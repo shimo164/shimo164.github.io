@@ -65,6 +65,8 @@ col1 | col2
 何か|何か
 列がそろっていないくてもよい
 
-https://guides.github.com/features/mastering-markdown/
 
-For more details see [GitHub Flavored Markdown](D).
+# 参考
+
+https://guides.github.com/features/mastering-markdown/
+https://github.github.com/gfm/
