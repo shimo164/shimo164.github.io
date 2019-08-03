@@ -1,16 +1,6 @@
-
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/shimo164/shimo164.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# マークダウンのチートシート
 
 ```markdown
-Syntax highlighted code block
 
 # Header 1
 ## Header 2
@@ -22,17 +12,60 @@ Syntax highlighted code block
 1. Numbered
 2. List
 
-**Bold** and _Italic_ and `Code` text
+**Bold**
+_Italic_ 
+`Code`
+```
+### リンク名
+`[Link](url) `
 
-[Link](url) and ![Image](src)
+### 画像
+`![Image](src)`
+
+
+### エスケープ
+
+\\
+バックスラッシュでエスケープ
+
+### コード
+
+```
+バッククォート3つで囲むと、コード
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+\```python
 
-### Jekyll Themes
+\```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shimo164/shimo164.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+などと指定してシンタックスハイライトをつけられる。
 
-### Support or Contact
+```python
+def test(n):
+    a = "string"
+    return 0
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 引用
+
+\> 引用
+
+> 引用
+
+### 表
+
+```
+col1 | col2
+----|----
+何か|何か
+列がそろっていないくてもよい
+
+```
+col1 | col2
+----|----
+何か|何か
+列がそろっていないくてもよい
+
+https://guides.github.com/features/mastering-markdown/
+
+For more details see [GitHub Flavored Markdown](D).
