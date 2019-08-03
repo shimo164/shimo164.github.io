@@ -73,7 +73,7 @@ https://guides.github.com/features/mastering-markdown/
 https://github.github.com/gfm/
 
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
+First Header|Second Header
+------------|-------------
+Content from cell 1|Content from cell 2
 Content in the first column | Content in the second column
