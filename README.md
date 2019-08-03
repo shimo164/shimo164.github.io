@@ -66,6 +66,12 @@ col1 | col2
 何か|何か
 Pagesだと表にならないときがある| \| の数を合わせること
 
+### 注意
+
+- GitHub上での更新と、github.ioの更新はタイムラグがある。jekyllによる更新をしているから？
+- GitHub上でのmarkdown表示と、github.ioでは少し異なるときがある。表で|の数合わせなど。
+
+
 
 # 参考
 
@@ -73,8 +79,3 @@ https://guides.github.com/features/mastering-markdown/
 
 https://github.github.com/gfm/
 
-
-First Header|Second Header
-------------|-------------
-Content from cell 1|Content from cell 2
-Content in the first column | Content in the second column
