@@ -2,8 +2,7 @@
 
 **Ncrack**
 
-![image](../image/ncrack_logo.png)
-
+<img src="../image/ncrack_logo.png" height=100>
 
 **NMAP**
 
@@ -17,4 +16,4 @@
 
 **armbian**
 
-![image](../image/armbian.png)
+<img src="../image/armbian.png" height=100>
