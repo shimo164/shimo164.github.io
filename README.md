@@ -1,3 +1,5 @@
+`[link](/docc/bash.md)`
+
 # マークダウンのチートシート
 
 ```markdown
