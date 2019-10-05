@@ -4,4 +4,4 @@
 
 [Lixnuコマンドのメモ](/docs/linux_command.md)
 
-[VIMのメモ](/docs/vim_command.md)
+[VIMのメモ](/docs/vim.md)
