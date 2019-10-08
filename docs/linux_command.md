@@ -18,8 +18,19 @@
 
 ### ○○日以内に更新したファイルを探す
 
-`$ find . -mtime -12 -name \*.py`
+`find . -mtime -12 -name \*.py`
 
-`$ find . -mtime -12 |grep "\.py$"`
+`find . -mtime -12 |grep "\.py$"`
 
 12日以内に更新した.pyファイルを探す(どちらも使えるが、.pyへのマッチが違う)
+
+### whichコマンドで実行ファイルを探す
+
+```
+which python
+/home/user/anaconda3/bin/python
+
+which git
+/usr/bin/git
+```
+
