@@ -1,14 +1,13 @@
 ## Linuxコマンドをメモする
 
-### 検索する
+### locate検索
 
-`locate aaa` aaa がpathに入っているものを探す
-
-`locate aaa bbb` OR 検索
-
-`locate -A aaa bbb` AND検索
-
-`locate -b aaa` basenameのみ検索
+command | meaning
+----|----
+`locate aaa` | aaa がpathに入っているものを探す
+`locate aaa bbb` | aaa OR bbb
+`locate -A aaa bbb`| aaa AND bbb
+`locate -b aaa` | basenameのみ検索
 
 
 ### 今いるディレクトリを開く
@@ -34,3 +33,6 @@ which git
 /usr/bin/git
 ```
 
+### full pathを出力
+
+`readlink -f filename.txt`
