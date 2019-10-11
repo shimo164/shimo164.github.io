@@ -31,3 +31,8 @@ git push -u origin master
 `git pull origin master`
 
 をする。
+
+**Github上でディレクトリを丸ごと消す**
+
+Github上では消せない。cloneしてローカル上でディレクトリを消して、pushする。
+https://github.community/t5/How-to-use-Git-and-GitHub/How-to-delete-multiples-files-in-Github/td-p/4623
