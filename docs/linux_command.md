@@ -1,4 +1,4 @@
-## Linuxコマンドをメモする　もくじ
+## LInuxコマンドをメモする　もくじ
 
 [negative wildcard](#negative-wildcard)
 
