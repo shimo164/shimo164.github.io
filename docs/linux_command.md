@@ -1,7 +1,10 @@
-## Linuxコマンドをメモする
-[negative wildcard](#negative wildcard)
+## Linuxコマンドをメモする　もくじ
+
+[negative wildcard](#negative-wildcard)
 
 [filenameという文字列を名前に含むファイルを探す](#filenameという文字列を名前に含むファイルを探す)
+
+[stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
 
 ### negative wildcard
 `$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
