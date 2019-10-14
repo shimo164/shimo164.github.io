@@ -1,5 +1,18 @@
 ## Linuxコマンドをメモする
 
+### ワイルドカードで"含まない"negative wildcard 
+`$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
+
+### filenameという文字列を名前に含むファイルを探す
+find ./ -type f | grep &lt;filename&gt;
+
+./ :　カレントディレクトリより下で、という意味
+
+grepで正規表現の利用　filename$ するとfilenameで終わるファイル
+
+### stringを本文に含むファイルを探すとき
+find ./ -type f | xargs grep -l -s "string"
+
 ### locate検索
 
 command | meaning
