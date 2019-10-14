@@ -34,3 +34,24 @@ recursive, .txt でword を検索　cwで表示
 `<C-W> X` 入れ替え
 
 `<C-W> h, j, k,l` で縦横を変更する
+
+
+### .vimrcにvim scriptを書く
+
+**function**
+```vim
+fucntion! Test()
+  echo "This is test!"
+endfunction
+```
+
+`:call Test()`として呼び出せる。
+
+**command**
+```vim
+command! Hoge call Test()
+```
+`:Hoge`で呼び出せる。
+
+参考: 
+[Vim script と vimrc の正しい書き方＠nagoya.vim #1](https://www.slideshare.net/cohama/vim-script-vimrc-nagoyavim-1)
