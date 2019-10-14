@@ -6,6 +6,16 @@
 
 [stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
 
+[locate検索](#locate検索)
+
+[今いるディレクトリを開く](#今いるディレクトリを開く)
+
+[○○日以内に更新したファイルを探す](#○○日以内に更新したファイルを探す)
+
+[whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
+
+[full pathを出力](#full pathを出力)
+
 ### negative wildcard
 `$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
 
@@ -27,7 +37,6 @@ command | meaning
 `locate aaa bbb` | aaa OR bbb
 `locate -A aaa bbb`| aaa AND bbb
 `locate -b aaa` | basenameのみ検索
-
 
 ### 今いるディレクトリを開く
 
