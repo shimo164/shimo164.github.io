@@ -13,7 +13,7 @@
 
 ### 大文字小文字を変換
 
-(NORMALモード)数字の上にカーソルおいて、`~`
+(NORMAL)変換したい文字の上にカーソルおいて、`~`<チルダ>
 
 ### 検索した結果を含む行を削除/含まない行を削除
 
@@ -55,3 +55,16 @@ command! Hoge call Test()
 
 参考: 
 [Vim script と vimrc の正しい書き方＠nagoya.vim #1](https://www.slideshare.net/cohama/vim-script-vimrc-nagoyavim-1)
+
+
+### 文字数、バイト数、単語数をカウント
+
+ビジュアルモードで囲ってから`g C-g` とする。選択部分の文字数、バイト数、単語数、全体の文字数が表示される。
+
+### Vim のタブ補間候補でディレクトリ構造は / で区切られるが、 \ にしないとエラーになるときがある。
+
+copy C:/.../... C:/.../... 
+
+だと（候補には出るのに）動かず、`コマンドの構文が誤っています`と出てエラー。 / を \ に変えるとOK。
+NEADTreeも同じでcopyが動かない。moveはOK。
+http://takuan93.blog62.fc2.com/blog-entry-86.html
