@@ -1,3 +1,4 @@
+# マークダウンのチートシート■ＳｓSs（test）(t)
 
 # 数字	全角	０ １ ２ ３ ４ ５ ６ ７ ８ ９
 # 半角	0 1 2 3 4 5 6 7 8 9
@@ -26,7 +27,7 @@
 # aｰb ﾞc ﾟd ､e ｡f ･g ｢h ｣
 
 # ASCII記号	全角	a！b ＂c ＃d ＄e ％f ＆g ＇h （a ）b ＊c ＋d ，e －f ．g ／h ：a ；b ＜c ＝d ＞ e？ f＠ g［ h＼a ］b ＾c ＿d ｀e ｛f ｜g ｝h ～
-# 半角	a!b "c #d $e %f &g 'h (a )b * c +d ,e - f.g / a: b; c< d= e> f? g@a \[b \c ] d^ e_f \` g { a| f} b~e
+# 半角	a!b "c #d $e %f &g \' h (a )b * c +d ,e - f.g / a: b; c< d= e> f? g@a \[b \c ] d^ e_f \` g { a| f} b~e
 # 非ASCII記号	全角	a｟ b｠ c￠ d￡ e￢ f￣ a￤ b￥c ￦d │e ←f ↑a →b ↓c■d ○e
 # 半角	⦅ ⦆ ¢ £ ¬ ¯ ¦ ¥ ₩ ￨ ￩ ￪ ￫ ￬ ￭ ￮
 
