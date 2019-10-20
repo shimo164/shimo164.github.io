@@ -1,3 +1,19 @@
+見出しのリンクがどう変換されるかをテスト中。
+ここがまとめている
+http://tbpgr.hatenablog.com/entry/20140125/1390659050
+
+```
+英大文字=>英小文字
+半角スペース=>半角ハイフン
+ドット=>削除
+シャープ=>削除
+丸括弧=>削除
+カンマ=>削除
+コロン=>削除
+```
+
+
+
 # 半角	a!b  (a )b
 
 [link](#半角ab--a-b)
@@ -28,10 +44,10 @@
 
 # aｰb ﾞc ﾟd ､e ｡f ･g ｢h ｣
 
-# ASCII記号	全角	a！b ＂c ＃d ＄e ％f ＆g ＇h （a ）b ＊c ＋d ，e －f ．g ／h ：a ；b ＜c ＝d ＞ e？ f＠ g［ h＼a ］b ＾c ＿d ｀e ｛f ｜g ｝h ～
-# 半角	a!b "c #d $e %f &g \' h (a )b * c +d ,e - f.g / a: b; c< d= e> f? g@a \[b \c ] d^ e_f \` g { a| f} b~e
-# 非ASCII記号	全角	a｟ b｠ c￠ d￡ e￢ f￣ a￤ b￥c ￦d │e ←f ↑a →b ↓c■d ○e
-# 半角	⦅ ⦆ ¢ £ ¬ ¯ ¦ ¥ ₩ ￨ ￩ ￪ ￫ ￬ ￭ ￮
+# ASCII記号全角a！b＂c＃d＄e％f＆g＇h（a）b＊c＋d，e－f．g／h：a；b＜c＝d＞e？f＠g［h＼a］b＾c＿d｀e｛f｜g｝h～
+# 半角a!b"c#d$e%f&g\'h(a)b*c+d,e-f.g/a:b;c<d=e>f?g@a\[b\c]d^e_f\`g{a|f}b~e
+# 非ASCII記号全角a｟b｠c￠d￡e￢f￣a￤b￥c￦d│e←f↑a→b↓c■d○e
+# 半角⦅⦆¢£¬¯¦¥₩￨￩￪￫￬￭￮
 
 
 # マークダウンのチートシート■ＳｓSs（test）  (t)
