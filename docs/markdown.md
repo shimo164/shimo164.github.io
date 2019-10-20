@@ -14,7 +14,7 @@ http://tbpgr.hatenablog.com/entry/20140125/1390659050
 
 
 
-# 半角	a!b  (a )b
+# a−全角ハイフンabー長音b
 
 [link](#半角ab--a-b)
 
