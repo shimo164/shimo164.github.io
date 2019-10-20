@@ -14,7 +14,7 @@ http://tbpgr.hatenablog.com/entry/20140125/1390659050
 
 
 
-# a−全角ハイフンabー長音b
+# a−全角ハイフンabー長音bc➖絵文字cd―全ダッシュde〜nami
 
 [link](#半角ab--a-b)
 
