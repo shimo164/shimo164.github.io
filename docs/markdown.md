@@ -1,6 +1,7 @@
 見出しのリンクがどう変換されるかをテスト中。
 ここがまとめている
 http://tbpgr.hatenablog.com/entry/20140125/1390659050
+https://so-zou.jp/web-app/text/fullwidth-halfwidth/
 
 ```
 英大文字=>英小文字
