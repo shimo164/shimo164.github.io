@@ -35,17 +35,17 @@ http://tbpgr.hatenablog.com/entry/20140125/1390659050
 
 # ヴ ガ ギ グ ゲ ゴ ザ ジ ズ ゼ ゾ ダ ヂ ヅ デ ド バ ビ ブ ベ ボ パ ピ プ ペ ポ ァ ィ ゥ ェ ォ ャ ュ ョ ッ
 
-# aーb◌゙c◌゚d 、e 。f ・g 「h 」
+# aーb◌゙c◌゚d、e。f・g「h」
 
 半角	
 # ｱ ｲ ｳ ｴ ｵ ｶ ｷ ｸ ｹ ｺ ｻ ｼ ｽ ｾ ｿ ﾀ ﾁ ﾂ ﾃ ﾄ ﾅ ﾆ ﾇ ﾈ ﾉ ﾊ ﾋ ﾌ ﾍ ﾎ ﾏ ﾐ ﾑ ﾒ ﾓ ﾔ ﾕ ﾖ ﾗ ﾘ ﾙ ﾚ ﾛ ﾜ ｦ ﾝ
 
 # ｳﾞ ｶﾞ ｷﾞ ｸﾞ ｹﾞ ｺﾞ ｻﾞ ｼﾞ ｽﾞ ｾﾞ ｿﾞ ﾀﾞ ﾁﾞ ﾂﾞ ﾃﾞ ﾄﾞ ﾊﾞ ﾋﾞ ﾌﾞ ﾍﾞ ﾎﾞ ﾊﾟ ﾋﾟ ﾌﾟ ﾍﾟ ﾎﾟ ｧ ｨ ｩ ｪ ｫ ｬ ｭ ｮ ｯ
 
-# aｰb ﾞc ﾟd ､e ｡f ･g ｢h ｣
+# aｰbﾞcﾟd､e｡f･g｢h｣
 
 # ASCII記号全角a！b＂c＃d＄e％f＆g＇h（a）b＊c＋d，e－f．g／h：a；b＜c＝d＞e？f＠g［h＼a］b＾c＿d｀e｛f｜g｝h～
-# 半角a!b"c#d$e%f&g\'h(a)b*c+d,e-f.g/a:b;c<d=e>f?g@a\[b\c]d^e_f\`g{a|f}b~e
+# 半角a!b"c#d$e%f&g\'h(a)b\*c+d,e-f.g/a:b;c<d=e>f?g@a\[b\c]d^e_f\`g{a|f}b~e
 # 非ASCII記号全角a｟b｠c￠d￡e￢f￣a￤b￥c￦d│e←f↑a→b↓c■d○e
 # 半角⦅⦆¢£¬¯¦¥₩￨￩￪￫￬￭￮
 
