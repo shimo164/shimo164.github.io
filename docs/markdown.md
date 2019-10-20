@@ -25,9 +25,9 @@
 
 # aｰb ﾞc ﾟd ､e ｡f ･g ｢h ｣
 
-# ASCII記号	全角	！ ＂ ＃ ＄ ％ ＆ ＇ （ ） ＊ ＋ ， － ． ／ ： ； ＜ ＝ ＞ ？ ＠ ［ ＼ ］ ＾ ＿ ｀ ｛ ｜ ｝ ～
-# 半角	! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
-# 非ASCII記号	全角	｟ ｠ ￠ ￡ ￢ ￣ ￤ ￥ ￦ │ ← ↑ → ↓ ■ ○
+# ASCII記号	全角	a！b ＂c ＃d ＄e ％f ＆g ＇h （a ）b ＊c ＋d ，e －f ．g ／h ：a ；b ＜c ＝d ＞ e？ f＠ g［ h＼a ］b ＾c ＿d ｀e ｛f ｜g ｝h ～
+# 半角	a!b "c #d $e %f &g 'h (a )b * c +d ,e - f.g / a: b; c< d= e> f? g@a \[b \c ] d^ e_f \` g { a| f} b~e
+# 非ASCII記号	全角	a｟ b｠ c￠ d￡ e￢ f￣ a￤ b￥c ￦d │e ←f ↑a →b ↓c■d ○e
 # 半角	⦅ ⦆ ¢ £ ¬ ¯ ¦ ¥ ₩ ￨ ￩ ￪ ￫ ￬ ￭ ￮
 
 
