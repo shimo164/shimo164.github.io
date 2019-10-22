@@ -22,7 +22,7 @@ https://so-zou.jp/web-app/text/fullwidth-halfwidth/
 
 
 
-# a−全角ハイフンabー長音bc➖絵文字cd―全ダッシュde〜ef＿全角アンダーラインf
+# a−全角ハイフンabー長音bc➖絵文字cd―全ダッシュde〜ef＿全角アンダーラインfg　全角スペースg
 
 [link](#半角ab--a-b)
 
