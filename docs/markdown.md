@@ -17,10 +17,22 @@ https://so-zou.jp/web-app/text/fullwidth-halfwidth/
 半角ハイフン-
 半角アンダースコア_
 全角アンダーライン＿
+全角スペース
 
 ```
+```python
+import re
+h = "### のあとのヘッダ"
+h = h.lower()
+h = re.sub(" ", "-", h)
+ma = re.findall("[a-xA-Z0-9_＿ー　ぁ-んァ-ンぁ-んァ-ンｱ-ﾝ一-龥]", h)
 
-
+h_md = ""
+for s in ma:
+    h_md += s
+    
+print(h_md)
+```
 
 # a−全角ハイフンabー長音bc➖絵文字cd―全ダッシュde〜ef＿全角アンダーラインfg　全角スペースg
 
