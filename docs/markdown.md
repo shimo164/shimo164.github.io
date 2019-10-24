@@ -1,7 +1,7 @@
 見出しのリンクがどう変換されるかをテスト中。
 ここがまとめている
-http://tbpgr.hatenablog.com/entry/20140125/1390659050
-https://so-zou.jp/web-app/text/fullwidth-halfwidth/
+* http://tbpgr.hatenablog.com/entry/20140125/1390659050
+* https://so-zou.jp/web-app/text/fullwidth-halfwidth/
 
 ```
 英大文字=>英小文字
@@ -20,57 +20,57 @@ https://so-zou.jp/web-app/text/fullwidth-halfwidth/
 全角スペース
 
 ```
-```python
-import re
-h = "### のあとのヘッダ"
-h = h.lower()
-h = re.sub(" ", "-", h)
-ma = re.findall("[a-xA-Z0-9_＿ー　ぁ-んァ-ンぁ-んァ-ンｱ-ﾝ一-龥]", h)
+### TODO code中の###はリンクにならないが、判定されてしまうのを回避
 
-h_md = ""
-for s in ma:
-    h_md += s
-    
-print(h_md)
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+In .md, make contens list from header ###.
+
+Usage:
+    $ python md_make_contents.py readfile.txt
+
+Output:
+    header_content.txt
+    In this txt, contents with md format is written.
+"""
+import re
+import sys
+
+file = sys.argv[1]
+total_line = ""
+
+sharp = "###"
+
+
+def format_md_header(header_raw):
+    h = header_raw
+    h = h.lower()
+    h = re.sub(" ", "-", h)
+    ma = re.findall("[a-zA-Z0-9_＿ー　ぁ-んァ-ンぁ-んァ-ンｱ-ﾝ一-龥]", h)
+
+    h_md = ""
+    for s in ma:
+        h_md += s
+
+    return h_md
+
+
+with open(file) as f:
+    for line in f:
+        line = re.sub("\n", "", line)
+        if re.match(sharp, line):
+            line = line.lstrip(sharp + " ")
+            h_md = format_md_header(line)
+            h_md = "* [" + line + "](#" + h_md + ")"
+            total_line += h_md + "\n"
+    fw = open("header_content.txt", "w")
+    fw.write(total_line)
 ```
 
-# a−全角ハイフンabー長音bc➖絵文字cd―全ダッシュde〜ef＿全角アンダーラインfg　全角スペースg
 
-[link](#半角ab--a-b)
-
-# 数字	全角	０ １ ２ ３ ４ ５ ６ ７ ８ ９
-# 半角	0 1 2 3 4 5 6 7 8 9
-# 英字	全角	
-# Ａ Ｂ Ｃ Ｄ Ｅ Ｆ Ｇ Ｈ Ｉ Ｊ Ｋ Ｌ Ｍ Ｎ Ｏ Ｐ Ｑ Ｒ Ｓ Ｔ Ｕ Ｖ Ｗ Ｘ Ｙ Ｚ
-
-# ａ ｂ ｃ ｄ ｅ ｆ ｇ ｈ ｉ ｊ ｋ ｌ ｍ ｎ ｏ ｐ ｑ ｒ ｓ ｔ ｕ ｖ ｗ ｘ ｙ ｚ
-
-半角	
-# A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-# a b c d e f g h i j k l m n o p q r s t u v w x y z
-
-カナ	全角	
-# ア イ ウ エ オ カ キ ク ケ コ サ シ ス セ ソ タ チ ツ テ ト ナ ニ ヌ ネ ノ ハ ヒ フ ヘ ホ マ ミ ム メ モ ヤ ユ ヨ ラ リ ル レ ロ ワ ヲ ン
-
-# ヴ ガ ギ グ ゲ ゴ ザ ジ ズ ゼ ゾ ダ ヂ ヅ デ ド バ ビ ブ ベ ボ パ ピ プ ペ ポ ァ ィ ゥ ェ ォ ャ ュ ョ ッ
-
-# aーb◌゙c◌゚d、e。f・g「h」
-
-半角	
-# ｱ ｲ ｳ ｴ ｵ ｶ ｷ ｸ ｹ ｺ ｻ ｼ ｽ ｾ ｿ ﾀ ﾁ ﾂ ﾃ ﾄ ﾅ ﾆ ﾇ ﾈ ﾉ ﾊ ﾋ ﾌ ﾍ ﾎ ﾏ ﾐ ﾑ ﾒ ﾓ ﾔ ﾕ ﾖ ﾗ ﾘ ﾙ ﾚ ﾛ ﾜ ｦ ﾝ
-
-# ｳﾞ ｶﾞ ｷﾞ ｸﾞ ｹﾞ ｺﾞ ｻﾞ ｼﾞ ｽﾞ ｾﾞ ｿﾞ ﾀﾞ ﾁﾞ ﾂﾞ ﾃﾞ ﾄﾞ ﾊﾞ ﾋﾞ ﾌﾞ ﾍﾞ ﾎﾞ ﾊﾟ ﾋﾟ ﾌﾟ ﾍﾟ ﾎﾟ ｧ ｨ ｩ ｪ ｫ ｬ ｭ ｮ ｯ
-
-# aｰbﾞcﾟd､e｡f･g｢h｣
-
-# ASCII記号全角a！b＂c＃d＄e％f＆g＇h（a）b＊c＋d，e－f．g／h：a；b＜c＝d＞e？f＠g［h＼a］b＾c＿d｀e｛f｜g｝h～
-# 半角a!b"c#d$e%f&g\'h(a)b\*c+d,e-f.g/a:b;c<d=e>f?g@a\[b\c]d^e_f\`g{a|f}b~e
-# 非ASCII記号全角a｟b｠c￠d￡e￢f￣a￤b￥c￦d│e←f↑a→b↓c■d○e
-# 半角⦅⦆¢£¬¯¦¥₩￨￩￪￫￬￭￮
-
-
-# マークダウンのチートシート■ＳｓSs（test）  (t)
+# マークダウンのチートシート
 
 ```markdown
 
