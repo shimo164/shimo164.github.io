@@ -1,22 +1,32 @@
 ## Git に関するメモ
 
-いろいろなwebに書いてある説明は分かり難い・・・のでまとめていきたい。
+### Github上でディレクトリを丸ごと消す
 
-※ローカルPCの作業ディレクトリにいるとする
+Github上では消せないので、cloneしてローカルでディレクトリを消して(rm -r)、pushする。
 
-* git hubでレポジトリrepoを作る
+```
+git checkout master
+git rm -r dir-name
+git commit -m "Remove dir-name"
+git push orign master
+```
+https://github.community/t5/How-to-use-Git-and-GitHub/How-to-delete-multiples-files-in-Github/td-p/4623
+
+# TODO 以下見直し
+
+### github上のrepositoryをローカルに
+
+* githubでレポジトリrepoがあるとする
 
 アドレスは　`https://github.com/username/repo.git`
 
-cloneする
+* clone
 
 `git clone https://github.com/username/repo.git`
 
 repoディレクトリが丸ごとコピーされる
 
-
-* pull する
-※先にreponameというディレクトリを作る
+* pull して同期する
 
 ```
 git pull origin master
@@ -26,13 +36,6 @@ git commit -m "first commit"
 git remote add origin https://github.com/username/repo.git
 git push -u origin master
 ```
-出だしが噛み合っていなければ先に ←？？噛みあう？？TODO
+コンフリクトしていなければ
 
 `git pull origin master`
-
-をする。
-
-**Github上でディレクトリを丸ごと消す**
-
-Github上では消せない。cloneしてローカル上でディレクトリを消して、pushする。
-https://github.community/t5/How-to-use-Git-and-GitHub/How-to-delete-multiples-files-in-Github/td-p/4623
