@@ -7,7 +7,7 @@
 * [XX日以内に更新したファイルを探す](#xx日以内に更新したファイルを探す)
 * [whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
 * [full pathを出力](#full-pathを出力)
-
+## 
 
 ### negative wildcard
 `$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
