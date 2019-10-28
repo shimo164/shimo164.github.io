@@ -1,20 +1,13 @@
-## Linuxコマンドをメモする　もくじ
+## Linuxコマンドメモ　もくじ
+* [negative wildcard](#negative-wildcard)
+* [filenameという文字列を名前に含むファイルを探す](#filenameという文字列を名前に含むファイルを探す)
+* [stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
+* [locate検索](#locate検索)
+* [今いるディレクトリを開く](#今いるディレクトリを開く)
+* [XX日以内に更新したファイルを探す](#xx日以内に更新したファイルを探す)
+* [whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
+* [full pathを出力](#full-pathを出力)
 
-[negative wildcard](#negative-wildcard)
-
-[filenameという文字列を名前に含むファイルを探す](#filenameという文字列を名前に含むファイルを探す)
-
-[stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
-
-[locate検索](#locate検索)
-
-[今いるディレクトリを開く](#今いるディレクトリを開く)
-
-[XX日以内に更新したファイルを探す](#xx日以内に更新したファイルを探す)
-
-[whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
-
-[full pathを出力](#full-pathを出力)
 
 ### negative wildcard
 `$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
