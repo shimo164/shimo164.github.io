@@ -38,6 +38,16 @@ command | meaning
 
 ### XX日以内に更新したファイルを探す
 
+`-mtime X` : x 日前
+
+`-mtime -X` : x 日前*以降*
+
+`-mtime 0` : 0-24時間前
+
+`-mtime 1` : 24-48時間前
+
+`-mtime -1` : 0-24時間前
+
 `find . -mtime -12 -name \*.py`
 
 `find . -mtime -12 |grep "\.py$"`
