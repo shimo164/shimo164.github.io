@@ -1,4 +1,4 @@
-### icons of software are characters
+### icons of software
 ---
 
 **Ncrack**
@@ -18,3 +18,8 @@
 **armbian**
 
 <img src="../image/armbian.png" height=100>
+
+**Python**
+
+<img src="../image/python.png" height=100>
+
