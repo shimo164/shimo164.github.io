@@ -10,4 +10,6 @@ HOME https://shimo164.github.io/
 
 [shell script](/docs/bash.md)
 
+[shell script](/docs/tmux.txt)
+
 [VIM memo](/docs/vim.md)
