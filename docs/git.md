@@ -1,5 +1,14 @@
 ## Git に関するメモ
 
+### git status をエイリアスgstにする
+
+`~/.bashrc` に追記する。
+
+```
+alias gst='git status'
+```
+
+
 ### Github上でディレクトリを丸ごと消す
 
 Github上では消せないので、cloneしてローカルでディレクトリを消して(rm -r)、pushする。
