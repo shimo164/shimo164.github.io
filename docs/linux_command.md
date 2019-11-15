@@ -9,6 +9,13 @@
 * [full pathを出力](#full-pathを出力)
 ## 
 
+### findコマンドの使い方
+
+`find ./ -type f | grep <filename>` ファイルfilenameを探す。自動でワイルドカード、再帰。
+
+`find ./ -type f | xargs grep -l -s searchword` searchwordを中に含むファイルを探す。-l ファイル名だけを出力　-s エラーメッセージをスキップ
+
+
 ### negative wildcard
 `$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
 
