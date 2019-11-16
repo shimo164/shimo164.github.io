@@ -1,3 +1,25 @@
+### vimgrep でファイルの中を検索
+
+`:vimgrep /*/j **/**.* | cw`
+
+/*/j の *　が検索語
+
+|cw :　QuickFixリストを出力
+
+/j : QuickFixを更新するでけでジャンプしない、の意味
+
+`**/**.*` : 再帰、どのファイルでも
+
+|cw を入力しないでもgrepしたときは自動でQuickFixになるようにできる
+
+```
+" .vimrc
+augroup QuickFixCmd
+  autocmd!
+  autocmd QuickFixCmdPost *grep* cwindow
+augroup END
+```
+
 ### non-greedy 非貪欲マッチ
 
 
