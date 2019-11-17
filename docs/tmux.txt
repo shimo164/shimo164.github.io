@@ -46,45 +46,45 @@ bind-key    -T prefix l                last-window
 bind-key    -T prefix m                select-pane -m ペインにマーク。ウィンドウにもMの文字が出る。join,swapの対象になる
 bind-key    -T prefix n                next-window
 bind-key    -T prefix o                select-pane -t :.+
-bind-key    -T prefix p                previous-window
-bind-key    -T prefix q                display-panes
-bind-key    -T prefix r                refresh-client
-bind-key    -T prefix s                choose-tree
-bind-key    -T prefix t                clock-mode
-bind-key    -T prefix w                choose-window
+bind-key    -T prefix p                previous-window  前のウィンドウ
+bind-key    -T prefix q                display-panes  ペインの番号、サイズを表示
+bind-key    -T prefix r                refresh-client ???
+bind-key    -T prefix s                choose-tree  セッションをリスト表示して選択して移動
+bind-key    -T prefix t                clock-mode ペインが時刻表示になる。クリック/タイプで戻る。
+bind-key    -T prefix w                choose-window  ウィンドウを選択
 bind-key    -T prefix x                confirm-before -p "kill-pane #P? (y/n)" kill-pane
-bind-key    -T prefix z                resize-pane -Z
-bind-key    -T prefix {                swap-pane -U
-bind-key    -T prefix }                swap-pane -D
-bind-key    -T prefix ~                show-messages
-bind-key    -T prefix PPage            copy-mode -u
+bind-key    -T prefix z                resize-pane -Z 1つのペインをウィンドウ最大まで広げる。再押しで戻る。
+bind-key    -T prefix {                swap-pane -U ペイン入れ替え
+bind-key    -T prefix }                swap-pane -D ペイン入れ替え
+bind-key    -T prefix ~                show-messages ???
+bind-key    -T prefix PPage            copy-mode -u ???
 bind-key -r -T prefix Up               select-pane -U
 bind-key -r -T prefix Down             select-pane -D
 bind-key -r -T prefix Left             select-pane -L
 bind-key -r -T prefix Right            select-pane -R
-bind-key    -T prefix M-1              select-layout even-horizontal
-bind-key    -T prefix M-2              select-layout even-vertical
-bind-key    -T prefix M-3              select-layout main-horizontal
-bind-key    -T prefix M-4              select-layout main-vertical
-bind-key    -T prefix M-5              select-layout tiled
-bind-key    -T prefix M-n              next-window -a
-bind-key    -T prefix M-o              rotate-window -D
-bind-key    -T prefix M-p              previous-window -a
-bind-key -r -T prefix M-Up             resize-pane -U 5
-bind-key -r -T prefix M-Down           resize-pane -D 5
-bind-key -r -T prefix M-Left           resize-pane -L 5
-bind-key -r -T prefix M-Right          resize-pane -R 5
-bind-key -r -T prefix C-Up             resize-pane -U
-bind-key -r -T prefix C-Down           resize-pane -D
-bind-key -r -T prefix C-Left           resize-pane -L
-bind-key -r -T prefix C-Right          resize-pane -R
-bind-key    -T root   MouseDown1Pane   select-pane -t = ; send-keys -M
-bind-key    -T root   MouseDown1Status select-window -t =
-bind-key    -T root   MouseDown3Pane   if-shell -F -t = #{mouse_any_flag} "select-pane -t=; send-keys -M" "select-pane -mt="
+bind-key    -T prefix M-1              select-layout even-horizontal ペインを横向き均等に整列
+bind-key    -T prefix M-2              select-layout even-vertical  ペインを縦向き均等に整列
+bind-key    -T prefix M-3              select-layout main-horizontal メインだけを横向き、他は縦に均等に整列
+bind-key    -T prefix M-4              select-layout main-vertical　メインだけを縦向き
+bind-key    -T prefix M-5              select-layout tiled タイル状に均等分割
+bind-key    -T prefix M-n              next-window -a alertの出ている次のウィンドウへ
+bind-key    -T prefix M-o              rotate-window -D ペインの分け方は変えずに中身を入れ替える
+bind-key    -T prefix M-p              previous-window -a alertの出ている前のウィンドウへ
+bind-key -r -T prefix M-Up             resize-pane -U 5 ペインをその方向に5拡張する
+bind-key -r -T prefix M-Down           resize-pane -D 5 同上
+bind-key -r -T prefix M-Left           resize-pane -L 5 同上
+bind-key -r -T prefix M-Right          resize-pane -R 5 同上
+bind-key -r -T prefix C-Up             resize-pane -U ペインをその方向に拡張する
+bind-key -r -T prefix C-Down           resize-pane -D 同上
+bind-key -r -T prefix C-Left           resize-pane -L 同上
+bind-key -r -T prefix C-Right          resize-pane -R 同上
+bind-key    -T root   MouseDown1Pane   select-pane -t = ; send-keys -M  ペインをマウスで直接選択
+bind-key    -T root   MouseDown1Status select-window -t = ステータスバーでウィンドウ選択
+bind-key    -T root   MouseDown3Pane   if-shell -F -t = #{mouse_any_flag} "select-pane -t=; send-keys -M" "select-pane -mt=" ???
 bind-key    -T root   MouseDrag1Pane   if-shell -F -t = #{mouse_any_flag} "if -Ft= "#{pane_in_mode}" "copy-mode -M" "send-keys -M"
-" "copy-mode -M"
-bind-key    -T root   MouseDrag1Border resize-pane -M
+" "copy-mode -M" ???
+bind-key    -T root   MouseDrag1Border resize-pane -M マウスドラッグでペインの境界を変更
 bind-key    -T root   WheelUpPane      if-shell -F -t = #{mouse_any_flag} "send-keys -M" "if -Ft= "#{pane_in_mode}" "send-keys -M"
- "copy-mode -et=""
-bind-key    -T root   WheelUpStatus    previous-window
-bind-key    -T root   WheelDownStatus  next-window
+ "copy-mode -et=""　マウスホイールをペイン上でアップするとコピーモードに
+bind-key    -T root   WheelUpStatus    previous-window ステータスバーの上でマウスホイールでウィドウ選択
+bind-key    -T root   WheelDownStatus  next-window　同上
