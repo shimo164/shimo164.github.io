@@ -1,6 +1,4 @@
-# Tips and memos
-
-HOME https://shimo164.github.io/
+HOME: https://shimo164.github.io/
 
 [git](/docs/git.md)
 
