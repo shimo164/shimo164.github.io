@@ -1,10 +1,8 @@
-# Tips and memos
-
-HOME https://shimo164.github.io/
+HOME: https://shimo164.github.io/
 
 [git](/docs/git.md)
 
-[Lixnu command](/docs/linux_command.md)
+[Linux command](/docs/linux_command.md)
 
 [Markdown](/docs/markdown.md)
 
