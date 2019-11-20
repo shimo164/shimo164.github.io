@@ -9,6 +9,12 @@
 * [full pathを出力](#full-pathを出力)
 ## 
 
+### grep
+
+`ls -l | grep foo | grep bar` grepをつなぐときはパイプ
+
+`ls -l | grep -v foo` 含まないときは `-v` をつける
+
 ### `cd -` で直前にいたディレクトリに戻る
 
 間違ってホームディレクトリに行ってしまったときに便利。
