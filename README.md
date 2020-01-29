@@ -10,6 +10,6 @@ HOME: https://shimo164.github.io/
 
 [tmux.txt(raw)](/docs/tmux.txt)
 
-[tmux cheetsheet)](/docs/tmux.md)
+[tmux cheetsheet](/docs/tmux.md)
 
 [VIM memo](/docs/vim.md)
