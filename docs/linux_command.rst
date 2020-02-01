@@ -78,13 +78,14 @@ XX日以内に更新したファイルを探す
 whichコマンドで実行ファイルを探す
 #################################
 
-```
-which python
-/home/user/anaconda3/bin/python
+.. code-block::
 
-which git
-/usr/bin/git
-```
+  which python
+  /home/user/anaconda3/bin/python
+
+  which git
+  /usr/bin/git
+
 
 full pathを出力
 ################
