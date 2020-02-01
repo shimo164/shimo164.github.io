@@ -2,7 +2,9 @@ HOME: https://shimo164.github.io/
 
 [git](/docs/git.md)
 
-[Linux command](/docs/linux_command.md)
+[Linux command md](/docs/linux_command.md)
+
+[Linux command rst](/docs/linux_command.md)
 
 [Markdown](/docs/markdown.md)
 
