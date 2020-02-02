@@ -7,3 +7,5 @@
 * マークダウンではhtmlを使ってもよい。
 
 * 画像のサイズを変えたいときはGithubのmd記法ではできない。htmlで`<img src="hoge.png" width=100 height=100>`は可。
+
+* rst ファイルは使えない
