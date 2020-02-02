@@ -4,8 +4,6 @@ HOME: https://shimo164.github.io/
 
 [Linux command md](/docs/linux_command.md)
 
-[Linux command rst](/docs/linux_command.rst)
-
 [Markdown](/docs/markdown.md)
 
 [shell script](/docs/bash.md)
