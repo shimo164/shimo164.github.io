@@ -2,6 +2,8 @@ HOME: https://shimo164.github.io/
 
 [git](/docs/git.md)
 
+[test.html](/docs/test.html)
+
 [Linux command md](/docs/linux_command.md)
 
 [Markdown](/docs/markdown.md)
