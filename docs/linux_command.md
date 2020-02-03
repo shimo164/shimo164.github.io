@@ -21,12 +21,11 @@
 
 ### findコマンドの使い方
 
-`find | grep filename` でfilenameを探す。 findのあとに探索ディレクトリ(例 /home/)、-type f/d などを入れることも可能
+`find directory | grep filename` filenameを探す。 findのあとに探索ディレクトリ(例 ./, /home/)、-type f/d などを入れることも可能。自動でワイルドカード、再帰になる。
 
-`find ./ -type f | grep <filename>` ファイルfilenameを探す。自動でワイルドカード、再帰。
+`find directory -type f | xargs grep -l -s searchword` searchwordを中に含むファイルを探す。-l ファイル名だけを出力　-s エラーメッセージをスキップ
 
-`find ./ -type f | xargs grep -l -s searchword` searchwordを中に含むファイルを探す。-l ファイル名だけを出力　-s エラーメッセージをスキップ
-
+`find dirctory -maxdepth 1 | grep filename` dirctoryから階層1だけ探す。
 
 ### negative wildcard
 `$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
