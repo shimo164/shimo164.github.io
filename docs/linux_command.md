@@ -9,7 +9,7 @@
 * [full pathを出力](#full-pathを出力)
 ## 
 
-### mistake
+### *mistake*
 
 I could not detect /var/ file-directory with `find ./ | grep var.` Because /var/ is subdirectory of root　like /home/ . And `find ./` means find under /home/ directory.
 
