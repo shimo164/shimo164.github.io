@@ -8,7 +8,7 @@ HOME: https://shimo164.github.io/
 
 [Markdown](/docs/markdown.md)
 
-[shell script](/docs/bash.md)
+[shell script](/docs/shell-script.md)
 
 [tmux.txt(raw)](/docs/tmux.txt)
 
