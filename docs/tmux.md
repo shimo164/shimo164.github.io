@@ -1,15 +1,21 @@
-### Comamands to operate Client, Window and Pane
+### Commands to operate Client, Window and Pane
+
+**bold command is with prefix C-b**
 
 | | Client | Window | Pane |
 | ---- | ---- | ---- | ---- |
-| New  | $tmux| c    | ", % |
-| Kill | $tmux kill-session -t [num] | & | x |
-| Move | (, ), L|p, n, [num] | o, Up, Down|
-| Rename | $  | ,    |       | 
+| New  | $tmux| **c**    | **"**, **%** |
+| Open | $tmux a [-t num]|- |- |
+| Kill | $tmux kill-session -t [num] | **&** | **x** |
+| Move | **(**, **)**, **L**|**p**, **n**, **[num]** | **o**, **Up**, **Down**|
+| Rename | **$**  | **,**    |       | 
 
--q view pane num
+| Command | Usage |
+| --- | --- |
+| C-b, **q** | View pane num |
+| C-b, **z** | Zoom pane and back|
+| C-b, **w** |List windows |
 
--z miximize one pane and go back
 
 To kill pane, $exit is also useful.
 
