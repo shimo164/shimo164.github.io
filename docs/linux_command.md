@@ -13,6 +13,19 @@
 
 I could not detect /var/ file-directory with `find ./ | grep var.` Because /var/ is subdirectory of root　like /home/ . And `find ./` means find under /home/ directory.
 
+### mkdirで深いディレクトリを作る
+
+`mkdir dir1/dir2`
+
+はエラー。`mkdir: cannot create directory ‘dir1/dir2’: No such file or directory`
+
+深いディレクトリを同時に作るには、
+
+`mkdir -p dir1/dir2`
+
+と -p をつけると、dir1がなくても同時に作成する。
+
+
 ### grep
 
 `ls -l | grep foo | grep bar` grepをつなぐときはパイプ
