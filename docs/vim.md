@@ -106,7 +106,7 @@ a と　最後のbをマッチするなら `a.*b`
 
 ### コマンド内で計算
 `<C-R>=1+2<CR>` で3が入力される。
-  
+
 ### 分割ウィンドウの入れ替え
 `<C-W> X` 入れ替え
 
@@ -130,7 +130,7 @@ command! Hoge call Test()
 ```
 `:Hoge`で呼び出せる。
 
-参考: 
+参考:
 [Vim script と vimrc の正しい書き方＠nagoya.vim #1](https://www.slideshare.net/cohama/vim-script-vimrc-nagoyavim-1)
 
 
@@ -140,7 +140,7 @@ command! Hoge call Test()
 
 ### Vim のタブ補間候補でpathの区切りは / だが、 \ でないとエラーになるときがある
 
-copy C:/.../... C:/.../... 
+copy C:/.../... C:/.../...
 
 だと（候補には出るのに）動かず、`コマンドの構文が誤っています`と出てエラー。 / を \ に変えるとOK。
 NEADTreeも同じでcopyが動かない。moveはOK。

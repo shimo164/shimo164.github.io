@@ -1,4 +1,5 @@
 ## Linuxコマンドメモ　もくじ
+<!--Contents-->
 * [negative wildcard](#negative-wildcard)
 * [filenameという文字列を名前に含むファイルを探す](#filenameという文字列を名前に含むファイルを探す)
 * [stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
@@ -7,11 +8,29 @@
 * [XX日以内に更新したファイルを探す](#xx日以内に更新したファイルを探す)
 * [whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
 * [full pathを出力](#full-pathを出力)
-## 
+<!--Contents-->
 
 ### *mistake*
 
 I could not detect /var/ file-directory with `find ./ | grep var.` Because /var/ is subdirectory of root　like /home/ . And `find ./` means find under /home/ directory.
+
+### lsコマンド
+
+|Command| Explanation|
+|---|---|
+|`ls -d */`| ディレクトリのみ出力|
+|`ls -l | grep ^d`| ディレクトリのみ出力（-l の出力でディレクトリはdで始まる）|
+|`ls -l | grep -v ^d`| ファイルだけを出力（-v 上記の反対）|
+|`ls -d .?*` | .で始まるファイル。※regex ?は"match exactly one"|
+
+**TODO**
+`ls -d` はlist directories themselves, not their contents ということだが、ファイルも出力されている。
+
+`ll`コマンドはlsのエイリアスになっている。環境に依存。
+```
+type ll
+ll is aliased to `ls -alF'
+```
 
 ### mkdirで深いディレクトリを作る
 
