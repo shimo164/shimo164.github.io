@@ -85,7 +85,7 @@ with open(file) as f:
 2. List
 
 **Bold**
-_Italic_ 
+_Italic_
 `Code`
 ※スペースを入れないこと
 ```
@@ -99,6 +99,9 @@ _Italic_
 ページ内リンク
 `[文字列](./#見出し)`
 * 見出しのスペースはハイフンに、大文字は小文字になる
+
+absolute link
+`[link](file:///home/user/.../)`
 
 ### 画像
 `![Image](src)`

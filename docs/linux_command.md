@@ -1,13 +1,20 @@
 ## Linuxコマンドメモ　もくじ
 <!--Contents-->
-* [negative wildcard](#negative-wildcard)
-* [filenameという文字列を名前に含むファイルを探す](#filenameという文字列を名前に含むファイルを探す)
-* [stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
-* [locate検索](#locate検索)
-* [今いるディレクトリを開く](#今いるディレクトリを開く)
-* [XX日以内に更新したファイルを探す](#xx日以内に更新したファイルを探す)
-* [whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
-* [full pathを出力](#full-pathを出力)
+- [Linuxコマンドメモ　もくじ](#linuxコマンドメモもくじ)
+  - [*mistake*](#mistake)
+  - [lsコマンド](#lsコマンド)
+  - [mkdirで深いディレクトリを同時に作る](#mkdirで深いディレクトリを同時に作る)
+  - [grep](#grep)
+  - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
+  - [findコマンドの使い方](#findコマンドの使い方)
+  - [negative wildcard](#negative-wildcard)
+  - [filenameという文字列を名前に含むファイルを探す](#filenameという文字列を名前に含むファイルを探す)
+  - [stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
+  - [locate検索](#locate検索)
+  - [今いるディレクトリを開く](#今いるディレクトリを開く)
+  - [findで更新時間で探す](#findで更新時間で探す)
+  - [whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
+  - [full pathを出力](#full-pathを出力)
 <!--Contents-->
 
 ### *mistake*
@@ -23,27 +30,19 @@ I could not detect /var/ file-directory with `find ./ | grep var.` Because /var/
 |`ls -l | grep -v ^d`| ファイルだけを出力（-v 上記の反対）|
 |`ls -d .?*` | .で始まるファイル。※regex ?は"match exactly one"|
 
-**TODO**
-`ls -d` はlist directories themselves, not their contents ということだが、ファイルも出力されている。
-
-`ll`コマンドはlsのエイリアスになっている。環境に依存。
+`ll`コマンドはlsのエイリアスになっている(.bashrcで設定)。
 ```
-type ll
 ll is aliased to `ls -alF'
 ```
 
-### mkdirで深いディレクトリを作る
+### mkdirで深いディレクトリを同時に作る
+
+`mkdir -p dir1/dir2`　option:-p をつける。dir1がなくても同時に作成する。
+
 
 `mkdir dir1/dir2`
 
 はエラー。`mkdir: cannot create directory ‘dir1/dir2’: No such file or directory`
-
-深いディレクトリを同時に作るには、
-
-`mkdir -p dir1/dir2`
-
-と -p をつけると、dir1がなくても同時に作成する。
-
 
 ### grep
 
@@ -53,7 +52,7 @@ ll is aliased to `ls -alF'
 
 ### `cd -` で直前にいたディレクトリに戻る
 
-間違ってホームディレクトリに行ってしまったときに便利。
+間違ってディレクトリを移動したときなどに便利。
 
 ### findコマンドの使い方
 
@@ -89,18 +88,15 @@ command | meaning
 
 `nautilus .`
 
+### findで更新時間で探す
 
-### XX日以内に更新したファイルを探す
-
-`-mtime X` : x 日前
-
-`-mtime -X` : x 日前*以降*
-
-`-mtime 0` : 0-24時間前
-
-`-mtime 1` : 24-48時間前
-
-`-mtime -1` : 0-24時間前
+command | meaning
+---|---
+`-mtime X` | x+1 日前
+`-mtime -X` | x+1 日前*以降*
+`-mtime 0` | 0-24時間前
+`-mtime 1` | 24-48時間前
+`-mtime -1` | 0-48時間前
 
 `find . -mtime -12 -name \*.py`
 
