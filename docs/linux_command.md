@@ -1,7 +1,9 @@
-## Linuxコマンドメモ　もくじ
+## Linuxコマンドメモ もくじ
 <!--Contents-->
-- [Linuxコマンドメモ　もくじ](#linuxコマンドメモもくじ)
+- [Linuxコマンドメモ もくじ](#linuxコマンドメモ-もくじ)
   - [*mistake*](#mistake)
+  - [rm](#rm)
+- [固まったとき](#固まったとき)
   - [lsコマンド](#lsコマンド)
   - [mkdirで深いディレクトリを同時に作る](#mkdirで深いディレクトリを同時に作る)
   - [grep](#grep)
@@ -19,15 +21,24 @@
 
 ### *mistake*
 
-I could not detect /var/ file-directory with `find ./ | grep var.` Because /var/ is subdirectory of root　like /home/ . And `find ./` means find under /home/ directory.
+I could not detect /var/ file-directory with `find ./ | grep var.` Because /var/ is subdirectory of root like /home/ . And `find ./` means find under /home/ directory.
+
+### rm
+
+ディレクトリを削除するときは、`rm -rf direname` で丸ごと削除。
+
+## 固まったとき
+
+- Ctrl + Alt + F2 でコマンドウィンドウに移動 Ctrl + Alt + F7 で戻る。
+- `top`でプロセスpidを確認。`kill -9 <pid>` でkill。
 
 ### lsコマンド
 
 |Command| Explanation|
 |---|---|
 |`ls -d */`| ディレクトリのみ出力|
-|`ls -l | grep ^d`| ディレクトリのみ出力（-l の出力でディレクトリはdで始まる）|
-|`ls -l | grep -v ^d`| ファイルだけを出力（-v 上記の反対）|
+|`ls -l | grep ^d`| ディレクトリのみ出力（-lの出力でディレクトリはdで始まる）|
+|`ls -l | grep -v ^d`| ファイルだけを出力（-v上記の反対）|
 |`ls -d .?*` | .で始まるファイル。※regex ?は"match exactly one"|
 
 `ll`コマンドはlsのエイリアスになっている(.bashrcで設定)。
@@ -37,12 +48,12 @@ ll is aliased to `ls -alF'
 
 ### mkdirで深いディレクトリを同時に作る
 
-`mkdir -p dir1/dir2`　option:-p をつける。dir1がなくても同時に作成する。
+`mkdir -p dir1/dir2` option:-pをつける。dir1がなくても同時に作成する。
 
 
 `mkdir dir1/dir2`
 
-はエラー。`mkdir: cannot create directory ‘dir1/dir2’: No such file or directory`
+はエラー。`mkdir: cannot create directory‘dir1/dir2’: No such file or directory`
 
 ### grep
 
@@ -56,9 +67,13 @@ ll is aliased to `ls -alF'
 
 ### findコマンドの使い方
 
-`find directory | grep filename` filenameを探す。 findのあとに探索ディレクトリ(例 ./, /home/)、-type f/d などを入れることも可能。自動でワイルドカード、再帰になる。
 
-`find directory -type f | xargs grep -l -s searchword` searchwordを中に含むファイルを探す。-l ファイル名だけを出力　-s エラーメッセージをスキップ
+
+`find <directory> | grep filename` filenameを探す。findのあとに探索ディレクトリ(例 ./, /home/)、-type f/dなどを入れることも可能。自動でワイルドカード、再帰になる。
+
+`find ./ -type f | grep filename` カレントディレクトリから再帰でfilenameを探す。
+
+`find directory -type f | xargs grep -l -s searchword` searchwordを中に含むファイルを探す。-lファイル名だけを出力 -sエラーメッセージをスキップ
 
 `find dirctory -maxdepth 1 | grep filename` dirctoryから階層1だけ探す。
 
@@ -68,9 +83,9 @@ ll is aliased to `ls -alF'
 ### filenameという文字列を名前に含むファイルを探す
 find ./ -type f | grep &lt;filename&gt;
 
-./ :　カレントディレクトリより下で、という意味
+./ : カレントディレクトリより下で、という意味
 
-grepで正規表現の利用　filename$ するとfilenameで終わるファイル
+grepで正規表現の利用 filename$ するとfilenameで終わるファイル
 
 ### stringを本文に含むファイルを探すとき
 find ./ -type f | xargs grep -l -s "string"
@@ -79,7 +94,7 @@ find ./ -type f | xargs grep -l -s "string"
 
 command | meaning
 ----|----
-`locate aaa` | aaa がpathに入っているものを探す
+`locate aaa` | aaaがpathに入っているものを探す
 `locate aaa bbb` | aaa OR bbb
 `locate -A aaa bbb`| aaa AND bbb
 `locate -b aaa` | basenameのみ検索

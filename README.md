@@ -1,4 +1,4 @@
-HOME: https://shimo164.github.io/
+HOME: [https://shimo164.github.io/](https://shimo164.github.io/)
 
 [git](/docs/git.md)
 
@@ -6,7 +6,9 @@ HOME: https://shimo164.github.io/
 
 [Markdown](/docs/markdown.md)
 
-[shell script](/docs/shell-script.md)
+[Regex](/docs/regex.md)
+
+[Shell script](/docs/shell-script.md)
 
 [tmux cheetsheet](/docs/tmux.md)
 
