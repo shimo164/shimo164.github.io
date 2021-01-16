@@ -1,73 +1,25 @@
-## Linuxコマンドメモ もくじ
-<!--Contents-->
-- [Linuxコマンドメモ もくじ](#linuxコマンドメモ-もくじ)
-  - [*mistake*](#mistake)
-  - [rm](#rm)
-- [固まったとき](#固まったとき)
-  - [lsコマンド](#lsコマンド)
-  - [mkdirで深いディレクトリを同時に作る](#mkdirで深いディレクトリを同時に作る)
-  - [grep](#grep)
-  - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
-  - [findコマンドの使い方](#findコマンドの使い方)
-  - [negative wildcard](#negative-wildcard)
-  - [filenameという文字列を名前に含むファイルを探す](#filenameという文字列を名前に含むファイルを探す)
-  - [stringを本文に含むファイルを探すとき](#stringを本文に含むファイルを探すとき)
-  - [locate検索](#locate検索)
-  - [今いるディレクトリを開く](#今いるディレクトリを開く)
-  - [findで更新時間で探す](#findで更新時間で探す)
-  - [whichコマンドで実行ファイルを探す](#whichコマンドで実行ファイルを探す)
-  - [full pathを出力](#full-pathを出力)
-<!--Contents-->
+# Linuxコマンドメモ もくじ
+  - [検索](#検索)
+    - [findコマンドの使い方](#findコマンドの使い方)
+    - [findで<filename>を名前に含むファイルを探す](#findでfilenameを名前に含むファイルを探す)
+    - [findで"string"を本文に含むファイルを探す](#findでstringを本文に含むファイルを探す)
+    - [locate検索](#locate検索)
+    - [findで更新時間で探す](#findで更新時間で探す)
+    - [findで/var/.. を検索するときの注意](#findでvar-を検索するときの注意)
+  - [Tips いろいろ](#tips-いろいろ)
+    - [rmでディレクトリ削除](#rmでディレクトリ削除)
+    - [プロセスが固まったとき](#プロセスが固まったとき)
+    - [lsコマンド](#lsコマンド)
+    - [mkdirで深いディレクトリを同時に作る](#mkdirで深いディレクトリを同時に作る)
+    - [今いるディレクトリを開く](#今いるディレクトリを開く)
+    - [grep](#grep)
+    - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
+    - [whichコマンドで実行ファイルのフルパスを出力](#whichコマンドで実行ファイルのフルパスを出力)
+    - [readlinkでfull pathを出力](#readlinkでfull-pathを出力)
 
-### *mistake*
-
-I could not detect /var/ file-directory with `find ./ | grep var.` Because /var/ is subdirectory of root like /home/ . And `find ./` means find under /home/ directory.
-
-### rm
-
-ディレクトリを削除するときは、`rm -rf direname` で丸ごと削除。
-
-## 固まったとき
-
-- Ctrl + Alt + F2 でコマンドウィンドウに移動 Ctrl + Alt + F7 で戻る。
-- `top`でプロセスpidを確認。`kill -9 <pid>` でkill。
-
-### lsコマンド
-
-|Command| Explanation|
-|---|---|
-|`ls -d */`| ディレクトリのみ出力|
-|`ls -l | grep ^d`| ディレクトリのみ出力（-lの出力でディレクトリはdで始まる）|
-|`ls -l | grep -v ^d`| ファイルだけを出力（-v上記の反対）|
-|`ls -d .?*` | .で始まるファイル。※regex ?は"match exactly one"|
-
-`ll`コマンドはlsのエイリアスになっている(.bashrcで設定)。
-```
-ll is aliased to `ls -alF'
-```
-
-### mkdirで深いディレクトリを同時に作る
-
-`mkdir -p dir1/dir2` option:-pをつける。dir1がなくても同時に作成する。
-
-
-`mkdir dir1/dir2`
-
-はエラー。`mkdir: cannot create directory‘dir1/dir2’: No such file or directory`
-
-### grep
-
-`ls -l | grep foo | grep bar` grepをつなぐときはパイプ
-
-`ls -l | grep -v foo` 含まないときは `-v` をつける
-
-### `cd -` で直前にいたディレクトリに戻る
-
-間違ってディレクトリを移動したときなどに便利。
+## 検索
 
 ### findコマンドの使い方
-
-
 
 `find <directory> | grep filename` filenameを探す。findのあとに探索ディレクトリ(例 ./, /home/)、-type f/dなどを入れることも可能。自動でワイルドカード、再帰になる。
 
@@ -77,18 +29,18 @@ ll is aliased to `ls -alF'
 
 `find dirctory -maxdepth 1 | grep filename` dirctoryから階層1だけ探す。
 
-### negative wildcard
-`$ ls -l !(*csv)` csvをファイル名に含まないファイルをlsする
 
-### filenameという文字列を名前に含むファイルを探す
-find ./ -type f | grep &lt;filename&gt;
+### findで<filename>を名前に含むファイルを探す
 
-./ : カレントディレクトリより下で、という意味
+`find ./ -type f | grep <filename>`
+
+`./` : カレントディレクトリより下で、という意味
 
 grepで正規表現の利用 filename$ するとfilenameで終わるファイル
 
-### stringを本文に含むファイルを探すとき
-find ./ -type f | xargs grep -l -s "string"
+### findで"string"を本文に含むファイルを探す
+
+`find ./ -type f | xargs grep -l -s "string"`
 
 ### locate検索
 
@@ -99,9 +51,6 @@ command | meaning
 `locate -A aaa bbb`| aaa AND bbb
 `locate -b aaa` | basenameのみ検索
 
-### 今いるディレクトリを開く
-
-`nautilus .`
 
 ### findで更新時間で探す
 
@@ -119,7 +68,64 @@ command | meaning
 
 12日以内に更新した.pyファイルを探す(どちらも使えるが、.pyへのマッチが違う)
 
-### whichコマンドで実行ファイルを探す
+### findで/var/.. を検索するときの注意
+
+`/var/`の中を探すとき、`find ./ | grep var`ではできない。`/var/`はrootのサブディレクトリで`/home/`と同列にある。
+`find ./` は `/home/` 以下を検索するということである。
+
+## Tips いろいろ
+
+
+
+### rmでディレクトリ削除
+
+ディレクトリを削除するときは、`rm -rf direname` で丸ごと削除。
+
+### プロセスが固まったとき
+
+- Ctrl + Alt + F2 でコマンドウィンドウに移動 Ctrl + Alt + F7 で戻る。
+- `top`でプロセスpidを確認。`kill -9 <pid>` でkill。
+
+### lsコマンド
+
+|Command| Explanation|
+|---|---|
+|`ls -d */`| ディレクトリのみ出力|
+|`ls -l | grep ^d`| ディレクトリのみ出力（-lの出力でディレクトリはdで始まる）|
+|`ls -l | grep -v ^d`| ファイルだけを出力（-v上記の反対）|
+|`ls -d .?*` | .で始まるファイル。※regex ?は"match exactly one"|
+|`$ ls -l !(*csv)` |csvをファイル名に**含まない**ファイルをlsする|
+
+
+`ll`コマンドはlsのエイリアスになっている(.bashrcで設定)。
+```
+ll is aliased to `ls -alF'
+```
+
+### mkdirで深いディレクトリを同時に作る
+
+`mkdir -p dir1/dir2` option:-pをつける。dir1がなくても同時に作成する。
+
+
+`mkdir dir1/dir2`
+
+はエラー。`mkdir: cannot create directory‘dir1/dir2’: No such file or directory`
+
+### 今いるディレクトリを開く
+
+`nautilus .`
+
+### grep
+
+`ls -l | grep foo | grep bar` grepをつなぐときはパイプ
+
+`ls -l | grep -v foo` 含まないときは `-v` をつける
+
+### `cd -` で直前にいたディレクトリに戻る
+
+間違ってディレクトリを移動したときなどに便利。
+
+### whichコマンドで実行ファイルのフルパスを出力
 
 ```
 which python
@@ -128,7 +134,6 @@ which python
 which git
 /usr/bin/git
 ```
-
-### full pathを出力
+### readlinkでfull pathを出力
 
 `readlink -f filename.txt`
