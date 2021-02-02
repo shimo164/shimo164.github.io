@@ -126,6 +126,9 @@ grep -rl time directory
 
 # directory配下でt..eを含む行番号とマッチした部分を出力
 grep -rno t..e directory
+
+# grepした結果を消す
+find ... | grep ... | xargs rm
 ```
 
 ## Tips いろいろ
