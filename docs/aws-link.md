@@ -1,6 +1,5 @@
 # AWS
 
-##
 
 [AWS Architecture Center](https://aws.amazon.com/architecture/)
 
@@ -52,37 +51,43 @@
 
 [aws:RequestTag/tag-key](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)
 
+
+[Troubleshooting Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/troubleshooting.html#troubleshooting-by-symptom-increase-503-reponses)
+
+[Will rebooting an Amazon EC2 instance cause the IP to change?](https://www.quora.com/Will-rebooting-an-Amazon-EC2-instance-cause-the-IP-to-change)
+
+
+### Best Practice
+
 [AWS Foundational Security Best Practices controls](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-iam-1)
 
 [Best Practices for Designing and Architecting with DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
 
 [Best practices for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html)
 
-[Quotas and constraints for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.MaxConnections)
-
 [Best practices with Amazon Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.BestPractices.html#AuroraPostgreSQL.BestPractices.FastFailover.Configuring)
 
+[Quotas and constraints for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.MaxConnections)
+
+### IAM
 
 [IAM: Create new users only with specific tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_iam-new-user-tag.html)
 
 [Using key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)
 
-
 [Using Bucket Policies and User Policies](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html)
-
-[Troubleshooting Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/troubleshooting.html#troubleshooting-by-symptom-increase-503-reponses)
-
-[Will rebooting an Amazon EC2 instance cause the IP to change?](https://www.quora.com/Will-rebooting-an-Amazon-EC2-instance-cause-the-IP-to-change)
 
 [Granting a user permissions to pass a role to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)
 
+
+[Guidelines for using the available access policy options](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html#when-to-use-acl)
+
+### Knowledge Center
 
 [How health checks work in complex Amazon Route 53 configurations](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-complex-configs.html)
 
 [How can I get my AWS CloudFormation stack to update if it's stuck in the UPDATE_ROLLBACK_FAILED state?](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-update-rollback-failed/?nc1=h_ls)
 
-
-[Guidelines for using the available access policy options](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html#when-to-use-acl)
 
 
 [複数の AWS アカウントを一つに統合することはできますか?](https://aws.amazon.com/jp/premiumsupport/knowledge-center/merge-aws-accounts/)
@@ -107,6 +112,4 @@
 
 [Build ETL Processes for Data Lakes with AWS Glue - AWS Online Tech Talks](https://www.youtube.com/watch?v=P3z4IX5-OHM)
 
-
-
-[AWS re:Invent 2019 Breakout Sessions | Analytics](https://www.youtube.com/playlist?list=PL2yQDdvlhXf8xDhf0MLJbercENCI6s_8y)
+[AWS re:Invent 2019 Breakout Sessions Analytics](https://www.youtube.com/playlist?list=PL2yQDdvlhXf8xDhf0MLJbercENCI6s_8y)

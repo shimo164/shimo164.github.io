@@ -1,31 +1,35 @@
-### Commands to operate Client, Window and Pane
+- [Commands to operate Client, Window and Pane](#commands-to-operate-client-window-and-pane)
+- [Menu bar parameter](#menu-bar-parameter)
 
-**bold command is with prefix C-b**
+# Commands to operate Client, Window and Pane
+
+*Note: default prefix is Ctrl+b*
 
 | | Client | Window | Pane |
 | ---- | ---- | ---- | ---- |
-| New  | $tmux| **c**    | **"**, **%** |
-| Open | $tmux a [-t num]|- |- |
-| Kill | $tmux kill-session -t [num] | **&** | **x** |
-| Move | **(**, **)**, **L**|**p**, **n**, **[num]** | **o**, **Up**, **Down**|
-| Rename | **$**  | **,**    |       | 
+| **New**  | $tmux| prefix c | prefix "<br> prefix % |
+| **Open** | $tmux a [-t num]|- |- |
+| **Kill** | $tmux kill-session [-t num] | prefix & | prefix x |
+| **Move** | prefix (<br>  prefix )<br>  prefix L|prefix p<br> prefix n<br>  prefix num | prefix o<br>  prefix Up<br>  prefix Down|
+| **Rename** | prefix $  | prefix ,    |       |
+
+*Note: To kill pane, window $exit is also useful.*
 
 | Command | Usage |
 | --- | --- |
-| C-b, **q** | View pane num |
-| C-b, **z** | Zoom pane and back|
-| C-b, **w** |List windows |
+| prefix q | View pane num |
+| prefix z | Zoom pane and back|
+| prefix w |List windows |
 
 
-To kill pane, $exit is also useful.
+# Menu bar parameter
 
-### Menu bar parameter
+Example: When `[3] 0:bash* 1:test-Z` is shown at the left bottom of menu bar,
 
-example: If `[3] 0:bash* 1:test-Z` is shown at the left bottom of menu bar. Meanings for each expression are below.
-
-* [3] client number is 3.
-* 0:bash 0th window with name bash
-* \* currently shown
-* 1:test 1st window with name test
-* -Z one pane is maximized.
-
+| Content | Meaning                              |
+| :-----: | ------------------------------------ |
+|   [3]   | Client number is 3.                  |
+| 0:bash  | 0th window with name bash            |
+|   \*    | Currently shown                      |
+| 1:test  | 1st window with name test            |
+|   -Z    | One pane is maximized in this window |
