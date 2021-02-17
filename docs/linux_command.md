@@ -2,7 +2,7 @@
 
 - [検索](#検索)
   - [findコマンドの使い方](#findコマンドの使い方)
-  - [findで<filename>を名前に含むファイルを探す](#findでfilenameを名前に含むファイルを探す)
+  - [findでfilenameを名前に含むファイルを探す](#findでfilenameを名前に含むファイルを探す)
   - [findで"string"を本文に含むファイルを探す](#findでstringを本文に含むファイルを探す)
   - [locate検索](#locate検索)
   - [findで更新時間で探す](#findで更新時間で探す)
@@ -15,6 +15,8 @@
   - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
   - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
   - [プロセスが固まったとき](#プロセスが固まったとき)
+  - [pidを確認してkill](#pidを確認してkill)
+    - [Ubuntu強制終了、強制再起動コマンド link](#ubuntu強制終了強制再起動コマンド-link)
   - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
   - [whichコマンドで実行ファイルのフルパスを出力](#whichコマンドで実行ファイルのフルパスを出力)
   - [readlinkでファイルのfull pathを出力](#readlinkでファイルのfull-pathを出力)
@@ -36,12 +38,12 @@
 
 `find ./ -type f | grep filename` カレントディレクトリから再帰でfilenameを探す。
 
-`find directory -type f | xargs grep -l -s searchword` searchwordを中に含むファイルを探す。-lファイル名だけを出力 -sエラーメッセージをスキップ
+`find directory -type f | xargs grep -l -s word` wordを中に含むファイルを探す。-lファイル名だけを出力 -sエラーメッセージをスキップ
 
-`find dirctory -maxdepth 1 | grep filename` dirctoryから階層1だけ探す。
+`find directory -maxdepth 1 | grep filename` directoryから階層1だけ探す。
 
 
-### findで<filename>を名前に含むファイルを探す
+### findでfilenameを名前に含むファイルを探す
 
 `find ./ -type f | grep <filename>`
 
@@ -145,8 +147,16 @@ find ... | grep ... | xargs rm
 
 ### プロセスが固まったとき
 
-- Ctrl + Alt + F2 でコマンドウィンドウに移動 Ctrl + Alt + F7 で戻る。
-- `top`でプロセスpidを確認。`kill -9 <pid>` でkill。
+### pidを確認してkill
+
+- Ctrl + Alt + F2 でコマンドウィンドウに移動 Ctrl + Alt + F7 で戻る
+- `top`でプロセスpidを確認。`kill -9 <pid>` でkill
+
+#### Ubuntu強制終了、強制再起動コマンド [link](https://wiki.ubuntulinux.jp/UbuntuTips/Others/MagicSysRq)
+
+- フリーズしたとき安全に再起動する Alt+PrintScreenを押しながらR+S+E+I+U+**B**
+- フリーズしたとき安全に終了する Alt+PrintScreenを押しながらR+S+E+I+U+**O**
+
 
 ### `cd -` で直前にいたディレクトリに戻る
 
