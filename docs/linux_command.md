@@ -14,8 +14,9 @@
   - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
   - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
   - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
-  - [プロセスが固まったとき](#プロセスが固まったとき)
-  - [pidを確認してkill](#pidを確認してkill)
+  - [lsof -iでポート使用状況を確認する](#lsof--iでポート使用状況を確認する)
+  - [Ubuntuフリーズしたとき](#ubuntuフリーズしたとき)
+    - [pidを確認してkill](#pidを確認してkill)
     - [Ubuntu強制終了、強制再起動コマンド link](#ubuntu強制終了強制再起動コマンド-link)
   - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
   - [whichコマンドで実行ファイルのフルパスを出力](#whichコマンドで実行ファイルのフルパスを出力)
@@ -34,26 +35,40 @@
 
 ### findコマンドの使い方
 
-`find <directory> | grep filename` filenameを探す。findのあとに探索ディレクトリ(例 ./, /home/)、-type f/dなどを入れることも可能。自動でワイルドカード、再帰になる。
+```
+find <directory> | grep filename
+```
 
-`find ./ -type f | grep filename` カレントディレクトリから再帰でfilenameを探す。
+filenameを探す。findのあとに探索ディレクトリ(例 ./, /home/)、-type f/dなどを入れることも可能。自動でワイルドカード、再帰になる。
+```
+find ./ -type f | grep filename
+```
+カレントディレクトリから再帰でfilenameを探す。
 
-`find directory -type f | xargs grep -l -s word` wordを中に含むファイルを探す。-lファイル名だけを出力 -sエラーメッセージをスキップ
+```
+find directory -type f | xargs grep -l -s word
+```
+wordを中に含むファイルを探す。-lファイル名だけを出力 -sエラーメッセージをスキップ
 
-`find directory -maxdepth 1 | grep filename` directoryから階層1だけ探す。
+```
+find directory -maxdepth 1 | grep filename
+```
+directoryから階層1だけ探す。
 
 
 ### findでfilenameを名前に含むファイルを探す
 
-`find ./ -type f | grep <filename>`
+```
+find ./ -type f | grep <filename>
+```
 
 `./` : カレントディレクトリより下で、という意味
 
-grepで正規表現の利用 filename$ するとfilenameで終わるファイル
+
 
 ### findで"string"を本文に含むファイルを探す
 
-`find ./ -type f | xargs grep -l -s "string"`
+```find ./ -type f | xargs grep -l -s "string"```
 
 
 
@@ -71,34 +86,34 @@ command | meaning
 
 command | meaning
 ---|---
-`-mtime X` | x+1 日前
-`-mtime -X` | x+1 日前*以降*
-`-mtime 0` | 0-24時間前
-`-mtime 1` | 24-48時間前
-`-mtime -1` | 0-48時間前
+`find . -mtime X` | x+1 日前
+`find . -mtime -X` | x+1 日前*以降*
+`find . -mtime 0` | 0-24時間前
+`find . -mtime 1` | 24-48時間前
+`find . -mtime -1` | 0-48時間前
+`find . -mtime -12 -name \*.py` | 12日以内に更新した.pyファイル
+`find . -mtime -12 | grep "\.py$"` | 同上
 
-`find . -mtime -12 -name \*.py`
-
-`find . -mtime -12 |grep "\.py$"`
-
-12日以内に更新した.pyファイルを探す(どちらも使えるが、.pyへのマッチが違う)
 
 ### findで/var/.. を検索するときの注意
 
-`/var/`の中を探すとき、`find ./ | grep var`ではできない。`/var/`はrootのサブディレクトリで`/home/`と同列にある。
-`find ./` は `/home/` 以下を検索するということである。
+`/var/`の中を探すとき、`find ./ | grep var`ではできない。正しくは`find /var/...` とする。`find ./` は `/home/` 以下を検索する。`/var/`はrootのサブディレクトリで`/home/`と同列。
+
 
 ## コマンド
 
 ### lsコマンド
 
-|Command| Explanation|
-|---|---|
-|`ls -d */`| ディレクトリのみ出力|
-|`ls -l | grep ^d`| ディレクトリのみ出力（-lの出力でディレクトリはdで始まる）|
-|`ls -l | grep -v ^d`| ファイルだけを出力（-v上記の反対）|
-|`ls -d .?*` | .で始まるファイル。※regex ?は"match exactly one"|
-|`$ ls -l !(*csv)` |csvをファイル名に**含まない**ファイルをlsする|
+|Command| Explanation| Note|
+|---|---|---|
+|`ls -d */`| ディレクトリのみ出力||
+|`ls -l | grep ^d`| ディレクトリのみ出力| -lの出力でディレクトリはdで始まる|
+|`ls -l | grep -v ^d`| ファイルだけを出力 | -v:上記の反対 |
+|`ls -d .?*` | .で始まるファイル | regex ? => match exactly one|
+|`$ ls -l !(xxx)` |ファイル名にxxxを**含まない**||
+|ls \| wc -l| ファイル数をカウント|[[link](https://unix.stackexchange.com/questions/1125/how-can-i-get-a-count-of-files-in-a-directory-using-the-command-line)]
+
+
 
 
 ### grepコマンド
@@ -131,7 +146,12 @@ grep -rno t..e directory
 
 # grepした結果を消す
 find ... | grep ... | xargs rm
+
+# grepで正規表現の利用(例:filenameで終わる)
+... |grep filename$
 ```
+
+
 
 ## Tips いろいろ
 
@@ -145,9 +165,23 @@ find ... | grep ... | xargs rm
 
 このオプションがないと、エラーになる。`mkdir: cannot create directory‘dir1/dir2’: No such file or directory`
 
-### プロセスが固まったとき
+### lsof -iでポート使用状況を確認する
 
-### pidを確認してkill
+使用している全てのアドレスを表示。lsof: list open files , -i: Internet address
+
+```
+lsof -i
+```
+
+特定のポート(ex.5000)を見たい場合は
+
+```
+$ lsof -i :5000`
+```
+
+### Ubuntuフリーズしたとき
+
+#### pidを確認してkill
 
 - Ctrl + Alt + F2 でコマンドウィンドウに移動 Ctrl + Alt + F7 で戻る
 - `top`でプロセスpidを確認。`kill -9 <pid>` でkill

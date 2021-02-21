@@ -1,33 +1,38 @@
-# AWS
+# AWSで役立った情報のリンク集
 
+## ライブラリやAWS公式のまとめ
 
 [AWS Architecture Center](https://aws.amazon.com/architecture/)
 
 [AWS Events Content](https://aws.amazon.com/events/events-content/)
 
-[AWS Prescriptive Guidance Patterns](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/welcome.html)
-- step-by-step instructions, architecture, tools, and code for implementing specific cloud migration, modernization, and deployment scenarios.
+[AWS Prescriptive Guidance Patterns](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/welcome.html)　
+step-by-step instructions, architecture, tools, and code for implementing specific cloud migration, modernization, and deployment scenarios.
 
-[AWS Solutions Library](https://aws.amazon.com/solutions/)
-- collection of cloud-based solutions for dozens of technical and business problems, vetted for you by AWS
+[AWS Solutions Library](https://aws.amazon.com/solutions/) - collection of cloud-based solutions for dozens of technical and business problems, vetted for you by AWS
 
 ## Blog
+
+### Best Practice
+
 [Amazon Redshift Spectrum 12 のベストプラクティス](https://aws.amazon.com/jp/blogs/news/10-best-practices-for-amazon-redshift-spectrum/)
-
-
-[2018 年に最もよく読まれた AWS データベースブログ](https://aws.amazon.com/jp/blogs/news/the-most-viewed-aws-database-blog-posts-in-2018/)
 
 [新年の抱負 : Amazon DynamoDB のベストプラクティスを守る](https://aws.amazon.com/jp/blogs/news/make-a-new-years-resolution-follow-amazon-dynamodb-best-practices/)
 
-[Scale Amazon Kinesis Data Streams with AWS Application Auto Scaling](https://aws.amazon.com/jp/blogs/big-data/scaling-amazon-kinesis-data-streams-with-aws-application-auto-scaling/)
+[Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/jp/architecture/security-identity-compliance/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc)
 
-- [Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/jp/architecture/security-identity-compliance/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc)
+[Best Practices for Securing Amazon EMR](https://aws.amazon.com/jp/blogs/big-data/best-practices-for-securing-amazon-emr/)
+
+### いろいろ
+
+[2018 年に最もよく読まれた AWS データベースブログ](https://aws.amazon.com/jp/blogs/news/the-most-viewed-aws-database-blog-posts-in-2018/)
+
+[Scale Amazon Kinesis Data Streams with AWS Application Auto Scaling](https://aws.amazon.com/jp/blogs/big-data/scaling-amazon-kinesis-data-streams-with-aws-application-auto-scaling/)
 
 [AWS Security Blog](https://aws.amazon.com/jp/blogs/security/)
 
 [Amazon Redshiftの運用管理 (PDF) AWS summit 2019](https://pages.awscloud.com/rs/112-TZM-766/images/A2-05.pdf)
 
-[Best Practices for Securing Amazon EMR](https://aws.amazon.com/jp/blogs/big-data/best-practices-for-securing-amazon-emr/)
 
 [How to use trust policies with IAM roles](https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/)
 
