@@ -1,4 +1,19 @@
 
+- [shell scriptの基本](#shell-scriptの基本)
+  - [shの実行](#shの実行)
+  - [環境変数](#環境変数)
+    - [配列](#配列)
+    - [条件判定](#条件判定)
+    - [if文](#if文)
+    - [case文](#case文)
+    - [while文](#while文)
+    - [for文](#for文)
+    - [キー入力](#キー入力)
+    - [ファイルを読む](#ファイルを読む)
+    - [関数を作る](#関数を作る)
+  - [try catchはないらしい](#try-catchはないらしい)
+- [例1 foループで日付を替えて処理をする](#例1-foループで日付を替えて処理をする)
+
 シェルスクリプトの教科書より
 
 # shell scriptの基本
@@ -203,4 +218,29 @@ hello() {
 
 hello Mike Tom
 echo $i
+```
+
+## try catchはないらしい
+
+# 例1 foループで日付を替えて処理をする
+
+- 日付をつけたフォルダをまとめている
+- フォルダ自身を選択しないように"a"をYEARの前につけている
+- $dはGNUのTimestampの処理を使っている。
+
+```
+#!/bin/bash
+
+d=20200801
+while [ "$d" != 20210101 ]; do
+  echo $d
+  # touch $d".txt"
+  mkdir "a"$d/
+  mv $d* "a"$d/
+
+  d=$(date -d "$d+1day" +%Y%m%d)
+done
+
+# d=$(date -I -d "$d + 1 day")  # %y-%m-%d
+# https://stackoverflow.com/questions/28226229/how-to-loop-through-dates-using-bash
 ```

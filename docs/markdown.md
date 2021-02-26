@@ -20,6 +20,94 @@
 全角スペース
 
 ```
+
+# Markdown Table column width
+
+コラム幅は、列の中で一番幅のあるもので決まる。下の場合、左の列はName、右の列はLong explanationで決まっている。
+
+| Name | Value            |
+| ---- | ---------------- |
+| a    | Long explanation |
+| b    | Long explanation |
+| c    | Long explanation |
+
+img widthを使うと比率を決められる。
+
+```
+
+| Name             | Value            |
+| ---------------- | ---------------- |
+| a                | Long explanation |
+| b                | Long explanation |
+| c                | Long explanation |
+| <img width=100/> | <img width=100/> |
+```
+| Name             | Value            |
+| ---------------- | ---------------- |
+| a                | Long explanation |
+| b                | Long explanation |
+| c                | Long explanation |
+| <img width=100/> | <img width=100/> |
+
+```
+| Name             | Value            |
+| ---------------- | ---------------- |
+| a                | Long explanation |
+| b                | Long explanation |
+| c                | Long explanation |
+| <img width=100/> | <img width=200/> |
+```
+
+| Name             | Value            |
+| ---------------- | ---------------- |
+| a                | Long explanation |
+| b                | Long explanation |
+| c                | Long explanation |
+| <img width=100/> | <img width=200/> |
+
+
+左400px,右200pxにした。一行開けると、Markdownでの最下部の線がなくなる。
+
+```
+| Name | Value            |
+| ---- | ---------------- |
+| a    | Long explanation |
+| b    | Long explanation |
+| c    | Long explanation |
+
+| <img width=400/> | <img width=200/> |
+```
+
+
+| Name | Value            |
+| ---- | ---------------- |
+| a    | Long explanation |
+| b    | Long explanation |
+| c    | Long explanation |
+
+| <img width=400/> | <img width=200/> |
+
+
+&nbsp;を使ってスペースを入れることもできる。
+```
+| Name &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; | Value            |
+| ----------------------------------------------------------- | ---------------- |
+| a                                                           | Long explanation |
+| b                                                           | Long explanation |
+| c                                                           | Long explanation |
+```
+
+| Name &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; | Value            |
+| ----------------------------------------------------------- | ---------------- |
+| a                                                           | Long explanation |
+| b                                                           | Long explanation |
+| c                                                           | Long explanation |
+
+
+===
+
+
+```
 ### TODO code中の###はリンクにならないが、判定されてしまうのを回避
 
 ```python
@@ -139,16 +227,16 @@ def test(n):
 ### 表
 
 ```
-col1 | col2
-----|----
-何か|何か
-Pagesだと表にならないときがある| |の数を合わせること
+| col1                            | col2 |
+| ------------------------------- | ---- |
+| 何か                            | 何か |
+| Pagesだと表にならないときがある |      | の数を合わせること |
 ```
 
-col1 | col2
----- | ------
-何か|何か
-Pagesだと表にならないときがある| \| の数を合わせること
+| col1                            | col2                  |
+| ------------------------------- | --------------------- |
+| 何か                            | 何か                  |
+| Pagesだと表にならないときがある | \| の数を合わせること |
 
 ### 注意
 
