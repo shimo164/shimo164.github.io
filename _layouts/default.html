@@ -60,6 +60,9 @@
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
     </script>
+    
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
     {% endif %}
   </body>
 </html>
