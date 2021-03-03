@@ -83,24 +83,9 @@
       </td>
       <td id="nagasaki">
         　終わりに、<span class=nagasaki>原子爆弾の犠牲者の</span>方々の御冥福と、御遺族並びに被爆者の方々の今後の御多幸を心からお祈りし、併せて参列者並びに<span class=nagasaki>長崎</span>市民の皆様の御健勝を祈念申し上げます。
-      </td>
-    </tr>
-    <tr>
-      <td id="hiroshima">
-        　平成十三年八月<span class=hiroshima>六</span>日<br>
-　　　　　　内閣総理大臣　小泉　純一郎
-      </td>
-      <td id="nagasaki">
-        　平成十三年八月<span class=nagasaki>九</span>日<br>
-　　　　　　内閣総理大臣　小泉　純一郎
-      </td>
-    </tr>
-  </tbody>
-</table>
-
+      </td></tr></tbody></table>
 
 <h2>平成14年(2002年) 小泉純一郎</h2>
-
 
 <table>
   <thead >
@@ -112,11 +97,9 @@
   <tbody>
     <tr>
       <td id=hiroshima><span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式・</span>平和祈念<span class=hiroshima>式</span>
-
 内閣総理大臣挨拶
       </td>
       <td id=nagasaki><span class=nagasaki>長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典</span>
-
 内閣総理大臣挨拶
       </td>
     </tr>
