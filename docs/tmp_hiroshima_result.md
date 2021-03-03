@@ -1,5 +1,8 @@
 # 広島・長崎記念式典での首相スピーチ
+
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
 
 <div id="page_top"><a href="#"></a></div>
 
@@ -15,7 +18,9 @@
   - [令和元年(2019年) 安倍晋三](#令和元年2019年-安倍晋三)
   - [平成二十二年(2010年) 菅直人](#平成二十二年2010年-菅直人)
 
+
 ## 平成13年(2001年) 小泉純一郎
+
 
 <table>
   <thead>
@@ -104,7 +109,9 @@
   </tbody>
 </table>
 
+
 ## 平成14年(2002年) 小泉純一郎
+
 
 <table>
   <thead >
