@@ -73,21 +73,11 @@ find ./ -type f | grep <filename>
 
 ### findで"string"を本文に含むファイルを探す
 
-```find ./ -type f | grep -rno "string"```
+```find ./ -type f | xargs grep -l -s "string"```
 
-またはこれ。[参考](https://stackoverflow.com/questions/6426363/how-can-i-have-grep-not-print-out-no-such-file-or-directory-errors)
+例: pwd以下にあるファイルで、ファイル名にpyを含み、ファイルの中に b = .*driver の文字列があるものを探す。
 
-```grep pattern * -s -R -n```
-
-
-
-NOTE: xargsが使えなくなった
-
-<del> ```find ./ -type f | xargs grep -l -s "string"```</del>
-
-<del> 例: pwd以下にあるファイルで、ファイル名にpyを含み、ファイルの中に b = .*driver の文字列があるものを探す。</del>
-
-<del> ```find ./ -type f | grep py | xargs grep -l -s "b = .*driver" ```</del>
+```find ./ -type f | grep py | xargs grep -l -s "b = .*driver" ```
 
 
 ### locate検索
