@@ -1,40 +1,37 @@
-**Linuxコマンドメモ もくじ**
+**Linuxコマンドメモもくじ**
 
-- [検索](#検索)
-- [### findコマンドの使い方](#-findコマンドの使い方)
-  - [findでfilenameを名前に含むファイルを探す](#findでfilenameを名前に含むファイルを探す)
-  - [findで"string"を本文に含むファイルを探す](#findでstringを本文に含むファイルを探す)
-  - [locate検索](#locate検索)
-  - [findで更新時間で探す](#findで更新時間で探す)
-  - [findで/var/.. を検索するときの注意](#findでvar-を検索するときの注意)
-- [コマンド](#コマンド)
-  - [lsコマンド](#lsコマンド)
-  - [grepコマンド](#grepコマンド)
-- [Tips いろいろ](#tips-いろいろ)
-  - [Ubuntuがフリーズしたとき](#ubuntuがフリーズしたとき)
-    - [pidを確認してkill](#pidを確認してkill)
-    - [Ubuntuで安全に強制終了、強制再起動するコマンド link](#ubuntuで安全に強制終了強制再起動するコマンド-link)
-  - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
-  - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
-  - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
-  - [lsof -iでポート使用状況を確認する](#lsof--iでポート使用状況を確認する)
-  - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
-  - [whichコマンドで実行ファイルのフルパスを出力](#whichコマンドで実行ファイルのフルパスを出力)
-  - [readlinkでファイルのfull pathを出力](#readlinkでファイルのfull-pathを出力)
-- [シェルスクリプト本より](#シェルスクリプト本より)
-  - [パス名展開](#パス名展開)
-  - [パラメータ展開](#パラメータ展開)
-  - [パターンを指定して切り出す](#パターンを指定して切り出す)
-  - [置換してから展開する](#置換してから展開する)
-  - [05 コマンド置換](#05-コマンド置換)
-  - [算術式評価](#算術式評価)
-  - [ファイルディスクリプタ](#ファイルディスクリプタ)
-  - [リダイレクト](#リダイレクト)
+- [findコマンドの使い方](#findコマンドの使い方)
+    - [findでfilenameを名前に含むファイルを探す](#findでfilenameを名前に含むファイルを探す)
+    - [findで"string"を本文に含むファイルを探す](#findでstringを本文に含むファイルを探す)
+    - [locate検索](#locate検索)
+    - [findで更新時間で探す](#findで更新時間で探す)
+    - [findで/var/.. を検索するときの注意](#findでvar-を検索するときの注意)
+  - [コマンド](#コマンド)
+    - [lsコマンド](#lsコマンド)
+    - [grepコマンド](#grepコマンド)
+  - [Tipsいろいろ](#tipsいろいろ)
+    - [Ubuntuがフリーズしたとき](#ubuntuがフリーズしたとき)
+      - [pidを確認してkill](#pidを確認してkill)
+      - [Ubuntuで安全に強制終了、強制再起動するコマンド link](#ubuntuで安全に強制終了強制再起動するコマンド-link)
+    - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
+    - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
+    - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
+    - [lsof -iでポート使用状況を確認する](#lsof--iでポート使用状況を確認する)
+    - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
+    - [whichコマンドで実行ファイルのフルパスを出力](#whichコマンドで実行ファイルのフルパスを出力)
+    - [readlinkでファイルのfull pathを出力](#readlinkでファイルのfull-pathを出力)
+  - [シェルスクリプト本より](#シェルスクリプト本より)
+    - [パス名展開](#パス名展開)
+    - [パラメータ展開](#パラメータ展開)
+    - [パターンを指定して切り出す](#パターンを指定して切り出す)
+    - [置換してから展開する](#置換してから展開する)
+    - [05コマンド置換](#05コマンド置換)
+    - [算術式評価](#算術式評価)
+    - [ファイルディスクリプタ](#ファイルディスクリプタ)
+    - [リダイレクト](#リダイレクト)
+  -
 
-## 検索
-
-### findコマンドの使い方
----
+# findコマンドの使い方
 filenameを探す。<directory> `./` `/home/`....。(自動でワイルドカード、再帰)
 ```
 find <directory> [-type f/d]| grep filename
@@ -60,38 +57,29 @@ directoryから階層1だけ探す
 find directory -maxdepth 1 | grep filename
 ```
 
-
 ### findでfilenameを名前に含むファイルを探す
-
 ```
 find ./ -type f | grep <filename>
 ```
 
 `./` : カレントディレクトリより下で、という意味
 
-
-
 ### findで"string"を本文に含むファイルを探す
-
 ```find ./ -type f | grep -rno "string"```
 
 またはこれ。[参考](https://stackoverflow.com/questions/6426363/how-can-i-have-grep-not-print-out-no-such-file-or-directory-errors)
 
 ```grep pattern * -s -R -n```
 
-
-
 NOTE: xargsが使えなくなった
 
 <del> ```find ./ -type f | xargs grep -l -s "string"```</del>
 
-<del> 例: pwd以下にあるファイルで、ファイル名にpyを含み、ファイルの中に b = .*driver の文字列があるものを探す。</del>
+<del> 例: pwd以下にあるファイルで、ファイル名にpyを含み、ファイルの中にb = .*driverの文字列があるものを探す。</del>
 
 <del> ```find ./ -type f | grep py | xargs grep -l -s "b = .*driver" ```</del>
 
-
 ### locate検索
-
 | Command             | Description                     |
 | ------------------- | ------------------------------- |
 | `locate aaa`        | aaaがpathに入っているものを探す |
@@ -99,29 +87,22 @@ NOTE: xargsが使えなくなった
 | `locate -A aaa bbb` | aaa AND bbb                     |
 | `locate -b aaa`     | basenameのみ検索                |
 
-
 ### findで更新時間で探す
-
 | Command                            | Description                   |
 | ---------------------------------- | ----------------------------- |
-| `find . -mtime X`                  | x+1 日前                      |
-| `find . -mtime -X`                 | x+1 日前*以降*                |
+| `find . -mtime X`                  | x+1日前                      |
+| `find . -mtime -X`                 | x+1日前*以降*                |
 | `find . -mtime 0`                  | 0-24時間前                    |
 | `find . -mtime 1`                  | 24-48時間前                   |
 | `find . -mtime -1`                 | 0-48時間前                    |
 | `find . -mtime -12 -name \*.py`    | 12日以内に更新した.pyファイル |
 | `find . -mtime -12 | grep "\.py$"` | 同上                          |
 
-
 ### findで/var/.. を検索するときの注意
-
 `/var/`の中を探すとき、`find ./ | grep var`ではできない。正しくは`find /var/...` とする。`find ./` は `/home/` 以下を検索する。`/var/`はrootのサブディレクトリで`/home/`と同列。
 
-
 ## コマンド
-
 ### lsコマンド
-
 | Command              | Description                   | Note                                                                                                                         |
 | -------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | `ls -d */`           | ディレクトリのみ出力          |                                                                                                                              |
@@ -131,11 +112,7 @@ NOTE: xargsが使えなくなった
 | `$ ls -l !(xxx)`     | ファイル名にxxxを**含まない** |                                                                                                                              |
 | ls \| wc -l          | ファイル数をカウント          | [[link](https://unix.stackexchange.com/questions/1125/how-can-i-get-a-count-of-files-in-a-directory-using-the-command-line)] |
 
-
-
-
 ### grepコマンド
-
 | オプション | grep出力                 |
 | :--------: | ------------------------ |
 |     -r     | 配下ディレクトリを対象に |
@@ -147,7 +124,6 @@ NOTE: xargsが使えなくなった
 |     -L     | マッチしないファイル名   |
 |     -o     | 検索にマッチした部分だけ |
 |     -q     | 結果を出力しない         |
-
 
 ```
 # ファイル名にfooとbarを含むgrepをつなぐときはパイプ。
@@ -169,35 +145,18 @@ find ... | grep ... | xargs rm
 ... |grep filename$
 ```
 
+## Tipsいろいろ
 
-
-## Tips いろいろ
-
-### Ubuntuがフリーズしたとき
-
-#### pidを確認してkill
-
-- Ctrl + Alt + F2 でコマンドウィンドウに移動 Ctrl + Alt + F7 で戻る
-- `top`でプロセスpidを確認。`kill -9 <pid>` でkill
-
-#### Ubuntuで安全に強制終了、強制再起動するコマンド [link](https://wiki.ubuntulinux.jp/UbuntuTips/Others/MagicSysRq)
-
-- **終了** Alt+PrintScreenを押しながらR+S+E+I+U+**O**
-- **再起動** Alt+PrintScreenを押しながらR+S+E+I+U+**B**
 -
 
 ### rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除
-
 ### `nautilus .` で今いるディレクトリを開く
-
 ### `mkdir -p`で深いディレクトリを同時に作る
-
 `mkdir -p dir1/dir2` オプション-p(--parents)を使うと、親ディレクトリdir1がなくても同時に作成する。
 
 このオプションがないと、エラーになる。`mkdir: cannot create directory‘dir1/dir2’: No such file or directory`
 
 ### lsof -iでポート使用状況を確認する
-
 使用している全てのアドレスを表示。lsof: list open files , -i: Internet address
 
 ```
@@ -210,13 +169,8 @@ lsof -i
 $ lsof -i :5000`
 ```
 
-
-
-
 ### `cd -` で直前にいたディレクトリに戻る
-
 ### whichコマンドで実行ファイルのフルパスを出力
-
 ```
 which python
 /home/user/anaconda3/bin/python
@@ -225,14 +179,10 @@ which git
 /usr/bin/git
 ```
 ### readlinkでファイルのfull pathを出力
-
 `readlink -f filename.txt`
 
-
 ## シェルスクリプト本より
-
 ### パス名展開
-
 | 記号    | 意味                          |
 | ------- | ----------------------------- |
 | ?       | 任意の1文字                   |
@@ -243,7 +193,7 @@ which git
 ブレース展開
 
 {}で指定した複数コマンドを順に実行する。
-注意:　{}の中はコンマ区切りにするが、コンマの後にスペースを入れないこと
+注意: {}の中はコンマ区切りにするが、コンマの後にスペースを入れないこと
 
 ```
 $ echo {foo,bar,baz}.txt
@@ -261,9 +211,7 @@ $ echo file-{c..f}.txt
 ```
 
 ### パラメータ展開
-
 `$HOME`は`${HOME}`とも書ける。
-
 
 `:-`, `:=`, `:+`を使うと、変数が指定されているか、空白かなどによって返す値を変えることができる。
 
@@ -272,7 +220,6 @@ $ echo file-{c..f}.txt
 | `${変数:-Hoge}` | 指定された値         | Hoge         | 空白を値とみなす | -               |
 | `${変数:=Hoge}` | 指定された値         | Hoge         | 空白を値とみなす | 変数=Hogeを代入 |
 | `${変数:+Hoge}` | Hoge                 | 空白         | 空白を値とみなす | -               |
-
 
 | 記法            | 出力                                     |
 | --------------- | ---------------------------------------- |
@@ -291,11 +238,9 @@ $ echo file-{c..f}.txt
 ※文字は(0始まり)
 ※`変数`を`配列[@]`にすると配列の要素を指定できる
 
-
 ### パターンを指定して切り出す
 ### 置換してから展開する
-### 05 コマンド置換
-
+### 05コマンド置換
 (command)とすると、()の中のcommandが実行され、標準出力が文字列で展開される
 
 $ touch $(date +%Y-%m-%d).txt
@@ -305,11 +250,7 @@ $ touch $(date +%Y-%m-%d).txt
 $()の代わりに ``とバッククォートで囲んでもいいが、やりにくい
 
 ### 算術式評価
-
-
-
 ### ファイルディスクリプタ
-
 プロセスから開かれたファイルに割り当てられる番号。プロセスからファイルを参照する際の識別子。
 
 | name   | number |
@@ -319,7 +260,6 @@ $()の代わりに ``とバッククォートで囲んでもいいが、やり�
 | stderr |   2    |
 
 ### リダイレクト
-
 `>` (上書き)と、`>>` (追記)を選べる。
 
 stdoutとstderr出力を同じファイルにリダイレクトする
