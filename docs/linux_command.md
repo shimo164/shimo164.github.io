@@ -10,9 +10,6 @@
     - [lsコマンド](#lsコマンド)
     - [grepコマンド](#grepコマンド)
   - [Tipsいろいろ](#tipsいろいろ)
-    - [Ubuntuがフリーズしたとき](#ubuntuがフリーズしたとき)
-      - [pidを確認してkill](#pidを確認してkill)
-      - [Ubuntuで安全に強制終了、強制再起動するコマンド link](#ubuntuで安全に強制終了強制再起動するコマンド-link)
     - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
     - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
     - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
@@ -88,15 +85,22 @@ NOTE: xargsが使えなくなった
 | `locate -b aaa`     | basenameのみ検索                |
 
 ### findで更新時間で探す
+
+`-mtime n`: **last modified n*24 hours ago.**
+
 | Command                            | Description                   |
 | ---------------------------------- | ----------------------------- |
 | `find . -mtime X`                  | x+1日前                      |
-| `find . -mtime -X`                 | x+1日前*以降*                |
+| `find . -mtime -X`                 | x+1日前から今まで             |
 | `find . -mtime 0`                  | 0-24時間前                    |
 | `find . -mtime 1`                  | 24-48時間前                   |
 | `find . -mtime -1`                 | 0-48時間前                    |
-| `find . -mtime -12 -name \*.py`    | 12日以内に更新した.pyファイル |
+| `find . -mtime -12 -name \*.py`    | 12-13日以内に更新した.pyファイル |
 | `find . -mtime -12 | grep "\.py$"` | 同上                          |
+| `find . -type f -newermt 2021-6-1 ! -newermt 2021-7-1` | 期間内  |
+| `find . -maxdepth 1 -type f -newermt $(date --date="1 days ago" +%F)` | 昨日の0時以降に更新された |
+
+`find . -maxdepth 1 -type f -newermt $(date +%F)` : 今日の0時以降に更新されたファイル
 
 ### findで/var/.. を検索するときの注意
 `/var/`の中を探すとき、`find ./ | grep var`ではできない。正しくは`find /var/...` とする。`find ./` は `/home/` 以下を検索する。`/var/`はrootのサブディレクトリで`/home/`と同列。

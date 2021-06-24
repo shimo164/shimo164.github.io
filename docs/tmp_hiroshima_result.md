@@ -12,6 +12,14 @@
   - [平成20年(2008年) 福田康夫](#平成20年2008年-福田康夫)
   - [平成21年(2009年) 麻生太郎](#平成21年2009年-麻生太郎)
   - [平成22年(2010年) 菅直人](#平成22年2010年-菅直人)
+  - [平成23年(2011年) 菅直人](#平成23年2011年-菅直人)
+  - [平成24年(2012年) 野田佳彦](#平成24年2012年-野田佳彦)
+  - [平成25年(2013年) 安倍晋三](#平成25年2013年-安倍晋三)
+  - [平成26年(2014年) 安倍晋三](#平成26年2014年-安倍晋三)
+  - [平成27年(2015年) 安倍晋三](#平成27年2015年-安倍晋三)
+  - [平成28年(2016年) 安倍晋三](#平成28年2016年-安倍晋三)
+  - [平成29年(2017年) 安倍晋三](#平成29年2017年-安倍晋三)
+  - [平成30年(2018年) 安倍晋三](#平成30年2018年-安倍晋三)
   - [令和元年(2019年) 安倍晋三](#令和元年2019年-安倍晋三)
   - [令和2年(2020年) 安倍晋三](#令和2年2020年-安倍晋三)
 
@@ -691,6 +699,861 @@
 
 　　　内閣総理大臣　菅直人<BR></td>
     </tr>
+  </tbody>
+</table>
+
+## 平成23年(2011年) 菅直人
+
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td id=h>　<span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式並びに</span>平和祈念<span class=hiroshima>式</span>に当たり、原子爆弾の犠牲となられた方々の御霊<span class=hiroshima>（みたま）</span>に対し、謹んで哀悼の誠<span class=hiroshima>（まこと）</span>を捧げます。
+</td>
+		<td id=n>　<span class=nagasaki>長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典</span>に当たり、原子爆弾の犠牲となられた方々の御霊に対し、謹んで哀悼の誠を捧げます。
+</td>
+	</tr>
+	<tr>
+		<td id=h>　そして今なお原子爆弾の後遺症に苦しまれている方々に、心よりお見舞いを申し上げます。
+</td>
+		<td id=n>
+　そして今なお原子爆弾の後遺症に苦しまれている方々に、心よりお見舞いを申し上げます。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　六十六年前、ここ<span class=hiroshima>広島を襲っ</span>た核兵器の惨禍を、人類は決して忘れてはならず、二度と繰り返してはなりません。私は、日本国政府を代表し、唯一の戦争被爆国として、究極的な核兵器廃絶と世界恒久平和の実現に向け、日本国憲法を遵守し、非核三原則を堅持することを誓います。
+		</td>
+		<td id=n>
+　六十六年前<span class=nagasaki>の今日</span>、ここ<span class=nagasaki>長崎の地に原子爆弾が投下され、七万人ともいわれる尊い命が一瞬にして失われまし</span>た<span class=nagasaki>。一命をとりとめた方々も、筆舌に尽くしがたい苦しみと癒すことができない傷跡を残すこととなられました。この</span>核兵器の惨禍を、人類は決して忘れてはならず、二度と繰り返してはなりません。私は、日本国政府を代表し、唯一の戦争被爆国として、究極的な核兵器廃絶と世界恒久平和の実現に向け、日本国憲法を遵守し、非核三原則を堅持することを誓います。
+		</td>
+		<tr>
+		<td id=h>　我が国は、「核兵器のない世界」の実現に向け、国際社会の先頭に立って取り組むと強く決意し、それを実践してきました。昨年、我が国が国連総会に提出した「核兵器の全面的廃絶に向けた共同行動」と題する決議案は、米国を含む過去最多の九十か国が共同提案国に加わり、圧倒的な賛成多数で採択されました。また、昨年の核不拡散条約（ＮＰＴ）運用検討会議で得た合意を着実に実施するため、核兵器を持たない国々の地域横断的なグループである「核軍縮・不拡散イニシアティブ（ＮＰＤＩ）」を立ち上げました。こうした志を共有する国々との活動などを通じて、核軍縮・不拡散分野における国際的な議論を主導しています。</td>
+		<td id=n>　我が国は、「核兵器のない世界」の実現に向け、国際社会の先頭に立って取り組むと強く決意し、それを実践してきました。昨年、我が国が国連総会に提出した「核兵器の全面的廃絶に向けた共同行動」と題する決議案は、米国を含む過去最多の九十か国が共同提案国に加わり、圧倒的な賛成多数で採択されました。また、昨年の核不拡散条約（ＮＰＴ）運用検討会議で得た合意を着実に実施するため、核兵器を持たない国々の地域横断的なグループである「核軍縮・不拡散イニシアティブ（ＮＰＤＩ）」を立ち上げました。こうした志を共有する国々との活動などを通じて、核軍縮・不拡散分野における国際的な議論を主導しています。		</td>
+	</tr>
+		<tr>
+		<td id=h>　核兵器の悲惨な実態を将来の世代に語り継いでいくことは、我が国が世界に果たすべき歴史的な役割です。昨年、この式典で、私は「非核特使」の派遣を提唱しました。本日までに、<span class=hiroshima>広島で被爆された</span>延べ十<span class=hiroshima>七</span>名の方々が、<span class=hiroshima>地球一周証言の航海に参加される</span>など、世界各</td>
+		<td id=n>
+　核兵器の悲惨な実態を将来の世代に語り継いでいくことは、我が国が世界に果たすべき歴史的な役割です。昨年、この式典で、私は「非核特使」の派遣を提唱しました。本日までに、<span class=nagasaki>長崎からは</span>延べ十<span class=nagasaki>六</span>名の方々が、<span class=nagasaki>トルコにおける原爆展及び平和交流</span>など、世界各地で、核兵器の悲惨さや平和の大切さを発信していただきました。非核特使の皆様の献身的なご協力に感謝申し上げます。また、被爆者の方々の協力を得て、被爆証言を外国語に翻訳し、世界各国に紹介する取組も始めました<span class=nagasaki>。長崎市では、以前から市民が「平和案内人」として被爆の跡を修学旅行生にガイドするなどの活動をされていると聞いています</span>。核軍縮の機運を高めていく上で、市民の皆様の熱意と関心は欠かすことができません。皆様と共に、核軍縮・不拡散教育に関する活動を世界に広げてまいります。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>原子爆弾の後遺症により、現在も苦しんでいる方々がおられます。政府は、これまで保健、医療及び福祉にわたる総合的な援護策を講じてきました。</td>
+		<td id=n>
+　原子爆弾の後遺症により、現在も苦しんでいる方々がおられます。政府は、これまで保健、医療及び福祉にわたる総合的な援護策を講じてきました。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　原爆症の認定を待っておられる方々を一日でも早く認定できるよう最善を尽くします。認定制度のあり方については、昨年十二月から有識者や被爆者団体等の関係者にご参加いただき、検討会を開催しています。今後とも、高齢化の進む被爆者の方々の声にしっかりと耳を傾けながら、被爆者の方々の援護に誠心誠意、取り組んでまいります。
+		</td>
+		<td id=n>
+　原爆症の認定を待っておられる方々を一日でも早く認定できるよう最善を尽くします。認定制度のあり方については、昨年十二月から有識者や被爆者団体等の関係者にご参加いただき、検討会を開催しています。今後とも、高齢化の進む被爆者の方々の声にしっかりと耳を傾けながら、被爆者の方々の援護に誠心誠意、取り組んでまいります。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　本年三月十一日に発生した東日本大震災は、東京電力福島原子力発電所に極めて深刻な打撃を与えました。これにより発生した大規模かつ長期にわたる原発事故は、放射性物質の放出を引き起こし、我が国はもとより世界各国に大きな不安を与えました。
+		</td>
+		<td id=n>
+　本年三月十一日に発生した東日本大震災は、東京電力福島原子力発電所に極めて深刻な打撃を与えました。これにより発生した大規模かつ長期にわたる原発事故は、放射性物質の放出を引き起こし、我が国はもとより世界各国に大きな不安を与えました。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　政府は、この未曾有の事態を重く受け止め、事故の早期収束と健康被害の防止に向け、あらゆる方策を講じてまいりました。ここ<span class=hiroshima>広島</span>からも、<span class=hiroshima>広島</span>県や<span class=hiroshima>広島</span>市、<span class=hiroshima>広島大学</span>の関係者による放射線の測定や被ばく医療チームの派遣などの支援をいただきました。そうした結果、事態は着実に安定してきています。しかし、今なお多くの課題が残されており、今後とも全力をあげて取り組んでまいります。
+		</td>
+		<td id=n>
+　政府は、この未曾有の事態を重く受け止め、事故の早期収束と健康被害の防止に向け、あらゆる方策を講じてまいりました。ここ<span class=nagasaki>長崎</span>からも、<span class=nagasaki>長崎</span>県や<span class=nagasaki>長崎</span>市、<span class=nagasaki>長崎大学</span>の関係者による放射線の測定や被ばく医療チームの派遣などの支援をいただきました。そうした結果、事態は着実に安定してきています。しかし、今なお多くの課題が残されており、今後とも全力をあげて取り組んでまいります。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　そして、我が国のエネルギー政策についても、白紙からの見直しを進めています。私は、原子力については、これまでの<span class=hiroshima>「</span>安全<span class=hiroshima>神話」を</span>深く反省し、事故原因の徹底的な検証と安全性確保のための抜本対策を講じるとともに、原発への依存度を引き下げ、「原発に依存しない社会」を目指していきます。
+		</td>
+		<td id=n>
+　そして、我が国のエネルギー政策についても、白紙からの見直しを進めています。私は、原子力については、これまでの安全<span class=nagasaki>確保に関する規制や体制の在り方について</span>深く反省し、事故原因の徹底的な検証と安全性確保のための抜本対策を講じるとともに、原発への依存度を引き下げ、「原発に依存しない社会」を目指していきます。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　今回の事故を、人類にとっての新たな教訓と受け止め、そこから学んだことを世界の人々や将来の世代に伝えていくこと<span class=hiroshima>、それ</span>が我々の責務であると考えています。
+		</td>
+		<td id=n>
+　今回の事故を、人類にとっての新たな教訓と受け止め、そこから学んだことを世界の人々や将来の世代に伝えていくことが我々の責務であると考えています<span class=nagasaki>。</span>
+		</td>
+	</tr>
+		<tr>
+		<td id=h></td>
+		<td id=n>
+<span class=nagasaki>　私は、昨年、この式典で「パグウォッシュ会議」について触れました。人類に役立つべき科学技術が、核兵器を生み出してしまったという矛盾に、アインシュタイン博士や湯川博士などの方々が心を痛め、核兵器廃絶を訴える行動を起こすきっかけとなった会議です。この会議の活動を学んだことが、私が政治を志すきっかけの一つとなりました。科学技術は、真に人類の生存や幸福に役立つものでなければならない、この私が政治を志した際の初心は、今も変わりません</span>。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　結びに、原子爆弾の犠牲となられた方々のご冥福と、被爆された方々並びにご遺族の皆様の今後のご多幸を心からお祈りし、併せて参列者並びに<span class=hiroshima>広島</span>市民の皆様のご健勝を祈念申し上げます。核兵器による惨禍が二度と繰り返されることのないよう、核兵器廃絶と世界恒久平和の実現に、全力で取り組んでいくことを改めてお誓い申し上げ、私のあいさつといたします。
+		</td>
+		<td id=n>
+　結びに、原子爆弾の犠牲となられた方々のご冥福と、被爆された方々並びにご遺族の皆様の今後のご多幸を心からお祈りし、併せて参列者並びに<span class=nagasaki>長崎</span>市民の皆様のご健勝を祈念申し上げます。核兵器による惨禍が二度と繰り返されることのないよう、核兵器廃絶と世界恒久平和の実現に、全力で取り組んでいくことを改めてお誓い申し上げ、私のあいさつといたします。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+平成二十三年八月<span class=hiroshima>六</span>日
+		</td>
+		<td id=n>
+平成二十三年八月<span class=nagasaki>九</span>日
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+内閣総理大臣　菅直人
+		</td>
+		<td id=n>
+内閣総理大臣　菅直人
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+## 平成24年(2012年) 野田佳彦
+
+
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+			<td id=h>
+　六十七年前の今日、原子爆弾が<span class=hiroshima>広島</span>を襲い、約<span class=hiroshima>十四</span>万人もの尊い命が一瞬にして奪われ、多くの市民の方々が筆舌に尽くしがたい苦痛を受けられました。
+<td id=n>
+　六十七年前の今日、原子爆弾が<span class=nagasaki>長崎</span>を襲い、約<span class=nagasaki>七</span>万人もの尊い命が一瞬にして奪われ、多くの市民の方々が筆舌に尽くしがたい苦痛を受けられました。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　<span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式並びに</span>平和祈念<span class=hiroshima>式</span>に当たり、原子爆弾の犠牲となられた方々の御霊に対し、謹んで哀悼の誠を捧げます。
+		</td>
+		<td id=n>
+　<span class=nagasaki>長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典</span>に当たり、原子爆弾の犠牲となられた方々の御霊に対し、謹んで哀悼の誠を捧げます。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　そして今なお原子爆弾の後遺症に苦しまれている方々に、心よりお見舞いを申し上げます。
+		</td>
+		<td id=n>
+　そして今なお原子爆弾の後遺症に苦しまれている方々に、心よりお見舞いを申し上げます。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　人類は、核兵器の惨禍を決して忘れてはいけません。そして、人類史に刻まれたこの悲劇を二度と繰り返してはなりません。
+		</td>
+		<td id=n>
+　人類は、核兵器の惨禍を決して忘れてはいけません。そして、人類史に刻まれたこの悲劇を二度と繰り返してはなりません。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　唯一の戦争被爆国として核兵器の惨禍を体験した我が国は、人類全体に対して、地球の未来に対して、崇高な責任を負っています。それは、この悲惨な体験の「記憶」を次の世代に伝承していくことです。そして、「核兵器のない世界」を目指して「行動」する情熱を、世界中に広めていくことです。
+		</td>
+		<td id=n>
+　唯一の戦争被爆国として核兵器の惨禍を体験した我が国は、人類全体に対して、地球の未来に対して、崇高な責任を負っています。それは、この悲惨な体験の「記憶」を次の世代に伝承していくことです。そして、「核兵器のない世界」を目指して「行動」する情熱を、世界中に広めていくことです。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　被爆から六十七年を迎える本日、私は、日本国政府を代表し、核兵器の廃絶と世界の恒久平和の実現に向けて、日本国憲法を遵守し、非核三原則を堅持していくことを、ここに改めてお誓いいたします。
+		</td>
+		<td id=n>
+　被爆から六十七年を迎える本日、私は、日本国政府を代表し、核兵器の廃絶と世界の恒久平和の実現に向けて、日本国憲法を遵守し、非核三原則を堅持していくことを、ここに改めてお誓いいたします。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　六十七年の歳月を経て、被爆体験を肉声で語っていただける方々もかなりのお年となられています。被爆体験の伝承は、歴史的に極めて重要な局面を迎えつつあります。
+		</td>
+		<td id=n>
+　六十七年の歳月を経て、被爆体験を肉声で語っていただける方々もかなりのお年となられています。被爆体験の伝承は、歴史的に極めて重要な局面を迎えつつあります。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+		</td>
+		<td id=n>
+　<span class=nagasaki>　また来る八月十日から十一日には、長崎市と国連大学の協力を得て、「軍縮・不拡散教育グローバル・フォーラム」を開催します。政府や国際機関の関係者に、有識者や市民の皆さんが加わって、軍縮・不拡散教育のあり方について議論する予定です。皆様とともに、一層精力的に取り組み、世界に広げてまいります。</span>
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　「記憶」を新たにする社会基盤として何よりも重要なのは、軍縮・不拡散教育です。その担い手は、公的部門だけではありません。研究・教育機関、ＮＧＯ、メディアなど、幅広い主体が既に熱心に取り組んでおられます。そして、何よりも、市民自らの取組が大きな原動力となることを忘れてはなりません。被爆体験を世界に伝える、世界四十九か所での「非核特使」の活動に、改めて感謝を申し上げます。政府としては、これからも、「核兵器のない世界」の重要性を訴え、被爆体験の「記憶」を、国境を越え、世代を超えて確かに伝承する取組を様々な形で後押ししてまいります。
+		</td>
+		<td id=n>
+　「記憶」を新たにする社会基盤として何よりも重要なのは、軍縮・不拡散教育です。その担い手は、公的部門だけではありません。研究・教育機関、ＮＧＯ、メディアなど、幅広い主体が既に熱心に取り組んでおられます。そして、何よりも、市民自らの取組が大きな原動力となることを忘れてはなりません。被爆体験を世界に伝える、世界四十九か所での「非核特使」の活動に、改めて感謝を申し上げます。政府としては、これからも、「核兵器のない世界」の重要性を訴え、被爆体験の「記憶」を、国境を越え、世代を超えて確かに伝承する取組を様々な形で後押ししてまいります。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　「核兵器のない世界」の実現に向けて、国際社会も確かな歩みを進めています。核兵器保有国の間でも、昨年、米露の「新ＳＴＡＲＴ」が発効し、我が国が国連総会に提出した核軍縮決議が圧倒的な賛成多数で採択されました。こうした動きを発展させ、世界全体の大きなうねりにしていかなければなりません。
+		</td>
+		<td id=n>
+　「核兵器のない世界」の実現に向けて、国際社会も確かな歩みを進めています。核兵器保有国の間でも、昨年、米露の「新ＳＴＡＲＴ」が発効し、我が国が国連総会に提出した核軍縮決議が圧倒的な賛成多数で採択されました。こうした動きを発展させ、世界全体の大きなうねりにしていかなければなりません。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　<span class=hiroshima>我が国は、志を同じくする国々とも連携しながら、核軍縮・不拡散分野での国際的な議論を主導し、「行動への情熱」を世界に広めてまいります。再来年には、ここ広島で、我が国が主導する非核兵器国のグループである軍縮・不拡散イニシアティブ（ＮＰＤＩ）の外相会合を開催いたします。</span>
+		</td>
+		<td id=n>
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+<span class=hiroshima>　</span>原子爆弾の後遺症により、現在も苦しんでいる方々に目を向けることも忘れてはなりません。認定制度のあり方については、有識者や被爆者団体などの関係者に熱心にご議論いただき、本年六月に「中間とりまとめ」をいただきました。原爆症の認定を待っておられる方々を一日でも早く認定できるよう最善を尽くします。これからも、被爆者の方々の声に耳を傾けながら、より良い制度への改善を進め、総合的な援護策を進めてまいります。
+		</td>
+		<td id=n>
+　原子爆弾の後遺症により、現在も苦しんでいる方々に目を向けることも忘れてはなりません。認定制度のあり方については、有識者や被爆者団体などの関係者に熱心にご議論いただき、本年六月に「中間とりまとめ」をいただきました。原爆症の認定を待っておられる方々を一日でも早く認定できるよう<span class=nagasaki>、</span>最善を尽くします。これからも、被爆者の方々の声に耳を傾けながら、より良い制度への改善を進め、総合的な援護策を進めてまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　東日本大震災、そして東京電力福島第一原子力発電所の事故から、一年以上が経過しました。ここ<span class=hiroshima>広島</span>からも、福島の再生に心を砕き、様々な支援を寄せていただいています。今なお不自由な生活を余儀なくされている方々が一日も早く普通の日常生活を取り戻せるよう、除染などの生活基盤の再建に全力を尽くします。また、脱原発依存の基本方針の下、中長期的に国民が安心できるエネルギー構成の確立を目指します。
+		</td>
+		<td id=n>
+　東日本大震災、そして東京電力福島第一原子力発電所の事故から、一年以上が経過しました。ここ<span class=nagasaki>長崎</span>からも、福島の再生に心を砕き、様々な支援を寄せていただいています。今なお不自由な生活を余儀なくされている方々が一日も早く普通の日常生活を取り戻せるよう、除染などの生活基盤の再建に全力を尽くします。また、脱原発依存の基本方針の下、中長期的に国民が安心できるエネルギー構成の確立を目指します。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+　結びに、原子爆弾の犠牲となられた方々のご冥福と、被爆された方々、ご遺族の皆様の今後のご多幸を心からお祈りするとともに、参列者並びに<span class=hiroshima>広島市民</span>の皆様のご健勝を祈念申し上げ、私のあいさつといたします。
+		</td>
+		<td id=n>
+　結びに、原子爆弾の犠牲となられた方々のご冥福と、被爆された方々、ご遺族の皆様の今後のご多幸を心からお祈りするとともに、参列者並びに<span class=nagasaki>長崎</span>の皆様のご健勝を祈念申し上げ、私のあいさつといたします。
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+平成二十四年八月<span class=hiroshima>六</span>日
+		</td>
+		<td id=n>
+平成二十四年八月<span class=nagasaki>九</span>日
+		</td>
+	</tr>
+		<tr>
+		<td id=h>
+内閣総理大臣　野田佳彦
+		</td>
+		<td id=n>
+内閣総理大臣　野田佳彦
+		</td>
+	</tr>
+		<tr>
+		<td id=h></td>
+		<td id=n></td>
+	</tr>
+
+
+  </tbody>
+</table>
+
+## 平成25年(2013年) 安倍晋三
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td id=h>
+<span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式、</span>平和祈念<span class=hiroshima>式</span>に臨み、原子爆弾の犠牲となった方々の御霊に対し、謹んで、哀悼の誠を捧げます。今なお被爆の後遺症に苦しんでおられる皆様に、心から、お見舞いを申し上げます。
+		</td>
+		<td id=n>
+<span class=nagasaki>本日、被爆６８周年、長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典</span>に臨み、原子爆弾の犠牲となった方々の御霊に対し、謹んで、哀悼の誠を捧げます。今なお被爆の後遺症に苦しんでおられる皆様に、心から、お見舞いを申し上げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　６８年前の<span class=hiroshima>朝</span>、一発の爆弾が、<span class=hiroshima>十数</span>万<span class=hiroshima>になんなんとする</span>、貴い命を奪いました。<span class=hiroshima>７</span>万<span class=hiroshima>戸の建物</span>を<span class=hiroshima>壊し</span>、<span class=hiroshima>一面を、業火と爆風にさらわせ、廃墟と化しました。</span>生き長らえた<span class=hiroshima>人々</span>に、病と障害の、<span class=hiroshima>また</span>生活上の、<span class=hiroshima>言い知れ</span>ぬ苦難を強いました。
+		</td>
+		<td id=n>
+　６８年前の<span class=nagasaki>本日</span>、一発の爆弾が、<span class=nagasaki>７</span>万<span class=nagasaki>を上回る</span>、貴い命を奪いました。<span class=nagasaki>１２</span>万<span class=nagasaki>人が暮らしていた家屋</span>を<span class=nagasaki>全焼、全壊し</span>、生き長らえた<span class=nagasaki>方々</span>に、病と障害の、<span class=nagasaki>さらには</span>生活上の、<span class=nagasaki>言葉に尽くせ</span>ぬ苦難を強いました。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　犠牲<span class=hiroshima>と言うべくして、あまりに夥しい犠牲でありまし</span>た<span class=hiroshima>。しかし、戦後</span>の<span class=hiroshima>日本</span>を<span class=hiroshima>築いた</span>先人たち<span class=hiroshima>は、広島に斃れた人々を忘れてはならじ</span>と、<span class=hiroshima>心</span>に<span class=hiroshima>深く刻めばこそ</span>、<span class=hiroshima>我々に、平和と、繁栄の、祖国</span>を<span class=hiroshima>作り、与えてくれたのです。蝉しぐれが今</span>も<span class=hiroshima>しじまを破る、緑豊かな広島の街路に、私たちは、その最も美しい達成を見出さずにはいられません</span>。
+		</td>
+		<td id=n>
+　<span class=nagasaki>一度ならず、二度までも被爆の辛酸を嘗めた私たちは、にもかかわらず、苦しみ、悲しみに耐え立ち上がり、祖国を再建し、長崎を、美しい街として蘇らせました。今日は、</span>犠牲<span class=nagasaki>になっ</span>た<span class=nagasaki>方々</span>の<span class=nagasaki>御霊</span>を<span class=nagasaki>慰めるとともに、</span>先人たち<span class=nagasaki>の奮闘</span>と、<span class=nagasaki>達成</span>に、<span class=nagasaki>感謝</span>を<span class=nagasaki>捧げる日で</span>も<span class=nagasaki>あります</span>。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　私たち日本人は、唯一の、戦争被爆国民であります。そのような者として、我々には、確実に、核兵器のない世界を実現していく責務があります。その非道を、後の世に、また世界に、伝え続ける務めがあります。
+		</td>
+		<td id=n>
+　私たち日本人は、唯一の、戦争被爆国民であります。そのような者として、我々には、確実に、核兵器のない世界を実現していく責務があります。その非道を、後の世に、また世界に、伝え続ける務めがあります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　昨年、我が国が国連総会に提出した核軍縮決議は、米国並びに英国を含む、史上最多の９９カ国を共同提案国として巻き込み、圧倒的な賛成多数で採択されました。
+		</td>
+		<td id=n>
+　昨年、我が国が国連総会に提出した核軍縮決議は、米国並びに英国を含む、史上最多の９９カ国を共同提案国として巻き込み、圧倒的な賛成多数で採択されました。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　本年、若い世代の方々を、核廃絶の特使とする制度を始めました。来年は、我が国が一貫して主導する非核兵器国の集まり、「軍縮・不拡散イニシアティブ」の外相会合を、<span class=hiroshima>ここ</span>広島で開きます。
+		</td>
+		<td id=n>
+　本年、若い世代の方々を、核廃絶の特使とする制度を始めました。来年は、我が国が一貫して主導する非核兵器国の集まり、「軍縮・不拡散イニシアティブ」の外相会合を、広島で開きます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　今なお苦痛を忍びつつ、原爆症の認定を待つ方々に、一日でも早くその認定が下りるよう、最善を尽くします。被爆された方々の声に耳を傾け、より良い援護策を進めていくため、有識者や被爆<span class=hiroshima>された方々の</span>代表を含む関係者の<span class=hiroshima>方々</span>に議論を急いで頂いています。
+		</td>
+		<td id=n>
+　今なお苦痛を忍びつつ、原爆症の認定を待つ方々に、一日でも早くその認定が下りるよう、最善を尽くします。被爆された方々の声に耳を傾け、より良い援護策を進めていくため、有識者や<span class=nagasaki>、</span>被爆<span class=nagasaki>者</span>代表を含む関係者の<span class=nagasaki>皆さま</span>に<span class=nagasaki>、</span>議論を急いで頂いています。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　<span class=hiroshima>広島</span>の御霊を悼む朝、私は、これら責務に、旧<span class=hiroshima>倍の</span>努力を傾けていくことをお誓いします。
+		</td>
+		<td id=n>
+　<span class=nagasaki>長崎</span>の御霊を悼む朝、私は、これら責務に、旧<span class=nagasaki>に倍する</span>努力を傾けていくことをお誓いします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　結びに、いま一度、犠牲になった方々の御冥福を、心よりお祈りします。ご遺族と、ご存命の被爆者の皆様には、幸多からんことを祈念します。核兵器の惨禍が再現されることのないよう、非核三原則を堅持しつつ、核兵器廃絶に、また、恒久平和の実現に、力を惜しまぬことをお誓いし、私のご挨拶といたします。
+		</td>
+		<td id=n>
+　結びに、いま一度、犠牲になった方々の御冥福を、心よりお祈りします。ご遺族と、ご存命の被爆者の皆様には、幸多からんことを祈念します。核兵器の惨禍が再現されることのないよう、非核三原則を堅持しつつ、核兵器廃絶に、また、<span class=nagasaki>世界</span>恒久平和の実現に、力を惜しまぬことをお誓いし、私のご挨拶といたします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+平成二<span class=hiroshima>十</span>五年八月<span class=hiroshima>六</span>日内閣総理大臣・安倍晋三
+		</td>
+		<td id=n>
+		平成二五年八月<span class=nagasaki>九</span>日
+内閣総理大臣・安倍晋三</td>
+	</tr>
+  </tbody>
+</table>
+
+## 平成26年(2014年) 安倍晋三
+
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td id=h>
+<span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式、</span>平和祈念<span class=hiroshima>式</span>に臨み、原子爆弾の犠牲となった方々の御霊に対し、謹んで、哀悼の誠を捧げます。今なお被爆の後遺症に苦しんでおられる皆様に、心から、お見舞いを申し上げます。
+		</td>
+		<td id=n>
+<span class=nagasaki>本日、被爆６９周年、長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典</span>に臨み、原子爆弾の犠牲となった方々の御霊に対し、謹んで、哀悼の誠を捧げます。<span class=nagasaki>　</span>今なお被爆の後遺症に苦しんでおられる皆様に、心から、お見舞いを申し上げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　６９年前の<span class=hiroshima>朝</span>、一発の爆弾が、<span class=hiroshima>十数</span>万<span class=hiroshima>になんなんとする</span>、貴い命を奪いました。<span class=hiroshima>７</span>万<span class=hiroshima>戸の建物</span>を<span class=hiroshima>壊し</span>、<span class=hiroshima>一面を、業火と爆風にさらわせ、廃墟と化しました。</span>生き長らえた<span class=hiroshima>人々</span>に、病と障害の、<span class=hiroshima>また</span>生活上の、<span class=hiroshima>言い知れ</span>ぬ苦難を強いました。
+		</td>
+		<td id=n>
+　６９年前の<span class=nagasaki>本日</span>、一発の爆弾が、<span class=nagasaki>７</span>万<span class=nagasaki>を上回る</span>、貴い命を奪いました。<span class=nagasaki>１２</span>万<span class=nagasaki>人が暮らしていた家屋</span>を<span class=nagasaki>全焼、全壊し</span>、生き長らえた<span class=nagasaki>方々</span>に、病と障害の、<span class=nagasaki>さらには</span>生活上の、<span class=nagasaki>言葉に尽くせ</span>ぬ苦難を強いました。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　犠牲<span class=hiroshima>と言うべくして、あまりに夥しい犠牲でありまし</span>た<span class=hiroshima>。しかし、戦後</span>の<span class=hiroshima>日本</span>を<span class=hiroshima>築いた</span>先人たち<span class=hiroshima>は、広島に斃れた人々を忘れてはならじ</span>と、<span class=hiroshima>心に深く刻めばこそ、我々に、平和と、繁栄の、祖国を作り、与えてくれたのです。緑豊かな広島の街路に、私たちは、その最も美しい</span>達成<span class=hiroshima>を見出さず</span>に<span class=hiroshima>はいられません</span>。
+		</td>
+		<td id=n>
+　<span class=nagasaki>一度ならず、二度までも被爆の辛酸を嘗めた私たちは、にもかかわらず、苦しみ、悲しみに耐え立ち上がり、祖国を再建し、長崎を、美しい街として蘇らせました。</span>
+<span class=nagasaki>　今日は、</span>犠牲<span class=nagasaki>になっ</span>た<span class=nagasaki>方々</span>の<span class=nagasaki>御霊</span>を<span class=nagasaki>慰めるとともに、</span>先人たち<span class=nagasaki>の奮闘</span>と、達成に<span class=nagasaki>、感謝を捧げる日でもあります</span>。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　人類史上唯一の戦争被爆国として、核兵器の惨禍を体験した我が国には、確実に、「核兵器のない世界」を実現していく責務があります。その非道を、後の世に、また世界に、伝え続ける務めがあります。
+		</td>
+		<td id=n>
+<span class=nagasaki>　</span>その非道を、後の世に、また世界に、伝え続ける務めがあります。
+　人類史上唯一の戦争被爆国として、核兵器の惨禍を体験した我が国には、確実に、「核兵器のない世界」を実現していく責務があります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　私は、昨年、国連総会の「核軍縮ハイレベル会合」において、「核兵器のない世界」に向けての決意を表明しました。我が国が提出した核軍縮決議は、初めて１００を超える共同提案国を得て、圧倒的な賛成多数で採択されました。包括的核実験禁止条約の早期発効に向け、関係国の首脳に直接、条約の批准を働きかけるなど、現実的、実践的な核軍縮を進めています。
+		</td>
+		<td id=n>
+　私は、昨年、国連総会の「核軍縮ハイレベル会合」において、「核兵器のない世界」に向けての決意を表明しました。我が国が提出した核軍縮決議は、初めて１００を超える共同提案国を得て、圧倒的な賛成多数で採択されました。包括的核実験禁止条約の早期発効に向け、関係国の首脳に直接、条約の批准を働きかけるなど、現実的、実践的な核軍縮を進めています。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　本年４月には、「軍縮・不拡散イニシアティブ」の外相会合を、<span class=hiroshima>ここ</span>広島で開催し、被爆地から我々の思いを力強く発信<span class=hiroshima>いたし</span>ました。来年は、被爆から７０年目という節目の年であり、５年に一度の核兵器不拡散条約（<span class=hiroshima>NPT)</span>運用検討会議が開催されます。「核兵器のない世界」を実現するための取組をさらに前<span class=hiroshima>へ</span>進めて<span class=hiroshima>まいり</span>ます。
+		</td>
+		<td id=n>
+　本年４月には、「軍縮・不拡散イニシアティブ」の外相会合を、広島で開催し、被爆地から我々の思いを<span class=nagasaki>、</span>力強く発信<span class=nagasaki>し</span>ました。
+<span class=nagasaki>　</span>来年は、被爆から７０年目という節目の年であり、５年に一度の核兵器不拡散条約（<span class=nagasaki>ＮＰＴ）</span>運用検討会議が開催されます。「核兵器のない世界」を実現するための取組を<span class=nagasaki>、</span>さらに前<span class=nagasaki>に</span>進めて<span class=nagasaki>いき</span>ます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　今なお被爆による苦痛に耐え、原爆症の認定を待つ方々がおられます。昨年末には、３年に及ぶ関係者の方々のご議論を踏まえ、認定基準の見直しを行いました。多くの方々に一日でも早く認定が下りるよう、今後とも誠心誠意努力してまいります。
+		</td>
+		<td id=n>
+　今なお被爆による苦痛に耐え、原爆症の認定を待つ方々がおられます。昨年末には、３年に及ぶ関係者の方々のご議論を踏まえ、認定基準の見直しを行いました。多くの方々に一日でも早く認定が下りるよう、今後とも誠心誠意努力してまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　<span class=hiroshima>広島</span>の御霊を悼む朝、私は、これら責務に、<span class=hiroshima>倍旧の</span>努力を傾けていくことをお誓い<span class=hiroshima>いたし</span>ます。結びに、いま一度、犠牲になった方々の<span class=hiroshima>ご</span>冥福を、心よりお祈りします。ご遺族と、ご存命の被爆者の皆様には、幸多からんことを祈念します。核兵器の惨禍が再現されることのないよう、非核三原則を堅持しつつ、核兵器廃絶に、また、世界恒久平和の実現に、力を惜しまぬことをお誓いし、私のご挨拶といたします。
+		</td>
+		<td id=n>
+　<span class=nagasaki>長崎</span>の御霊を悼む朝、私は、これら責務に、<span class=nagasaki>旧に倍する</span>努力を傾けていくことをお誓い<span class=nagasaki>申し上げ</span>ます。
+<span class=nagasaki>　</span>結びに、いま一度、犠牲になった方々の<span class=nagasaki>御</span>冥福を、心よりお祈りします。ご遺族と、ご存命の被爆者の皆様には、幸多からんことを祈念します。核兵器の惨禍が再現されることのないよう、非核三原則を堅持しつつ、核兵器廃絶に、また、世界恒久平和の実現に、力を惜しまぬことをお誓いし、私のご挨拶といたします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+		平成二十六年八月<span class=hiroshima>六</span>日
+内閣総理大臣・安倍晋三</td>
+		<td id=n>
+		平成二十六年八月<span class=nagasaki>九</span>日
+内閣総理大臣・安倍晋三</td>
+	</tr>
+  </tbody>
+</table>
+
+## 平成27年(2015年) 安倍晋三
+
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td id=h>
+<span class=hiroshima>　</span>本日ここに、被爆七<span class=hiroshima>十周年の広島市原爆死没者慰霊式並びに平和祈念式</span>が<span class=hiroshima>挙行さ</span>れるに当たり、原子爆弾の犠牲となられた数多くの方々の御霊<span class=hiroshima>に向かい</span>、謹んで、哀悼の誠を捧げます。
+		</td>
+		<td id=n>
+本日ここに、被爆七<span class=nagasaki>十周年長崎原爆犠牲者慰霊平和祈念式典</span>が<span class=nagasaki>執り行わ</span>れるに当たり、原子爆弾の犠牲となられた数多くの方々の御霊<span class=nagasaki>に対し</span>、謹んで、哀悼の誠を捧げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　そして、被爆による後遺症に、今なお苦しんでおられる方々に対し、衷心よりお見舞いを申し上げます。
+		</td>
+		<td id=n>
+　そして、被爆による後遺症に、今なお苦しんでおられる方々に対し、衷心よりお見舞いを申し上げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　あの<span class=hiroshima>朝</span>から七十年が経ちました。<span class=hiroshima>ここ広島に投下された一発の原子爆弾により</span>、<span class=hiroshima>十数</span>万<span class=hiroshima>に</span>も<span class=hiroshima>のぼる幾多</span>の貴い命が奪われ<span class=hiroshima>、街は廃墟と化し</span>ました。惨禍の中、<span class=hiroshima>一命をとりとめ</span>た方々にも、<span class=hiroshima>言葉</span>に尽くしがたい<span class=hiroshima>辛苦</span>の<span class=hiroshima>日々</span>をもたらしました。
+		</td>
+		<td id=n>
+		　あの<span class=nagasaki>日投下された原子爆弾により、長崎の地が、草木もない焦土と化して</span>から七十年が経ちました。<span class=nagasaki>当時</span>、<span class=nagasaki>七</span>万<span class=nagasaki>と</span>も<span class=nagasaki>いわれる、あまた</span>の貴い命が奪われました。惨禍の中、<span class=nagasaki>生き長らえ</span>た方々にも、<span class=nagasaki>筆舌</span>に尽くしがたい<span class=nagasaki>苦難</span>の<span class=nagasaki>生活</span>をもたらしました。</td>
+	</tr>
+	<tr>
+		<td id=h>
+　<span class=hiroshima>今、広島</span>の街を見渡すとき、<span class=hiroshima>この水の都は、たくましく復興し、国際平和文化都市へと変貌を遂げました。被爆から七十年を迎えた今朝、私は、</span>改めて平和の尊さ<span class=hiroshima>に思い</span>を<span class=hiroshima>致し</span>ています。
+		</td>
+		<td id=n>
+　<span class=nagasaki>しかし、苦境の中から力強く立ち上がられた市民の皆様によって、世界文化遺産と美しい自然に恵まれた国際文化都市が、見事に築き上げられました。</span>
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+<span class=hiroshima>　我が国は</span>唯一の戦争被爆国として、<span class=hiroshima>現実的で実践的な取組</span>を<span class=hiroshima>着実に積み重ねていくことにより</span>、「核兵器のない世界」<span class=hiroshima>を</span>実現<span class=hiroshima>する重要な使命があります。また、核兵器の非人道性を世代と国境を越えて広める務めがあります</span>。
+		</td>
+		<td id=n>
+<span class=nagasaki>　今日の復興を成し遂げた長崎</span>の街を見渡すとき、改めて平和の尊さを<span class=nagasaki>噛みしめ</span>ています。<span class=nagasaki>そして、世界で</span>唯一の戦争被爆国として、<span class=nagasaki>非核三原則</span>を<span class=nagasaki>堅持しつつ</span>、「核兵器のない世界」<span class=nagasaki>の</span>実現<span class=nagasaki>に向けて、国際社会の核軍縮の取組を主導していく決意を新たにいたしました</span>。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　特に本年は、被爆七十年という節目の年<span class=hiroshima>であります</span>。核兵器不拡散条約（ＮＰＴ）運用検討会議では、残念ながら<span class=hiroshima>、</span>最終合意には至りませんでしたが、我が国としては、核兵器国と非核兵器国、双方の協力を引き続き求めつつ、「核兵器のない世界」の実現に向けて、一層の努力を積み重ねていく決意です。この決意を表明するため、本年秋の国連総会<span class=hiroshima>では</span>新たな核兵器廃絶決議案を提出いたします。
+		</td>
+		<td id=n>
+　特に本年は、被爆七十年という節目の年<span class=nagasaki>です</span>。核兵器不拡散条約（ＮＰＴ）運用検討会議では、残念ながら最終合意には至りませんでしたが、我が国としては、核兵器国と非核兵器国、双方の協力を引き続き求めつつ、「核兵器のない世界」の実現に向けて、一層の努力を積み重ねていく決意です。この決意を表明するため、本年秋の国連総会<span class=nagasaki>に</span>新たな核兵器廃絶決議案を提出いたします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　八月末に<span class=hiroshima>は、</span>包括的核実験禁止条約賢人グループ会合並びに国連軍縮会議<span class=hiroshima>が</span>、更に来年には、Ｇ７外相会合が<span class=hiroshima>、ここ</span>広島で開催されます。これらの国際会議を通じ、被爆地から我々の思いを、国際社会に力強く発信いたします。また、世界の指導者や若者が被爆の悲惨な現実に直に触れることを通じ、「核兵器のない世界」の実現に向けた取組を<span class=hiroshima>さらに</span>前に進めてまいります。
+		</td>
+		<td id=n>
+　八月末に<span class=nagasaki>広島で開催される</span>包括的核実験禁止条約賢人グループ会合並びに国連軍縮会議<span class=nagasaki>に続き</span>、<span class=nagasaki>十一月には、パグウォッシュ会議がここ長崎で開催されます。</span>更に来年には、Ｇ７外相会合が広島で開催されます。これらの国際会議を通じ、被爆地から我々の思いを、国際社会に力強く発信いたします。また、世界の指導者や若者が被爆の悲惨な現実に直に触れることを通じ、「核兵器のない世界」の実現に向けた取組を前に進めてまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　今年、被爆者の方々の平均年齢が、はじめて八十歳を超えました。高齢化する被爆者の方々に支援を行うために制定された「原子爆弾被爆者に対する援護に関する法律」も、施行から二十年を迎えました。引き続き、保健、医療、福祉にわたる総合的な援護施策を、しっかりと進めてまいります。
+		</td>
+		<td id=n>
+　今年、被爆者の方々の平均年齢が、はじめて八十歳を超えました。高齢化する被爆者の方々に支援を行うために制定された「原子爆弾被爆者に対する援護に関する法律」も、施行から二十年を迎えました。引き続き、保健、医療、福祉にわたる総合的な援護施策を、しっかりと進めてまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　特に、原爆症の認定につきましては、申請された方々の心情を思い、一日も早く認定がなされるよう、審査を急いでまいります。
+		</td>
+		<td id=n>
+　特に、原爆症の認定につきましては、申請された方々の心情を思い、一日も早く認定がなされるよう、審査を急いでまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　結びに、亡くなられた方々のご冥福と、ご遺族並びに被爆者の皆様のご多幸をお祈り申し上げるとともに、参列者並びに<span class=hiroshima>広島</span>市民の皆様のご平安を祈念いたしまして、私のご挨拶といたします。
+		</td>
+		<td id=n>
+　結びに、亡くなられた方々のご冥福と、ご遺族並びに被爆者の皆様のご多幸をお祈り申し上げるとともに、参列者並びに<span class=nagasaki>長崎</span>市民の皆様のご平安を祈念いたしまして、私のご挨拶といたします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+		平成二十七年八月<span class=hiroshima>六</span>日
+内閣総理大臣・安倍晋三</td>
+		<td id=n>
+平成二十七年八月<span class=nagasaki>九</span>日
+内閣総理大臣・安倍晋三		</td>
+	</tr>
+
+  </tbody>
+</table>
+
+## 平成28年(2016年) 安倍晋三
+
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td id=h>
+<span class=hiroshima>　</span>そして、今なお被爆の後遺症に苦しまれている方々に、心からお見舞いを申し上げます。
+本日、被爆七十一周年<span class=hiroshima>の広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式並びに</span>平和祈念<span class=hiroshima>式が執り行われるに当たり</span>、原子爆弾の犠牲となられた数多くの方々の御霊に対し、謹んで、哀悼の誠を捧げます。
+		</td>
+		<td id=n>
+本日、被爆七十一周年<span class=nagasaki>、長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典に当たり</span>、原子爆弾の犠牲となられた数多くの方々の御霊に対し、謹んで、哀悼の誠を捧げます。そして、今なお被爆の後遺症に苦しまれている方々に、心からお見舞いを申し上げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　七十一年前の<span class=hiroshima>よく晴れた朝</span>、<span class=hiroshima>一発の</span>原子爆弾<span class=hiroshima>の投下</span>によって、<span class=hiroshima>十数</span>万とも<span class=hiroshima>言わ</span>れる貴い命が<span class=hiroshima>奪わ</span>れ<span class=hiroshima>、広島は一瞬にして焦土と化しまし</span>た。
+<span class=hiroshima>　</span>惨禍の中、一命をとりとめた方々も、<span class=hiroshima>耐え難い苦難</span>を<span class=hiroshima>経験され</span>ました。
+<span class=hiroshima>　</span>しかし、<span class=hiroshima>広島は、</span>市民の皆様の<span class=hiroshima>たゆみない</span>御努力<span class=hiroshima>により</span>、<span class=hiroshima>見違えるような復興を遂げ</span>、国際<span class=hiroshima>平和</span>文化都市として<span class=hiroshima>の地位を</span>見事に<span class=hiroshima>築き上げ</span>られました。
+		</td>
+		<td id=n>
+　<span class=nagasaki>今から</span>七十一年前の<span class=nagasaki>今日</span>、<span class=nagasaki>この地に投下された</span>原子爆弾によって、<span class=nagasaki>当時、七</span>万とも<span class=nagasaki>いわ</span>れる<span class=nagasaki>、幾万の</span>貴い命が<span class=nagasaki>一瞬にして失わ</span>れ<span class=nagasaki>まし</span>た。惨禍の中、一命をとりとめた方々<span class=nagasaki>に</span>も、<span class=nagasaki>言葉にできない苦しみ</span>を<span class=nagasaki>もたらし</span>ました。しかし、市民の皆様の<span class=nagasaki>並々ならぬ</span>御努力<span class=nagasaki>によって</span>、<span class=nagasaki>長崎は焦土から立ち上がり</span>、<span class=nagasaki>長い歴史が息づく</span>国際文化都市として<span class=nagasaki>、</span>見事に<span class=nagasaki>発展を遂げ</span>られ<span class=nagasaki>ました。</span>
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　本年五月、オバマ大統領が、米国大統領として初めて、<span class=hiroshima>この地</span>を訪れました。核兵器を使用した唯一の国の大統領が、被爆の実相に触れ、被爆者の方々の前で、
+　核兵器のない世界を追求する、
+　そして、
+　核を保有する国々に対して、
+　その勇気を持とう
+と、力強く呼びかけました。		</td>
+		<td id=n>
+　本年五月、オバマ大統領が、米国大統領として初めて、<span class=nagasaki>広島</span>を訪れました。核兵器を使用した唯一の国の大統領が、被爆の実相に触れ、被爆者の方々の前で、
+　核兵器のない世界を追求する、
+　そして、
+　核を保有する国々に対して、
+　その勇気を持とう
+と、力強く呼びかけました。		</td>
+	</tr>
+	<tr>
+		<td id=h>
+<span class=hiroshima>　</span>Ｇ７外相会合の「広島宣言」とともに、「核兵器のない世界」を信じてやまない広島<span class=hiroshima>及び長崎</span>の人々、そして、日本中、世界中の人々に大きな希望を与えたものと確信して<span class=hiroshima>い</span>ます。
+		</td>
+		<td id=n>
+Ｇ７外相会合の「広島宣言」とともに、「核兵器のない世界」を信じてやまない<span class=nagasaki>長崎及び</span>広島の人々、そして、日本中、世界中の人々に大きな希望を与えたものと確信して<span class=nagasaki>おり</span>ます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　七十一年前に広島及び長崎で起こった悲惨な経験を二度と繰り返させてはならない。そのための努力を絶え間なく積み重ねていくことは、今を生きる私たちの責任であります。唯一の戦争被爆国として、非核三原則を堅持しつつ、核兵器不拡散条約（ＮＰＴ）体制の維持及び強化の重要性を訴えてまいります。核兵器国と非核兵器国の双方に協力を求め、また、世界の指導者や若者に被爆の悲惨な実態に触れてもらうことにより、「核兵器のない世界」に向け、努力を積み重ねてまいります。
+		</td>
+		<td id=n>
+　七十一年前に広島及び長崎で起こった悲惨な経験を二度と繰り返させてはならない。そのための努力を絶え間なく積み重ねていくことは、今を生きる私たちの責任であります。
+<span class=nagasaki>　</span>唯一の戦争被爆国として、非核三原則を堅持しつつ、核兵器不拡散条約（ＮＰＴ）体制の維持及び強化の重要性を訴えてまいります。核兵器国と非核兵器国の双方に協力を求め、また、世界の指導者や若者に被爆の悲惨な実態に触れてもらうことにより、「核兵器のない世界」に向け、努力を積み重ねてまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+私は、新たな一歩を踏みだす年に、この地<span class=hiroshima>広島</span>において、世界恒久平和の実現に向けて力を尽くすことを改めてお誓い申し上げます。
+<span class=hiroshima>　</span>被爆者の方々に対しましては、「原子爆弾被爆者に対する援護に関する法律」に基づき、保健、医療、福祉にわたる総合的な援護施策の充実を行ってまいりました。高齢化が進む被爆者の方々の実情を、今後もしっかりと踏まえながら、援護施策を着実に推進してまいります。
+<span class=hiroshima>　</span>特に、原爆症の認定につきましては、一日も早く結果をお知らせできるよう、できる限り迅速な審査に努めてまいります。
+
+</td>
+		<td id=n>
+<span class=nagasaki>　</span>私は、新たな一歩を踏みだす年に、この地<span class=nagasaki>長崎</span>において、世界恒久平和の実現に向けて力を尽くすことを改めてお誓い申し上げます。被爆者の方々に対しましては、「原子爆弾被爆者に対する援護に関する法律」に基づき、保健、医療、福祉にわたる総合的な援護施策の充実を行ってまいりました。高齢化が進む被爆者の方々の実情を、今後もしっかりと踏まえながら、援護施策を着実に推進してまいります。特に、原爆症の認定につきましては、一日も早く結果をお知らせできるよう、できる限り迅速な審査に努めてまいります。		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　結びに、永遠の平和が祈られ続けている、ここ<span class=hiroshima>広島</span>市において、原子爆弾の犠牲となられた方々の<span class=hiroshima>御</span>冥福と、<span class=hiroshima>御</span>遺族並びに被爆者の皆様の<span class=hiroshima>御</span>多幸をお祈り申し上げるとともに、参列者並びに<span class=hiroshima>広島</span>市民の皆様の<span class=hiroshima>御</span>平安を祈念いたしまして、私の挨拶といたします。
+		</td>
+		<td id=n>
+　結びに、永遠の平和が祈られ続けている、ここ<span class=nagasaki>長崎</span>市において、原子爆弾の犠牲となられた方々の<span class=nagasaki>ご</span>冥福と、<span class=nagasaki>ご</span>遺族並びに被爆者の皆様の<span class=nagasaki>ご</span>多幸をお祈り申し上げるとともに、参列者並びに<span class=nagasaki>長崎</span>市民の皆様の<span class=nagasaki>ご</span>平安を祈念いたしまして、私の挨拶といたします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+		平成二十八年八月<span class=hiroshima>六</span>日
+内閣総理大臣　安倍晋三</td>
+		<td id=n>
+平成二十八年八月<span class=nagasaki>九</span>日
+内閣総理大臣　安倍晋三		</td>
+	</tr>
+
+
+  </tbody>
+</table>
+
+## 平成29年(2017年) 安倍晋三
+
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td id=h>
+本日、被爆七十二周年の<span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式並びに</span>平和祈念<span class=hiroshima>式が執り行われるに当たり</span>、原子爆弾の犠牲となられた数多くの方々の御霊<span class=hiroshima>(</span>みたま<span class=hiroshima>)</span>に対し、謹んで、哀悼の誠を捧（ささ）げます。
+		</td>
+		<td id=n>
+本日、被爆七十二周年の<span class=nagasaki>長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典に当たり</span>、原子爆弾の犠牲となられた数多くの方々の御霊<span class=nagasaki>（</span>みたま<span class=nagasaki>）</span>に対し、謹んで、哀悼の誠を捧（ささ）げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　そして、今なお被爆の後遺症に苦しんでおられる方々に、心からお見舞いを申し上げます。
+		</td>
+		<td id=n>
+　そして、今なお被爆の後遺症に苦しんでおられる方々に、心からお見舞いを申し上げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　<span class=hiroshima>今</span>から七十二年<span class=hiroshima>前の、あの朝、一発の原子爆弾がここ広島</span>に<span class=hiroshima>投下され、十数万と</span>も<span class=hiroshima>いわれる数多(あまた)</span>の<span class=hiroshima>貴い命</span>が<span class=hiroshima>失われ</span>ました。<span class=hiroshima>街は一瞬にして焦土と化し、一命をとりとめた方々にも、言葉では言い表せない苦難の日々をもたらしました。若者</span>の夢や<span class=hiroshima>明るい</span>未来も、容赦なく奪われました。
+		</td>
+		<td id=n>
+　<span class=nagasaki>一発の原子爆弾により、一瞬にして、七万ともいわれる数多（あまた）の貴い命が失われたあの日</span>から<span class=nagasaki>、</span>七十二年<span class=nagasaki>がたちました。一命をとりとめた方々</span>にも<span class=nagasaki>、耐え難い苦難</span>の<span class=nagasaki>日々</span>が<span class=nagasaki>強いられ</span>ました。<span class=nagasaki>人々</span>の夢や未来も、容赦なく奪われました。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+		</td>
+		<td id=n>
+　<span class=nagasaki>しかし、長崎の人々は、原子爆弾によって破壊された凄惨な廃墟（はいきょ）の中から立ち上がり、たゆまぬ努力によって、素晴らしい国際文化都市を築き上げられました。</span>
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　この<span class=hiroshima>ような</span>惨禍が二度と繰り返されてはならない。唯一の戦争被爆国として、「核兵器のない世界」の実現に向けた歩みを着実に前に進める努力を、絶え間なく積み重ねていくこと。それが、今を生きる私たちの<span class=hiroshima>責任</span>です。
+		</td>
+		<td id=n>
+<span class=nagasaki>　</span>この<span class=nagasaki>地で起きた</span>惨禍が二度と繰り返されてはならない。唯一の戦争被爆国として、「核兵器のない世界」の実現に向けた歩みを着実に前に進める努力を、絶え間なく積み重ねていくこと。それが、今を生きる私たちの<span class=nagasaki>責務</span>です。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　真に「核兵器のない世界」を実現するためには、核兵器国と非核兵器国双方の参画が必要です。我が国は、非核三原則を堅持し、双方に働きかけを行うことを通じて、国際社会を主導していく決意です。
+		</td>
+		<td id=n>
+　真に「核兵器のない世界」を実現するためには、核兵器国と非核兵器国双方の参画が必要です。我が国は、非核三原則を堅持し、双方に働きかけを行うことを通じて、国際社会を主導していく決意です。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　そのため、あの悲惨な体験の「記憶」を、世代や国境を越えて、人類が共有する「記憶」として継承していかなければなりません。昨年、オバマ大統領が、現職の米国大統領として初めて、<span class=hiroshima>この地</span>を訪れ、被爆の実相に触れ、核を保有する国々に対して、核兵器のない世界を追求する勇気を持とうと力強く呼びかけました。核を保有する国の人々を含め、広島<span class=hiroshima>・長崎</span>を訪れる世界中の人々が、被爆の悲惨な実相に触れ、平和への<span class=hiroshima>願い</span>を新たにする。若い世代が、被爆者の方々から伝えられた被爆体験を語り継ぐ。政府として、そうした取組をしっかりと推し進めてまいります。
+		</td>
+		<td id=n>
+　そのため、あの悲惨な体験の「記憶」を、世代や国境を越えて、人類が共有する「記憶」として継承していかなければなりません。昨年、オバマ大統領が、現職の米国大統領として初めて、<span class=nagasaki>広島</span>を訪れ、被爆の実相に触れ、核を保有する国々に対して、核兵器のない世界を追求する勇気を持とうと力強く呼びかけました。核を保有する国の人々を含め、<span class=nagasaki>長崎・</span>広島を訪れる世界中の人々が、被爆の悲惨な実相に触れ、平和への<span class=nagasaki>思い</span>を新たにする。若い世代が、被爆者の方々から伝えられた被爆体験を語り継ぐ。政府として、そうした取組をしっかりと推し進めてまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　そして、<span class=hiroshima>各国</span>の<span class=hiroshima>有識者の知見</span>も<span class=hiroshima>得</span>ながら、核兵器不拡散条約（ＮＰＴ）発効五十周年となる二〇二〇年のＮＰＴ運用検討会議が意義あるものとなるよう、積極的に貢献してまいります。
+		</td>
+		<td id=n>
+　そして、<span class=nagasaki>昨年十二月、ここ長崎で開催された、核兵器廃絶に向けた国際会議で</span>の<span class=nagasaki>真摯な議論</span>も<span class=nagasaki>踏まえ</span>ながら、核兵器不拡散条約（ＮＰＴ）発効五十周年となる二〇二〇年のＮＰＴ運用検討会議が意義あるものとなるよう、積極的に貢献してまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　被爆者の方々に対しましては、保健、医療、福祉にわたる総合的な援護施策の充実を行ってまいりました。今後とも、被爆者の方々に寄り添いながら、援護施策を着実に推進してまいります。特に、原爆症の認定について、引き続き、一日も早く結果をお知らせできるよう、できる限り迅速な審査を行ってまいります。
+		</td>
+		<td id=n>
+　被爆者の方々に対しましては、保健、医療、福祉にわたる総合的な援護施策の充実を行ってまいりました。今後とも、被爆者の方々に寄り添いながら、援護施策を着実に推進してまいります。
+特に、原爆症の認定について、引き続き、一日も早く結果をお知らせできるよう、できる限り迅速な審査を行ってまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　<span class=hiroshima>今や</span>、<span class=hiroshima>国際</span>平和<span class=hiroshima>文化都市として、見事に発展を遂げられた</span>、ここ<span class=hiroshima>広島</span>市において、改めて、「核兵器のない世界」と恒久平和の実現に向けて力を尽くすことをお誓い申し上げるとともに、原子爆弾の犠牲となられた方々のご冥福と、ご遺族、被爆者の皆様、並びに、参列者、<span class=hiroshima>広島</span>市民の皆様のご平安を祈念いたしまして、私の挨拶といたします。
+		</td>
+		<td id=n>
+<span class=nagasaki>　</span>
+　<span class=nagasaki>結びに</span>、<span class=nagasaki>永遠の</span>平和<span class=nagasaki>が祈られ続けている</span>、ここ<span class=nagasaki>長崎</span>市において、改めて、「核兵器のない世界」と恒久平和の実現に向けて力を尽くすことをお誓い申し上げるとともに、原子爆弾の犠牲となられた方々のご冥福と、ご遺族、被爆者の皆様、並びに、参列者、<span class=nagasaki>長崎</span>市民の皆様のご平安を祈念いたしまして、私の挨拶といたします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+平成二十九年八月<span class=hiroshima>六</span>日
+内閣総理大臣・安倍晋三		</td>
+		<td id=n>
+平成二十九年八月<span class=nagasaki>九</span>日
+内閣総理大臣・安倍晋三		</td>
+	</tr>  </tbody>
+</table>
+
+## 平成30年(2018年) 安倍晋三
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td id=h>
+<span class=hiroshima>　一発の原子爆弾が、街を一瞬にして破壊し、十数万ともいわれる貴い命を奪いました。あれ</span>から７３年、一命をとりとめた方々にも、<span class=hiroshima>筆舌に尽くし難い</span>苦難の日々をもたらしました。若者の夢や明るい未来が容赦なく奪われました。
+		</td>
+		<td id=n>
+<span class=nagasaki>今</span>から７３年<span class=nagasaki>前の今日、一発の原子爆弾がここ長崎に投下され、７万ともいわれる数多（あまた）の貴い命が失われました。街は一瞬にして焦土と化し</span>、一命をとりとめた方々にも、<span class=nagasaki>耐え難い</span>苦難の日々をもたらしました。若者の夢や明るい未来が容赦なく奪われました。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　原子爆弾の犠牲となられた数多くの方々の御霊（みたま）に対し、謹んで、哀悼の誠を捧（ささ）げます。
+		</td>
+		<td id=n>
+　原子爆弾の犠牲となられた数多くの方々の御霊（みたま）に対し、謹んで、哀悼の誠を捧（ささ）げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　そして、今なお被爆の後遺症に苦しまれている方々に、心からお見舞いを申し上げます。
+		</td>
+		<td id=n>
+　そして、今なお被爆の後遺症に苦しまれている方々に、心からお見舞いを申し上げます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　広島<span class=hiroshima>、長崎</span>の悲劇<span class=hiroshima>を</span>再び<span class=hiroshima>繰り返し</span>てはならない。唯一の戦争被爆国として<span class=hiroshima>、</span>「核兵器のない世界」の実現に向けて、粘り強く努力を重ねていくこと。それは<span class=hiroshima>、</span>我が国の使命です。
+		</td>
+		<td id=n>
+　<span class=nagasaki>長崎、</span>広島の悲劇<span class=nagasaki>が</span>再び<span class=nagasaki>繰り返され</span>てはならない。唯一の戦争被爆国として「核兵器のない世界」の実現に向けて、粘り強く努力を重ねていくこと。それは我が国の使命です。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　近年、核軍縮の進め方について、各国の考え方の違いが顕在化して<span class=hiroshima>い</span>ます。
+		</td>
+		<td id=n>
+　近年、核軍縮の進め方について、各国の考え方の違いが顕在化して<span class=nagasaki>おり</span>ます。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　真に「核兵器のない世界」を実現するためには、被爆の悲惨な実相の正確な理解を出発点として、核兵器国と非核兵器国双方の協力を得ることが必要です。我が国は、非核三原則を堅持しつつ、粘り強く双方の橋渡しに努め、国際社会の取組を主導していく決意です。
+		</td>
+		<td id=n>
+　真に「核兵器のない世界」を実現するためには、被爆の悲惨な実相の正確な理解を出発点として、核兵器国と非核兵器国双方の協力を得ることが必要です。我が国は、非核三原則を堅持しつつ、粘り強く双方の橋渡しに努め、国際社会の取組を主導していく決意です。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　その具体的な取組として昨年<span class=hiroshima>、核軍縮に関する</span>「賢人会議」を、ここ<span class=hiroshima>広島</span>で開催<span class=hiroshima>しました</span>。
+		</td>
+		<td id=n>
+　その具体的な取組として<span class=nagasaki>、</span>昨年<span class=nagasaki>立ち上げた</span>「賢人会議」を、<span class=nagasaki>本年秋に、</span>ここ<span class=nagasaki>長崎</span>で開催<span class=nagasaki>予定です</span>。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+<span class=hiroshima>　</span>「賢人会議」を通じて<span class=hiroshima>有識者の</span>知見も<span class=hiroshima>得</span>ながら、核兵器不拡散条約（ＮＰＴ）発効５０周年となる２０２０年のＮＰＴ運用検討会議が意義あるものとなるよう、積極的に貢献してまいります。
+		</td>
+		<td id=n>
+「賢人会議」を通じて<span class=nagasaki>得られる</span>知見も<span class=nagasaki>踏まえ</span>ながら、核兵器不拡散条約（ＮＰＴ）発効５０周年となる２０２０年のＮＰＴ運用検討会議が意義あるものとなるよう、<span class=nagasaki>本日、ご出席頂いているグテーレス国連事務総長とも緊密に協力しつつ、</span>積極的に貢献してまいります。		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　また、<span class=hiroshima>その</span>非人道性を<span class=hiroshima>、後の世に、また世界に、伝え続ける務めが我々にあります。</span>
+		</td>
+		<td id=n>
+　また、<span class=nagasaki>「核兵器のない世界」の実現に向けて国際社会が一致して取り組むには、あの悲惨な体験の「記憶」を、世代や国境を越えて、人類が共有する「記憶」として継承していかなければなりません。長崎・広島を訪れる世界中の人々が、被爆の悲惨な実相に触れ、平和への決意を新たにする。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+若い世代が、<span class=hiroshima>　被爆者の方々から伝えられた</span>被爆体験を語り継ぐ。
+<span class=hiroshima>　政府</span>として、そうした取組をしっかりと<span class=hiroshima>推し</span>進めて<span class=hiroshima>まいり</span>ます。
+		</td>
+		<td id=n>
+若い世代が、被爆体験を語り継ぐ。<span class=nagasaki>唯一の戦争被爆国</span>として、<span class=nagasaki>核兵器の非人道性を誰よりも深く知る我が国</span>として、そうした取組をしっかりと進めて<span class=nagasaki>いき</span>ます。		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　被爆者の方々への援護施策については、保健、医療、福祉にわたる支援の必要性をしっかりと受け止め、被爆者の方々に寄り添いながら、今後とも、総合的に推進してまいります。特に、原爆症の認定について、引き続き、一日も早く結果をお知らせできるよう、できる限り迅速な審査を行ってまいります。
+		</td>
+		<td id=n>
+　被爆者の方々への援護施策については、保健、医療、福祉にわたる支援の必要性をしっかりと受け止め、被爆者の方々に寄り添いながら、今後とも、総合的に推進してまいります。特に、原爆症の認定について、引き続き、一日も早く結果をお知らせできるよう、できる限り迅速な審査を行ってまいります。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+　結びに、永遠の平和が祈られ続けている、ここ<span class=hiroshima>広島</span>市において、「核兵器のない世界」と恒久平和の実現に向けて力を尽くすことをお誓い<span class=hiroshima>申し上げます。</span>原子爆弾の犠牲となられた方々のご冥福と、ご遺族、被爆者の皆様、並びに、参列者、<span class=hiroshima>広島</span>市民の皆様のご平安を祈念いたしまして、私の挨拶といたします。
+		</td>
+		<td id=n>
+　結びに、永遠の平和が祈られ続けている、ここ<span class=nagasaki>長崎</span>市において、「核兵器のない世界」と恒久平和の実現に向けて力を尽くすことをお誓い<span class=nagasaki>申し上げるとともに、</span>原子爆弾の犠牲となられた方々のご冥福と、ご遺族、被爆者の皆様、並びに、参列者、<span class=nagasaki>長崎</span>市民の皆様のご平安を祈念いたしまして、私の挨拶といたします。
+		</td>
+	</tr>
+	<tr>
+		<td id=h>
+平成３０年８月<span class=hiroshima>６</span>日
+内閣総理大臣・安倍晋三		</td>
+		<td id=n>
+平成３０年８月<span class=nagasaki>９</span>日
+内閣総理大臣・安倍晋三		</td>
+	</tr>
   </tbody>
 </table>
 

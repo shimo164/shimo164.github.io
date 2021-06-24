@@ -2,6 +2,11 @@
 
 ## ライブラリやAWS公式のまとめ
 
+[Reinvent2019 How_to_use_unsupervised_ML_to_find_patterns,_meaning,_and_anomalies_AIM421](https://d1.awsstatic.com/events/reinvent/2019/REPEAT_1_How_to_use_unsupervised_ML_to_find_patterns,_meaning,_and_anomalies_AIM421-R1.pdf)
+
+BlazingText, Object2Vecなどの説明がよい
+
+
 [AWS Architecture Center](https://aws.amazon.com/architecture/)
 
 [AWS Events Content](https://aws.amazon.com/events/events-content/)
