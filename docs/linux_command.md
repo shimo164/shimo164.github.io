@@ -1,15 +1,13 @@
 **Linuxコマンドメモもくじ**
 
 - [findコマンドの使い方](#findコマンドの使い方)
-    - [findでfilenameを名前に含むファイルを探す](#findでfilenameを名前に含むファイルを探す)
     - [findで"string"を本文に含むファイルを探す](#findでstringを本文に含むファイルを探す)
     - [locate検索](#locate検索)
     - [findで更新時間で探す](#findで更新時間で探す)
     - [findで/var/.. を検索するときの注意](#findでvar-を検索するときの注意)
-  - [コマンド](#コマンド)
-    - [lsコマンド](#lsコマンド)
-    - [grepコマンド](#grepコマンド)
-  - [Tipsいろいろ](#tipsいろいろ)
+- [lsコマンド](#lsコマンド)
+- [grepコマンド](#grepコマンド)
+- [Tipsいろいろ](#tipsいろいろ)
     - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
     - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
     - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
@@ -17,7 +15,7 @@
     - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
     - [whichコマンドで実行ファイルのフルパスを出力](#whichコマンドで実行ファイルのフルパスを出力)
     - [readlinkでファイルのfull pathを出力](#readlinkでファイルのfull-pathを出力)
-  - [シェルスクリプト本より](#シェルスクリプト本より)
+- [シェルスクリプト本より](#シェルスクリプト本より)
     - [パス名展開](#パス名展開)
     - [パラメータ展開](#パラメータ展開)
     - [パターンを指定して切り出す](#パターンを指定して切り出す)
@@ -26,40 +24,58 @@
     - [算術式評価](#算術式評価)
     - [ファイルディスクリプタ](#ファイルディスクリプタ)
     - [リダイレクト](#リダイレクト)
-  -
 
 # findコマンドの使い方
-filenameを探す。<directory> `./` `/home/`....。(自動でワイルドカード、再帰)
 ```
 find <directory> [-type f/d]| grep filename
 ```
+filenameを探す(自動でワイルドカード、再帰)。
+
+`./` -> カレントディレクトリ以下で
+
+`/home/user/` -> /home/user/ 以下で
+
 ---
-カレントディレクトリからfilenameを探す(自動で再帰)
 ```
 find ./ -type f | grep filename
+
+find ./ -type f -name filename
 ```
+カレントディレクトリからfilenameを探す(自動で再帰)
+
 ---
-その1:patternを中に含むファイルを探す。-l:ファイル名だけを出力 -s:エラーメッセージをスキップ
 ```
 find directory -type f | xargs grep -l -s pattern
 ```
+patternを中に含むファイルを探す-l:ファイル名だけを出力 -s:エラーメッセージをスキップ
+
 ---
-その2:patternを中に含むファイルを探す。Rと*があるとファイル名にスペースがあっても有効。。-R:再帰。-n:マッチした行を出力。
 ```
 find ./ -type f | xargs grep -R -n -s "pattern" *
 ```
+patternを中に含むファイルを探す(その2)。Rと*があるとファイル名にスペースがあっても有効。。-R:再帰。-n:マッチした行を出力。
+
 ---
-directoryから階層1だけ探す
 ```
 find directory -maxdepth 1 | grep filename
 ```
+directoryから階層1だけをfindの対象にする
 
-### findでfilenameを名前に含むファイルを探す
+---
 ```
 find ./ -type f | grep <filename>
 ```
+findでfilenameを名前に含むファイルを探す
 
-`./` : カレントディレクトリより下で、という意味
+---
+```
+find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t cli/ {} +
+```
+
+2020-09-01 に更新したファイルが**見つかったら cli/ に移動させる** [link](https://unix.stackexchange.com/questions/154818/how-to-integrate-mv-command-after-find-command)
+
+---
+
 
 ### findで"string"を本文に含むファイルを探す
 ```find ./ -type f | grep -rno "string"```
@@ -77,6 +93,7 @@ NOTE: xargsが使えなくなった
 <del> ```find ./ -type f | grep py | xargs grep -l -s "b = .*driver" ```</del>
 
 ### locate検索
+
 | Command             | Description                     |
 | ------------------- | ------------------------------- |
 | `locate aaa`        | aaaがpathに入っているものを探す |
@@ -105,8 +122,8 @@ NOTE: xargsが使えなくなった
 ### findで/var/.. を検索するときの注意
 `/var/`の中を探すとき、`find ./ | grep var`ではできない。正しくは`find /var/...` とする。`find ./` は `/home/` 以下を検索する。`/var/`はrootのサブディレクトリで`/home/`と同列。
 
-## コマンド
-### lsコマンド
+# lsコマンド
+
 | Command              | Description                   | Note                                                                                                                         |
 | -------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | `ls -d */`           | ディレクトリのみ出力          |                                                                                                                              |
@@ -116,7 +133,8 @@ NOTE: xargsが使えなくなった
 | `$ ls -l !(xxx)`     | ファイル名にxxxを**含まない** |                                                                                                                              |
 | ls \| wc -l          | ファイル数をカウント          | [[link](https://unix.stackexchange.com/questions/1125/how-can-i-get-a-count-of-files-in-a-directory-using-the-command-line)] |
 
-### grepコマンド
+# grepコマンド
+
 | オプション | grep出力                 |
 | :--------: | ------------------------ |
 |     -r     | 配下ディレクトリを対象に |
@@ -130,7 +148,7 @@ NOTE: xargsが使えなくなった
 |     -q     | 結果を出力しない         |
 
 ```
-# ファイル名にfooとbarを含むgrepをつなぐときはパイプ。
+# ファイル名にfooとbarを含む。grepのANDをパイプでつなぐ。
 ls -l | grep foo | grep bar
 
 # ファイル名にfooを含まない。マッチしないものを出力ときは `-v` をつける。
@@ -149,7 +167,7 @@ find ... | grep ... | xargs rm
 ... |grep filename$
 ```
 
-## Tipsいろいろ
+# Tipsいろいろ
 
 -
 
@@ -185,7 +203,7 @@ which git
 ### readlinkでファイルのfull pathを出力
 `readlink -f filename.txt`
 
-## シェルスクリプト本より
+# シェルスクリプト本より
 ### パス名展開
 | 記号    | 意味                          |
 | ------- | ----------------------------- |
