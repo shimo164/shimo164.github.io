@@ -1,4 +1,16 @@
-見出しのリンクがどう変換されるかをテスト中。
+
+# リンクのいい感じの書き方
+[こちら][ref1]で紹介されているように、長いURLをrefで参照することで、スッキリした記述にできる。
+
+[ref1]:https://miraium.com/markdown-summary-for-vscode/
+
+画像埋め込みの場合は、！マークが必要です。
+
+![][ref2]
+
+[ref2]: /image/python.png
+
+# 見出しのリンクがどう変換されるかをテスト中。(不要かも)
 ここがまとめている
 * http://tbpgr.hatenablog.com/entry/20140125/1390659050
 * https://so-zou.jp/web-app/text/fullwidth-halfwidth/
@@ -22,7 +34,6 @@
 ```
 
 # Markdown Table column width
-
 コラム幅は、列の中で一番幅のあるもので決まる。下の場合、左の列はName、右の列はLong explanationで決まっている。
 
 | Name | Value            |
@@ -65,7 +76,6 @@ img widthを使うと比率を決められる。
 | c                | Long explanation |
 | <img width=100/> | <img width=200/> |
 
-
 左400px,右200pxにした。一行開けると、Markdownでの最下部の線がなくなる。
 
 ```
@@ -78,7 +88,6 @@ img widthを使うと比率を決められる。
 | <img width=400/> | <img width=200/> |
 ```
 
-
 | Name | Value            |
 | ---- | ---------------- |
 | a    | Long explanation |
@@ -86,7 +95,6 @@ img widthを使うと比率を決められる。
 | c    | Long explanation |
 
 | <img width=400/> | <img width=200/> |
-
 
 &nbsp;を使ってスペースを入れることもできる。
 ```
@@ -103,16 +111,10 @@ img widthを使うと比率を決められる。
 | b                                                           | Long explanation |
 | c                                                           | Long explanation |
 
-
-
-
-
 ===
-
 
 ```
 ### TODO code中の###はリンクにならないが、判定されてしまうのを回避
-
 ```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -134,7 +136,6 @@ total_line = ""
 
 sharp = "###"
 
-
 def format_md_header(header_raw):
     h = header_raw
     h = h.lower()
@@ -146,7 +147,6 @@ def format_md_header(header_raw):
         h_md += s
 
     return h_md
-
 
 with open(file) as f:
     for line in f:
@@ -160,15 +160,12 @@ with open(file) as f:
     fw.write(total_line)
 ```
 
-
 # マークダウンのチートシート
-
 ```markdown
 
 # Header 1
 ## Header 2
 ### Header 3
-
 - Bulleted
 - List
 
@@ -181,7 +178,6 @@ _Italic_
 ※スペースを入れないこと
 ```
 ### リンク
-
 ふつうに書くとリンク　https://example.com
 
 リンクに文字列を与える
@@ -194,17 +190,16 @@ _Italic_
 absolute link
 `[link](file:///home/user/.../)`
 
+TODO　ローカルのフルパスでは記述できなくなった
+
 ### 画像
 `![Image](src)`
 
-
 ### エスケープ
-
 \\
 バックスラッシュでエスケープ
 
 ### コード
-
 ```
 バッククォート3つで囲むと、コード
 ```
@@ -222,13 +217,11 @@ def test(n):
 ```
 
 ### 引用
-
 `> 引用`
 
 > 引用
 
 ### 表
-
 ```
 | col1                            | col2 |
 | ------------------------------- | ---- |
@@ -242,13 +235,9 @@ def test(n):
 | Pagesだと表にならないときがある | \| の数を合わせること |
 
 ### 注意
-
 - GitHub上での更新と、github.ioの更新はタイムラグがある。jekyllによる更新をしているから？
 - GitHub上でのmarkdown表示と、github.ioでは少し異なるときがある。表で|の数合わせなど。
 
-
-
 ### 参考
-
 https://guides.github.com/features/mastering-markdown/
 https://github.github.com/gfm/
