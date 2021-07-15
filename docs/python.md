@@ -53,3 +53,23 @@ logger.addHandler(fh)
 # logger.error('error message')
 # logger.critical('critical message')
 ```
+
+# Jupyter
+You cannot get the name of ipynb directory like __name__ in `.py`.
+
+```py
+%%javascript
+IPython.notebook.kernel.execute(`notebookName = '${IPython.notebook.notebook_name}'`);
+```
+
+`notebookName` is the Jupyter notebook name.
+
+```
+import os
+os.path.abspath("")
+```
+gives directory path the file is in.
+
+
+[ref](https://github.com/ipython/ipython/issues/10123)
+[ref](https://stackoverflow.com/questions/12544056/how-do-i-get-the-current-ipython-jupyter-notebook-name)
