@@ -33,16 +33,19 @@ import logging
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
-fh = logging.FileHandler("log/" + __file__ + ".log")
-fh.setLevel(logging.DEBUG)
-# ch = logging.StreamHandler()
-# ch.setLevel(logging.ERROR)
 formatter = logging.Formatter(
     "%(asctime)s, %(levelname)s, %(message)s", "%Y-%m-%d %H:%M:%S"
 )
+
+fh = logging.FileHandler("log/" + __file__ + ".log")
+fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
-# ch.setFormatter(formatter)
 logger.addHandler(fh)
+
+# ch = logging.StreamHandler()
+# ch.setLevel(logging.ERROR)
+# ch.setFormatter(formatter)
+# logger.addHandler(ch)
 
 # logger.debug('debug message')
 # logger.info('info message')
