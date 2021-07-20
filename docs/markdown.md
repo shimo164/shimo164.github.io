@@ -129,6 +129,7 @@ with open(file) as f:
 | c                | Long explanation |
 | <img width=100/> |                  |
 ```
+
 | Name             | Value            |
 | ---------------- | ---------------- |
 | a                | Long explanation |
