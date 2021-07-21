@@ -1,9 +1,9 @@
 - [リンクのいい感じの書き方](#リンクのいい感じの書き方)
-- [md見出しがhtmlでどう変換されるか](#md見出しがhtmlでどう変換されるか)
-- [Width of Table column in Markdown](#width-of-table-column-in-markdown)
+- [見出しでは使えない日本語文字がある](#見出しでは使えない日本語文字がある)
+- [Table columnの幅](#table-columnの幅)
   - [img widthで幅設定する](#img-widthで幅設定する)
   - [`&nbsp;`でスペースを入れる](#nbspでスペースを入れる)
-- [マークダウンのチートシート](#マークダウンのチートシート)
+- [マークダウン記法をまとめる](#マークダウン記法をまとめる)
     - [リンク](#リンク)
     - [画像](#画像)
     - [エスケープ](#エスケープ)
@@ -36,7 +36,7 @@
 [ref2]: /image/python.png
 ```
 
-# md見出しがhtmlでどう変換されるか
+# 見出しでは使えない日本語文字がある
 ここがまとめている
 * http://tbpgr.hatenablog.com/entry/20140125/1390659050
 * https://so-zou.jp/web-app/text/fullwidth-halfwidth/
@@ -57,56 +57,8 @@
 全角アンダーライン＿
 全角スペース
 ```
-===
 
-```py
-### TODO code中の###はリンクにならないが、判定されてしまうのを回避
-
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-In .md, make contens list from header ###.
-
-Usage:
-    $ python md_make_contents.py readfile.txt
-
-Output:
-    header_content.txt
-    In this txt, contents with md format is written.
-"""
-import re
-import sys
-
-file = sys.argv[1]
-total_line = ""
-
-sharp = "###"
-
-def format_md_header(header_raw):
-    h = header_raw
-    h = h.lower()
-    h = re.sub(" ", "-", h)
-    ma = re.findall("[a-zA-Z0-9_＿ー　ぁ-んァ-ンぁ-んァ-ンｱ-ﾝ一-龥]", h)
-
-    h_md = ""
-    for s in ma:
-        h_md += s
-
-    return h_md
-
-with open(file) as f:
-    for line in f:
-        line = re.sub("\n", "", line)
-        if re.match(sharp, line):
-            line = line.lstrip(sharp + " ")
-            h_md = format_md_header(line)
-            h_md = "* [" + line + "](#" + h_md + ")"
-            total_line += h_md + "\n"
-    fw = open("header_content.txt", "w")
-    fw.write(total_line)
-```
-
-# Width of Table column in Markdown
+# Table columnの幅
 複数行の最大幅で決まる。下の場合、左の列はName、右の列はLong explanationが最大幅。
 
 | Name | Value            |
@@ -116,10 +68,9 @@ with open(file) as f:
 | c    | Long explanation |
 
 ## img widthで幅設定する
-
-下の行に、空白のimgをwidth指定で入れる。
-- 空白行が下に付いていることに注意
-- 幅を大きくすることはできるが、小さくはできない
+一番下の行に、空白行を挿入して、imgをwidthを指定する
+- **空白行が下に付くのは避けられない**
+- img幅を文字の最大幅よりも小さく指定しても効果がない
 
 ```
 | Name             | Value            |
@@ -137,7 +88,7 @@ with open(file) as f:
 | c                | Long explanation |
 | <img width=100/> |                  |
 
-左右とも200pxにする。
+左右とも200pxに設定。
 ```
 | Name             | Value            |
 | ---------------- | ---------------- |
@@ -154,17 +105,13 @@ with open(file) as f:
 | c                | Long explanation |
 | <img width=200/> | <img width=200/> |
 
-左400px,右200pxにした。
-- 一行開けると、Markdownでの最下部の線がなくなる。
-  - 空白行があるのは変わらない
-
+左400px、右200pxに設定。
 ```
 | Name | Value            |
 | ---- | ---------------- |
 | a    | Long explanation |
 | b    | Long explanation |
 | c    | Long explanation |
-
 | <img width=400/> | <img width=200/> |
 ```
 
@@ -173,12 +120,12 @@ with open(file) as f:
 | a    | Long explanation |
 | b    | Long explanation |
 | c    | Long explanation |
-
 | <img width=400/> | <img width=200/> |
 
 ## `&nbsp;`でスペースを入れる
-- mdテキスト上での幅が大きくなるのがデメリット
-- imgと違って空白行ができない
+- 上記のimg幅指定と違って空白行はない
+- mdテキスト上での見た目の幅が大きくなるのがデメリット
+
 ```
 | Name &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; | Value            |
 | ----------------------------------------------------------- | ---------------- |
@@ -193,14 +140,12 @@ with open(file) as f:
 | b                                                           | Long explanation |
 | c                                                           | Long explanation |
 
-
-
-# マークダウンのチートシート
+# マークダウン記法をまとめる
 ```markdown
-
 # Header 1
 ## Header 2
 ### Header 3
+
 - Bulleted
 - List
 
@@ -208,24 +153,31 @@ with open(file) as f:
 2. List
 
 **Bold**
+
 _Italic_
+
 `Code`
 ※スペースを入れないこと
 ```
 ### リンク
-ふつうに書くとリンク　https://example.com
+URLを平文に書くとリンクになる https://example.com
 
 リンクに文字列を与える
 `[Link](url) `
 
 ページ内リンク
-`[文字列](./#見出し)`
+`[Link文](./#見出し)`
 * 見出しのスペースはハイフンに、大文字は小文字になる
 
 absolute link
 `[link](file:///home/user/.../)`
 
-TODO　ローカルのフルパスでは記述できなくなった
+[link](_site/aws-link.md)
+
+[link](/../_site/aws-link.md)
+
+
+TODO ローカルのフルパスでは記述できない？
 
 ### 画像
 `![Image](src)`
@@ -270,8 +222,10 @@ def test(n):
 | Pagesだと表にならないときがある | \| の数を合わせること |
 
 ### 注意
-- GitHub上での更新と、github.ioの更新はタイムラグがある。jekyllによる更新をしているから？
-- GitHub上でのmarkdown表示と、github.ioでは少し異なるときがある。表で|の数合わせなど。
+- GitHub上での更新と、github.ioの更新はタイムラグがある。jekyllによる更新をしている
+- GitHub上でのmarkdown表示と、github.ioでは異なるときがある。表で|の数合わせなど。
+  - 表の開始時に空白行を入れること(github.ioでは必要)
+  - Githubでの表示とVSCodeのmarkdown previewは同じ
 
 ### 参考
 https://guides.github.com/features/mastering-markdown/
