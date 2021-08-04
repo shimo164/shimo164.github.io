@@ -1,9 +1,34 @@
 - [Python Snippets](#python-snippets)
+  - [Condition with None, empty list](#condition-with-none-empty-list)
   - [Create directory if not exists](#create-directory-if-not-exists)
   - [Datetime with format](#datetime-with-format)
   - [Logging](#logging)
+- [Jupyter](#jupyter)
 
 # Python Snippets
+
+
+## Condition with None, empty list
+```py
+
+# Use `is None` for checking null
+a = None
+
+>>> a is None
+True
+>>> a is not None
+False
+
+
+# Use `not` for checking empty list
+data = []
+
+>> not data
+True
+
+>> data is None
+False
+```
 
 ## Create directory if not exists
 
