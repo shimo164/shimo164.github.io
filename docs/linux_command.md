@@ -1,12 +1,11 @@
 **Linuxコマンドメモもくじ**
 
-- [findコマンドの使い方](#findコマンドの使い方)
-    - [findで"string"を本文に含むファイルを探す](#findでstringを本文に含むファイルを探す)
-    - [locate検索](#locate検索)
-    - [findで更新時間で探す](#findで更新時間で探す)
-    - [findで/var/.. を検索するときの注意](#findでvar-を検索するときの注意)
-- [lsコマンド](#lsコマンド)
 - [grepコマンド](#grepコマンド)
+- [findコマンド](#findコマンド)
+    - [更新時間で探す](#更新時間で探す)
+    - [findで/var/.. を検索するときの注意](#findでvar-を検索するときの注意)
+- [locate検索](#locate検索)
+- [lsコマンド](#lsコマンド)
 - [Tipsいろいろ](#tipsいろいろ)
     - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
     - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
@@ -25,116 +24,7 @@
     - [ファイルディスクリプタ](#ファイルディスクリプタ)
     - [リダイレクト](#リダイレクト)
 
-# findコマンドの使い方
-```
-find <directory> [-type f/d]| grep filename
-```
-filenameを探す(自動でワイルドカード、再帰)。
-
-`./` -> カレントディレクトリ以下で
-
-`/home/user/` -> /home/user/ 以下で
-
----
-```
-find ./ -type f | grep filename
-
-find ./ -type f -name filename
-```
-カレントディレクトリからfilenameを探す(自動で再帰)
-
----
-```
-find directory -type f | xargs grep -l -s pattern
-```
-patternを中に含むファイルを探す-l:ファイル名だけを出力 -s:エラーメッセージをスキップ
-
----
-```
-find ./ -type f | xargs grep -R -n -s "pattern" *
-```
-patternを中に含むファイルを探す(その2)。Rと*があるとファイル名にスペースがあっても有効。。-R:再帰。-n:マッチした行を出力。
-
----
-```
-find directory -maxdepth 1 | grep filename
-```
-directoryから階層1だけをfindの対象にする
-
----
-```
-find ./ -type f | grep <filename>
-```
-findでfilenameを名前に含むファイルを探す
-
----
-```
-find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t cli/ {} +
-```
-
-2020-09-01 に更新したファイルが**見つかったら cli/ に移動させる** [link](https://unix.stackexchange.com/questions/154818/how-to-integrate-mv-command-after-find-command)
-
----
-
-
-### findで"string"を本文に含むファイルを探す
-```find ./ -type f | grep -rno "string"```
-
-またはこれ。[参考](https://stackoverflow.com/questions/6426363/how-can-i-have-grep-not-print-out-no-such-file-or-directory-errors)
-
-```grep pattern * -s -R -n```
-
-NOTE: xargsが使えなくなった
-
-<del> ```find ./ -type f | xargs grep -l -s "string"```</del>
-
-<del> 例: pwd以下にあるファイルで、ファイル名にpyを含み、ファイルの中にb = .*driverの文字列があるものを探す。</del>
-
-<del> ```find ./ -type f | grep py | xargs grep -l -s "b = .*driver" ```</del>
-
-### locate検索
-
-| Command             | Description                     |
-| ------------------- | ------------------------------- |
-| `locate aaa`        | aaaがpathに入っているものを探す |
-| `locate aaa bbb`    | aaa OR bbb                      |
-| `locate -A aaa bbb` | aaa AND bbb                     |
-| `locate -b aaa`     | basenameのみ検索                |
-
-### findで更新時間で探す
-
-`-mtime n`: **last modified n*24 hours ago.**
-
-| Command                            | Description                   |
-| ---------------------------------- | ----------------------------- |
-| `find . -mtime X`                  | x+1日前                      |
-| `find . -mtime -X`                 | x+1日前から今まで             |
-| `find . -mtime 0`                  | 0-24時間前                    |
-| `find . -mtime 1`                  | 24-48時間前                   |
-| `find . -mtime -1`                 | 0-48時間前                    |
-| `find . -mtime -12 -name \*.py`    | 12-13日以内に更新した.pyファイル |
-| `find . -mtime -12 | grep "\.py$"` | 同上                          |
-| `find . -type f -newermt 2021-6-1 ! -newermt 2021-7-1` | 期間内  |
-| `find . -maxdepth 1 -type f -newermt $(date --date="1 days ago" +%F)` | 昨日の0時以降に更新された |
-
-`find . -maxdepth 1 -type f -newermt $(date +%F)` : 今日の0時以降に更新されたファイル
-
-### findで/var/.. を検索するときの注意
-`/var/`の中を探すとき、`find ./ | grep var`ではできない。正しくは`find /var/...` とする。`find ./` は `/home/` 以下を検索する。`/var/`はrootのサブディレクトリで`/home/`と同列。
-
-# lsコマンド
-
-| Command              | Description                   | Note                                                                                                                         |
-| -------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `ls -d */`           | ディレクトリのみ出力          |                                                                                                                              |
-| `ls -l | grep ^d`    | ディレクトリのみ出力          | -lの出力でディレクトリはdで始まる                                                                                            |
-| `ls -l | grep -v ^d` | ファイルだけを出力            | -v:上記の反対                                                                                                                |
-| `ls -d .?*`          | .で始まるファイル             | regex ? => match exactly one                                                                                                 |
-| `$ ls -l !(xxx)`     | ファイル名にxxxを**含まない** |                                                                                                                              |
-| ls \| wc -l          | ファイル数をカウント          | [[link](https://unix.stackexchange.com/questions/1125/how-can-i-get-a-count-of-files-in-a-directory-using-the-command-line)] |
-
 # grepコマンド
-
 | オプション | grep出力                 |
 | :--------: | ------------------------ |
 |     -r     | 配下ディレクトリを対象に |
@@ -146,6 +36,7 @@ NOTE: xargsが使えなくなった
 |     -L     | マッチしないファイル名   |
 |     -o     | 検索にマッチした部分だけ |
 |     -q     | 結果を出力しない         |
+|     -s     | --no-messagesエラー無出力      |
 
 ```
 # ファイル名にfooとbarを含む。grepのANDをパイプでつなぐ。
@@ -167,8 +58,120 @@ find ... | grep ... | xargs rm
 ... |grep filename$
 ```
 
-# Tipsいろいろ
+その他 エラーを出力しない
+[参考](https://stackoverflow.com/questions/6426363/how-can-i-have-grep-not-print-out-no-such-file-or-directory-errors)
 
+```
+grep pattern * -s -R -n
+```
+
+# findコマンド
+| オプション | Description                 |
+| :--------: | ------------------------ |
+| -type f/d  | only File/Directory      |
+| -maxdepth  | 検索対象の階層       |
+|   -name   | ファイル名(wildcard可)                |
+|   -mtime   | 更新日時                |
+|  -newermt  | この日より新しいもの         |
+
+---
+**NOTE**
+
+- `/home/user/` -> /home/user/ 以下で
+- `./` -> カレントディレクトリ以下で
+- `grep`と組み合わせることが多い
+
+---
+
+filenameを探す(自動でワイルドカード、再帰)
+
+```
+find <directory> [-type f/d]| grep filename
+```
+---
+カレントディレクトリからfilenameを探す(自動で再帰)
+```
+find ./ -type f -name filename
+```
+
+```
+find ./ -type f | grep filename
+```
+
+---
+directoryから階層1だけをfindの対象にする
+
+```
+find directory -maxdepth 1 | grep filename
+```
+---
+patternという文字列を中に含むファイルを探す(その1)
+- `-l` ファイル名だけを出力
+- `-s` エラーメッセージをスキップ
+```
+find directory -type f | xargs grep -l -s pattern
+```
+---
+patternという文字列を中に含むファイルを探す(その2)。Rと*があるとファイル名にスペースがあっても有効。
+-  `-R` 再帰
+- `-n` マッチした行を出力
+
+```
+find ./ -type f | xargs grep -R -n -s "pattern" *
+```
+
+---
+### 更新時間で探す
+`-mtime n` **last modified n*24 hours ago.**
+
+| Command                            | Description                   |
+| ---------------------------------- | ----------------------------- |
+| `find . -mtime X`                  | x+1日前                      |
+| `find . -mtime -X`                 | x+1日前から今まで             |
+| `find . -mtime 0`                  | 0-24時間前                    |
+| `find . -mtime 1`                  | 24-48時間前                   |
+| `find . -mtime -1`                 | 0-48時間前                    |
+| `find . -mtime -12 -name \*.py`    | 12-13日以内に更新した.pyファイル |
+| `find . -mtime -12 | grep "\.py$"` | 同上                          |
+| `find . -type f -newermt 2021-6-1 ! -newermt 2021-7-1` | 期間内  |
+| `find . -maxdepth 1 -type f -newermt $(date --date="1 days ago" +%F)` | 昨日の0時以降に更新された |
+|`find . -maxdepth 1 -type f -newermt $(date +%F)` | 今日の0時以降に更新された|
+
+---
+`-exec`コマンドと組合せて、マッチしたファイルを操作する
+
+2020-09-01に更新したファイルが**見つかったら <dir_2/> に移動させる** [link](https://unix.stackexchange.com/questions/154818/how-to-integrate-mv-command-after-find-command)
+```
+find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/ {} +
+```
+
+### findで/var/.. を検索するときの注意
+`/var/`の中を探すとき、`find ./ | grep var`ではできない。正しくは`find /var/...` とする。
+
+`find ./` は `/home/` を検索するという意味。`/var/`はrootのサブディレクトリで`/home/`と同列。
+
+# locate検索
+| Command             | Description                     |
+| ------------------- | ------------------------------- |
+| `locate aaa`        | aaaがpathに入っているものを探す |
+| `locate aaa bbb`    | aaa OR bbb                      |
+| `locate -A aaa bbb` | aaa AND bbb                     |
+| `locate -b aaa`     | basenameのみ検索                |
+
+# lsコマンド
+| Command              | Description                   | Note                              |
+| -------------------- | ----------------------------- | --------------------------------- |
+| `ls -d */`           | ディレクトリのみ出力          |                                   |
+| `ls -l | grep ^d`    | ディレクトリのみ出力          | -lの出力でディレクトリはdで始まる |
+| `ls -l | grep -v ^d` | ファイルだけを出力            | -v:上記の反 対                    |
+| `ls -d .?*`          | .で始まるファイル             | regex ? => match exactly          |
+| `$ ls -l !(xxx)`     | ファイル名にxxxを**含まない** |                                   |
+| ls \| wc -l          | ファイル数をカウント          | [link][ref1]                      |
+
+[ref1]:https://unix.stackexchange.com/questions/1125/how-can-i-get-a-count-of-files-in-a-directory-using-the-command-line
+
+
+# Tipsいろいろ
 -
 
 ### rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除
