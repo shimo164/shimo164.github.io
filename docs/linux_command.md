@@ -11,6 +11,7 @@
   - [Tips](#tips)
   - [例](#例)
 - [Tipsいろいろ](#tipsいろいろ)
+    - [コマンド中でランダム数を入れる](#コマンド中でランダム数を入れる)
     - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
     - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
     - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
@@ -70,13 +71,14 @@ grep pattern * -s -R -n
 ```
 
 # findコマンド
-| オプション | Description                 |
-| :--------: | ------------------------ |
-| -type f/d  | only File/Directory      |
-| -maxdepth  | 検索対象の階層       |
-|   -name   | ファイル名(wildcard可)                |
-|   -mtime   | 更新日時                |
-|  -newermt  | この日より新しいもの         |
+
+| オプション | Description            |
+| :--------: | ---------------------- |
+| -type f/d  | only File/Directory    |
+| -maxdepth  | 検索対象の階層         |
+|   -name    | ファイル名(wildcard可) |
+|   -mtime   | 更新日時               |
+|  -newermt  | この日より新しいもの   |
 
 ---
 **NOTE**
@@ -223,7 +225,18 @@ $ awk 'BEGIN{i=0}{print ++i,$0}' /etc/shells
 
 
 # Tipsいろいろ
--
+
+### コマンド中でランダム数を入れる
+
+例: コマンドで指定するファイル名にランダム数を入れたい。
+
+```
+echo $RANDOM  # 0 to 32767
+
+echo $(($RANDOM % 129))  # reminder: 0 to 128
+
+touch file_$(($RANDOM % 1000)).txt  # file_num.txt 0 to 999
+```
 
 ### rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除
 ### `nautilus .` で今いるディレクトリを開く
