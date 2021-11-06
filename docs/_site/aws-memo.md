@@ -1,9 +1,20 @@
+- [あるリージョンで使えるAZを調べる](#あるリージョンで使えるazを調べる)
 - [パスワードを紛失した場合について](#パスワードを紛失した場合について)
 - [大容量データ転送](#大容量データ転送)
   - [ネットワークを利用して50TBを転送する場合の必要日数。](#ネットワークを利用して50tbを転送する場合の必要日数)
   - [1Gbpsでの転送の時間単位を変換する](#1gbpsでの転送の時間単位を変換する)
   - [Snowballの場合](#snowballの場合)
 - [AWSの課金単位、最小課金](#awsの課金単位最小課金)
+
+## あるリージョンで使えるAZを調べる
+
+Console: EC2 Dashboard -> [Service Health] -> [Zones] に表示されている。
+
+CLI:
+```
+aws ec2 describe-availability-zones --region region-name
+```
+https://aws.amazon.com/jp/premiumsupport/knowledge-center/vpc-find-availability-zone-options/
 
 
 ## パスワードを紛失した場合について

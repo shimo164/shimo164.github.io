@@ -80,7 +80,7 @@ grep pattern * -s -R -n
 |   -mtime   | 更新日時               |
 |  -newermt  | この日より新しいもの   |
 
----
+
 **NOTE**
 
 - `/home/user/` -> /home/user/ 以下で
@@ -114,9 +114,11 @@ find directory -maxdepth 1 | grep filename
 patternという文字列を中に含むファイルを探す(その1)
 - `-l` ファイル名だけを出力
 - `-s` エラーメッセージをスキップ
+
 ```
 find directory -type f | xargs grep -l -s pattern
 ```
+
 ---
 patternという文字列を中に含むファイルを探す(その2)。Rと*があるとファイル名にスペースがあっても有効。
 -  `-R` 再帰
@@ -157,6 +159,7 @@ find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/
 `find ./` は `/home/` を検索するという意味。`/var/`はrootのサブディレクトリで`/home/`と同列。
 
 # locate検索
+
 | Command             | Description                     |
 | ------------------- | ------------------------------- |
 | `locate aaa`        | aaaがpathに入っているものを探す |
@@ -165,6 +168,7 @@ find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/
 | `locate -b aaa`     | basenameのみ検索                |
 
 # lsコマンド
+
 | Command              | Description                   | Note                              |
 | -------------------- | ----------------------------- | --------------------------------- |
 | `ls -d`              | ディレクトリの中を出力しない  |                                   |
@@ -184,6 +188,7 @@ awk [オプション] [コマンド] [ファイル……]
 ```
 
 ## オプション
+
 | オプション | 意味                                         |
 | ---------- | -------------------------------------------- |
 | -f         | awkスクリプトが書かれたファイルを指定する    |
