@@ -12,6 +12,7 @@
   - [例](#例)
 - [Tipsいろいろ](#tipsいろいろ)
     - [コマンド中でランダム数を入れる](#コマンド中でランダム数を入れる)
+    - [$RANDOM でランダム数を出せる](#random-でランダム数を出せる)
     - [rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rmでディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
     - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
     - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
@@ -30,6 +31,7 @@
     - [リダイレクト](#リダイレクト)
 
 # grepコマンド
+
 | オプション | grep出力                  |
 | :--------: | ------------------------- |
 |     -r     | 配下ディレクトリを対象に  |
@@ -242,6 +244,9 @@ echo $(($RANDOM % 129))  # reminder: 0 to 128
 
 touch file_$(($RANDOM % 1000)).txt  # file_num.txt 0 to 999
 ```
+
+### $RANDOM でランダム数を出せる
+[in the range 0 - 32767](https://tldp.org/LDP/abs/html/randomvar.html)
 
 ### rmでディレクトリを削除するときは、`rm -rf direname` で丸ごと削除
 ### `nautilus .` で今いるディレクトリを開く

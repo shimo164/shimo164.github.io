@@ -14,6 +14,7 @@
   - [関数を作る](#関数を作る)
   - [try catchはないらしい](#try-catchはないらしい)
 - [例1 forループで日付を替えて処理をする](#例1-forループで日付を替えて処理をする)
+- [実行しているfileのbasenameを出力](#実行しているfileのbasenameを出力)
 
 シェルスクリプトの教科書より
 
@@ -38,6 +39,7 @@
   - コンマ区切りは文字扱いになるのでNG
 - 配列の呼び出しは{}でくくる
   - `echo ${a[0]}`
+  -
 ## shの実行
 
 `bash hello.sh` bashコマンドで実行すると、実行権限がなくても実行できる
@@ -251,3 +253,13 @@ done
 # d=$(date -I -d "$d + 1 day")  # %y-%m-%d
 # https://stackoverflow.com/questions/28226229/how-to-loop-through-dates-using-bash
 ```
+
+# 実行しているfileのbasenameを出力
+
+$0は  argsの1番目。つまりそのファイル名になる。
+
+#!/bin/bash
+me=$(basename "$0")
+
+echo $0
+echo $me
