@@ -184,7 +184,7 @@ find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/
 [ref1]:https://unix.stackexchange.com/questions/1125/how-can-i-get-a-count-of-files-in-a-directory-using-the-command-line
 
 # awkコマンド
-shellコマンドの中で、出力を抽出したりする
+shellコマンドの中で、出力を抽出
 ```
 awk [オプション] [コマンド] [ファイル……]
 ```
@@ -205,26 +205,34 @@ awk [オプション] [コマンド] [ファイル……]
 ## 例
 ls -la の出力で、最初($1)と最後($NF)だけをprint
 ```
-$ ls -la | awk '{print $1, $NF}'
+ls -la | awk '{print $1, $NF}'
+```
+
+4行目と7行目(||)、4行目から7行目(&&)を抽出
+```
+ls -la | awk 'NR==4 || NR==7'
+ls -la | awk 'NR>=4 && NR<=7'
 ```
 
 ls -la の出力で、サイズ($5)が1000バイトより大きいものだけを出力
 
 ```
-$ ls -la | awk '$5 >= 1000 { print }'
+ls -la | awk '$5 >= 1000 { print }'
 ```
 
 「BEGIN {アクション}」: 処理を開始する前に実行する
 
 ls -la の出力の各行の前に、整数をインクリメントで出力
 ```
-$ ls -la | awk 'BEGIN{i=0}{print ++i,$0}'
+ls -la | awk 'BEGIN{i=0}{print ++i,$0}'
 ```
 
 ファイルに対して実行する
 ```
-$ awk 'BEGIN{i=0}{print ++i,$0}' /etc/shells
+awk 'BEGIN{i=0}{print ++i,$0}' /etc/shells
 ```
+
+
 
 「END {アクション}」: 最終行まで終えた後に実行したい処理がある場合
 
@@ -265,7 +273,7 @@ lsof -i
 特定のポート(ex.5000)を見たい場合は
 
 ```
-$ lsof -i :5000`
+lsof -i :5000`
 ```
 
 ### `cd -` で直前にいたディレクトリに戻る
@@ -295,18 +303,18 @@ which git
 注意: {}の中はコンマ区切りにするが、コンマの後にスペースを入れないこと
 
 ```
-$ echo {foo,bar,baz}.txt
+echo {foo,bar,baz}.txt
 foo.txt bar.txt baz.txt
 
 8から11まで
-$ echo file-{8..11}.txt
+echo file-{8..11}.txt
 file-8.txt file-9.txt file-10.txt file-11.txt
 
 8から11まで、2ずつ増加
-$ echo file-{8..11..2}.txt
+echo file-{8..11..2}.txt
 
 文字も順に変えられる
-$ echo file-{c..f}.txt
+echo file-{c..f}.txt
 ```
 
 ### パラメータ展開
@@ -342,7 +350,7 @@ $ echo file-{c..f}.txt
 ### 05コマンド置換
 (command)とすると、()の中のcommandが実行され、標準出力が文字列で展開される
 
-$ touch $(date +%Y-%m-%d).txt
+touch $(date +%Y-%m-%d).txt
 
 とすると2021-01-19.txtができる。
 
