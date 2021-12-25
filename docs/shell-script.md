@@ -6,6 +6,7 @@
   - [sleep](#sleep)
   - [配列](#配列)
   - [条件判定](#条件判定)
+  - [文字列が含まれているか判定](#文字列が含まれているか判定)
   - [if文](#if文)
   - [case文](#case文)
   - [while文](#while文)
@@ -57,8 +58,10 @@
 
 ## 環境変数
 
-- コマンドの直前で環境変数を定義すると、その時限りで有効になる↓
+コマンドの直前で環境変数を定義すると、その時限りで有効になる↓
+```
 CONFIG_FILE=/home/hoge.txt ./config.sh
+```
 
 ## sleep
 
@@ -104,23 +107,35 @@ test で判定した結果がtrueなら0
 -le less than or equal
 
 
-**文字列の判定**
+# 文字列の判定
 
 =
 !=
 
-**ファイルの判定**
+# ファイルの判定
 
 -nt (newer than)
 -ot
 -e exsist
 -d directory
 
-**論理演算子**
+# 論理演算子
 
 -a (and)
 -o (or)
 !
+```
+
+## 文字列が含まれているか判定
+
+```sh
+#!/bin/bash
+
+STR='This is a test.'
+SUB='test'
+if [[ "$STR" == *"$SUB"* ]]; then
+	echo "Found -> "$SUB
+fi
 ```
 
 ## if文
