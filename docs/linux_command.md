@@ -202,6 +202,7 @@ awk [オプション] [コマンド] [ファイル……]
 - 行ごとに実行される
 - awk '...' を awk "..." とすると間違い。全て出力してしまう。
 - awk を aws とタイプしてしまう間違い(AWSのCLIコマンド)。
+- $0 が全項目、$1は1番目、、、$NFは最後
 
 ## 例
 ls -la の出力で、最初($1)と最後($NF)だけをprint
@@ -237,6 +238,19 @@ awk 'BEGIN{i=0}{print ++i,$0}' /etc/shells
 
 参考: https://atmarkit.itmedia.co.jp/ait/articles/1706/09/news013.html
 
+---
+日付をtime変数として作ってawkの各行の前につける。codeという文字の入ったプロセスを抜き出している。[c]odeとしているのはgrep codeコマンド自体を回避するため。
+
+```
+ps aux | grep '[c]ode' | awk -v time="$(date +"%F %H:%M:%S")""    " '{print time, $0}'
+```
+---
+
+ある文字列(change this one)を含むファイルをfindして、ある文字列を置き換える(yes we can/we did)。change this one のところにyes we canを入れてもよい。 [参考](https://stackoverflow.com/questions/13838973/using-find-grep-and-sed-together)
+
+```
+find ./ -type f -exec grep -i "change this one" -l {} \; -exec sed -i 's/yes we can/we did/g' {} \;
+```
 
 # Tipsいろいろ
 

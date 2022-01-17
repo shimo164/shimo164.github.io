@@ -7,9 +7,9 @@
 # VScode commands
 
 ## add folder
-'''
+```
 code --add dir/
-'''
+```
 
 ## add file
 ```
@@ -22,7 +22,6 @@ code --diff file1 file2
 ```
 
 ## regex
-
 ```
 foo(?=bar)
 (?<=foo)bar
