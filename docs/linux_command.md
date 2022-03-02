@@ -1,12 +1,13 @@
 **Linuxコマンドメモもくじ**
 
-- [grepコマンド](#grepコマンド)
-- [findコマンド](#findコマンド)
+- [grep](#grep)
+- [find](#find)
     - [更新時間で探す](#更新時間で探す)
     - [findで/var/.. を検索するときの注意](#findでvar-を検索するときの注意)
-- [locate検索](#locate検索)
-- [lsコマンド](#lsコマンド)
-- [awkコマンド](#awkコマンド)
+- [locate](#locate)
+- [ls](#ls)
+- [tree](#tree)
+- [awk](#awk)
   - [オプション](#オプション)
   - [Tips](#tips)
   - [例](#例)
@@ -26,12 +27,12 @@
     - [パラメータ展開](#パラメータ展開)
     - [パターンを指定して切り出す](#パターンを指定して切り出す)
     - [置換してから展開する](#置換してから展開する)
-    - [05コマンド置換](#05コマンド置換)
+    - [コマンド置換](#コマンド置換)
     - [算術式評価](#算術式評価)
     - [ファイルディスクリプタ](#ファイルディスクリプタ)
     - [リダイレクト](#リダイレクト)
 
-# grepコマンド
+# grep
 
 | オプション | grep出力                  |
 | :--------: | ------------------------- |
@@ -73,7 +74,7 @@ find ... | grep ... | xargs rm
 grep pattern * -s -R -n
 ```
 
-# findコマンド
+# find
 
 | オプション | Description            |
 | :--------: | ---------------------- |
@@ -161,7 +162,7 @@ find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/
 
 `find ./` は `/home/` を検索するという意味。`/var/`はrootのサブディレクトリで`/home/`と同列。
 
-# locate検索
+# locate
 
 | Command             | Description                     |
 | ------------------- | ------------------------------- |
@@ -170,7 +171,7 @@ find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/
 | `locate -A aaa bbb` | aaa AND bbb                     |
 | `locate -b aaa`     | basenameのみ検索                |
 
-# lsコマンド
+# ls
 
 | Command              | Description                   | Note                              |
 | -------------------- | ----------------------------- | --------------------------------- |
@@ -184,7 +185,33 @@ find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/
 
 [ref1]:https://unix.stackexchange.com/questions/1125/how-can-i-get-a-count-of-files-in-a-directory-using-the-command-line
 
-# awkコマンド
+# tree
+ディレクトリの中身を表示
+
+| Command      | Description            | Note          |
+| ------------ | ---------------------- | ------------- |
+| `-a`         | 全ファイル出力         |               |
+| `-d`         | ディレクトリのみ出力   |               |
+| `-d`         | ディレクトリのみ出力   |               |
+| `-L level`   | level層まで出力        |               |
+| `-P pattern` | マッチするものを出力   | --ignore-case |
+| `-I pattern` | マッチしないものを出力 | --ignore-case |
+
+```
+# そのまま
+tree
+
+# patternという文字列をファイル名に含む。
+# *が前後に必要。^$は省略可能
+# 検索ヒットしたフォルダ内のフォルダも出力される
+tree -P '*pattern*'
+
+# ...を含まない
+tree -I 'example*|bin|lib'
+
+```
+
+# awk
 shellコマンドの中で、出力を抽出
 ```
 awk [オプション] [コマンド] [ファイル……]
@@ -372,7 +399,7 @@ echo file-{c..f}.txt
 
 ### パターンを指定して切り出す
 ### 置換してから展開する
-### 05コマンド置換
+### コマンド置換
 (command)とすると、()の中のcommandが実行され、標準出力が文字列で展開される
 
 touch $(date +%Y-%m-%d).txt

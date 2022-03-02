@@ -15,7 +15,7 @@
   - [ファイルを読む](#ファイルを読む)
   - [関数を作る](#関数を作る)
   - [try catchはないらしい](#try-catchはないらしい)
-- [例forループで日付を替えて処理をする](#例forループで日付を替えて処理をする)
+- [例: ループで日付順に処理](#例-ループで日付順に処理)
 - [例 実行しているfileのbasenameを出力](#例-実行しているfileのbasenameを出力)
 
 シェルスクリプトの教科書より
@@ -254,11 +254,16 @@ echo $i
 ないそうです
 
 
-# 例forループで日付を替えて処理をする
+# 例: ループで日付順に処理
 
-- 日付をつけたフォルダをまとめている
-- フォルダ自身を選択しないように"a"をYEARの前につけている
+- 日付を＋1日してループ
 - $dはGNUのTimestampの処理を使っている。
+  - d=$(date -d "$d+1day" +%Y%m%d) # yyyymmdd. Can set format.
+  - d=$(date -I -d "$d + 1 day") # %y-%m-%d, yyyy-mm-dd
+- (https://stackoverflow.com/questions/28226229/how-to-loop-through-dates-using-bash)
+
+
+- echoするだけ
 
 ```
 #!/bin/bash
@@ -267,14 +272,26 @@ d=20200801
 while [ "$d" != 20210101 ]; do
   echo $d
   # touch $d".txt"
-  mkdir "a"$d/
-  mv $d* "a"$d/
+  # mkdir $d/
 
   d=$(date -d "$d+1day" +%Y%m%d)
 done
 
 # d=$(date -I -d "$d + 1 day")  # %y-%m-%d
-# https://stackoverflow.com/questions/28226229/how-to-loop-through-dates-using-bash
+```
+
+- 日付をつけたファイルがあってフォルダを作成して移動する
+- フォルダ自身を選択しないように"a"をフォルダ名の前につけている
+
+```
+#!/bin/bash
+
+d=20201201
+while [ "$d" != 20210101 ]; do
+  mkdir "a"$d/
+  mv $d* "a"$d/
+  d=$(date -d "$d+1day" +%Y%m%d)
+done
 ```
 
 # 例 実行しているfileのbasenameを出力

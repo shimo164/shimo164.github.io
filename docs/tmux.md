@@ -21,6 +21,7 @@
 | prefix q | View pane num |
 | prefix z | Zoom pane and back|
 | prefix w |List windows |
+| prefix { | Rotate current pane |
 
 
 # Menu bar parameter
@@ -38,7 +39,7 @@ Example: When `[3] 0:bash* 1:test-Z` is shown at the left bottom of menu bar,
 
 # Move a pane to another window
 
-1. Chenge to command mode with `C-b, :`
+1. Change to command mode with `C-b, :`
 
 2. Enter `:join-pane  [-s src-pane] [-t dst-pane]`
 
