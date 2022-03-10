@@ -13,8 +13,12 @@
   - [while 文](#while-文)
   - [for 文](#for-文)
   - [キー入力](#キー入力)
-  - [ファイルを読む](#ファイルを読む)
+  - [ファイル Read](#ファイル-read)
+    - [最後が改行で終わっていないファイルを対策する](#最後が改行で終わっていないファイルを対策する)
+  - [ファイル Write](#ファイル-write)
   - [関数を作る](#関数を作る)
+    - [関数で返り値を作る](#関数で返り値を作る)
+    - [関数で arg を使う](#関数で-arg-を使う)
   - [try catch はない](#try-catch-はない)
 - [例: ループで日付順に処理](#例-ループで日付順に処理)
 - [例 実行している file の basename を出力](#例-実行している-file-の-basename-を出力)
@@ -75,24 +79,39 @@ CONFIG_FILE=/home/hoge.txt ./config.sh
 ## 配列
 
 ```bash
-a=(2 4 6) # i=0, 1, 2
+a=(2 4 6) # indexは0始まり
 
-echo $a  # 0 番目
-echo ${a[1]} # 1番目 添字で指定するときは{}が必要
-echo $a[1] # {}がないと$a と 文字列[1]の連結
+echo $a  # 0 番目になるので注意
+# 2
 
-echo ${a[@]}  # @ で全て
+echo ${a[1]} # indexで指定するときは{}が必要
+# 4
+
+echo $a[1] # {}がないと、$a と "[1]"の連結になるので注意
+# 2[1]
+
+echo ${a[@]}  # @ で全ての要素。
+# 2 4 6
+
+echo $a[@]  # {}がないとき
+# 2[@]
+
 echo ${#a[@]}  # #a[@] は要素数
+# 3
 
-a[2]=10  # 代入
+a[2]=10 # 代入
 echo ${a[@]}
+# 2 4 10
 
 a+=(20 30) # 要素追加
 echo ${a[@]}
+# 2 4 10 20 30
 
 echo `date` # Unixの日時表示
+
 d=(`date`)
-echo ${d[3]}  # その3番目の要素
+echo ${d[3]}  # その3番目の要素(曜日)
+
 ```
 
 ## 条件判定
@@ -172,11 +191,13 @@ x=70
 if [ $x -gt 60 ]; then # [  ] の前後は文字列がくるとエラー
   echo "ok!"
 elif [ $x -gt 40 ]; then
-  echo "soso..."
+  :  # 何もしないときはコロン
 else
   echo "ng!..."
 fi
 ```
+
+`[[ condition1 && condition2 ]]` というように、 カッコ[]を二重にすると`-a, -o`の代わりに`&&, ||`が使える。
 
 ## case 文
 
@@ -255,11 +276,47 @@ done
 
 ```
 
-## ファイルを読む
+## ファイル Read
 
-(省略)
+Read
+
+https://stackoverflow.com/questions/7427262/how-to-read-a-file-into-a-variable-in-shell
+
+https://linuxhint.com/read_file_line_by_line_bash/
+
+### 最後が改行で終わっていないファイルを対策する
+
+```
+# test.txt
+test1
+test2
+test3  # <- End with this line.
+```
+
+```sh
+#!/bin/bash
+filename='test.txt'
+
+while read line; do
+	echo "$line"
+done <$filename
+
+# read all lines
+while IFS= read line || [[ -n $line ]]; do
+	echo "$line"
+done <$filename
+```
+
+## ファイル Write
+
+echo "test" >> test.txt
+
+※ >> で追記にすること。> でリダイレクトすると上書きされる
 
 ## 関数を作る
+
+注:先に宣言しないと使えない
+注:呼び出すときは()いらない
 
 ```sh
 
@@ -270,7 +327,74 @@ hello() {
 }
 
 hello Mike Tom
-echo $i
+echo $i  # empty
+```
+
+### 関数で返り値を作る
+
+return は数値を返す。変数を返すときは echo を使う。
+
+関数内の複数の echo をまとめて 1 つとして受けとることになる。
+
+```sh
+#!/bin/bash
+func_test() {
+
+	echo "hi!"
+
+	result="my result"
+
+	echo $result
+}
+
+echo "hello"
+
+from_func=$(func_test)
+
+echo $from_func
+
+# Output:
+# hello
+# hi! my result
+```
+
+### 関数で arg を使う
+
+$1, $2,...を使う
+
+```sh
+func_arg() {
+	echo $1
+	echo $2
+	echo $1+$2        # string
+	echo $(($1 + $2)) # int
+	echo $4           # empty
+	echo $*           # all
+}
+
+func_arg 10 20
+
+# Output:
+# 10
+# 20
+# 10+20
+# 30
+#
+# 10 20
+```
+
+変数は$1,$2 という書き方しかできないので、
+置き換えると楽かもしれない
+
+```sh
+func_arg() {
+	this=$1
+	that=$2
+	# $a ,,,
+
+}
+
+func_arg $this $that
 ```
 
 ## try catch はない
