@@ -5,15 +5,18 @@
   - [sleep](#sleep)
   - [配列](#配列)
   - [条件判定](#条件判定)
+  - [数値を 2 回判定](#数値を-2-回判定)
   - [文字列が同一かを判定](#文字列が同一かを判定)
   - [文字列が空白であるかを判定](#文字列が空白であるかを判定)
   - [文字列が含まれているか判定](#文字列が含まれているか判定)
+  - [sed で文字を消す](#sed-で文字を消す)
   - [if 文](#if-文)
   - [case 文](#case-文)
   - [while 文](#while-文)
   - [for 文](#for-文)
   - [キー入力](#キー入力)
   - [ファイル Read](#ファイル-read)
+    - [文字列リストから配列にする](#文字列リストから配列にする)
     - [最後が改行で終わっていないファイルを対策する](#最後が改行で終わっていないファイルを対策する)
   - [ファイル Write](#ファイル-write)
   - [関数を作る](#関数を作る)
@@ -23,7 +26,7 @@
 - [例: ループで日付順に処理](#例-ループで日付順に処理)
 - [例 実行している file の basename を出力](#例-実行している-file-の-basename-を出力)
 
-シェルスクリプトの教科書より
+参考) 新しいシェルプログラミングの教科書 三宅 英明
 
 # shell script の基本
 
@@ -116,11 +119,15 @@ echo ${d[3]}  # その3番目の要素(曜日)
 
 ## 条件判定
 
+**注意。判定に使うカッコ[ ] で前後にスペースを入れること。`: command not found`というエラーが出る。**
+
 ```sh
 test 1 -eq 1; echo $?
 test 1 -eq 1 -a 2 -eq 2; echo $?
 
 test で判定した結果がtrueなら0
+
+# 数値の判定
 
 -ne not equal
 -gt greater than
@@ -146,6 +153,12 @@ test で判定した結果がtrueなら0
 -a (and)
 -o (or)
 !
+```
+
+## 数値を 2 回判定
+
+```sh
+if [[ $cnt -eq 0 ]] || [[ $cnt -eq 1 ]]; then
 ```
 
 ## 文字列が同一かを判定
@@ -182,6 +195,19 @@ if [[ "$STR" == *"$SUB"* ]]; then
 fi
 ```
 
+## sed で文字を消す
+
+```sh
+name='[ "aaaa", "bbbb" ]'
+echo $name
+# " を消している。
+name=$(echo $name | sed -E 's/"//g')
+echo $name
+# [ ] も消している 。縦棒で「または」バックスラッシュでエスケープ
+name=$(echo $name | sed -E 's/"|\[|\]//g')
+
+```
+
 ## if 文
 
 `if .. elif .. else .. fi`
@@ -195,6 +221,28 @@ elif [ $x -gt 40 ]; then
 else
   echo "ng!..."
 fi
+```
+
+ファイルが存在しなければ exit
+
+```sh
+if [ ! -f cdk.json ]; then
+  printf "\n--app is required either in command-line, in cdk.json or in ~/.cdk.json.\n"
+  exit
+fi
+```
+
+ファイルが空かどうか
+
+```
+
+if ! [ -s "/file" ];then
+    exit
+fi
+or shorter with less obvious syntax
+
+test -s "/file" && exit
+test -s tests if a file exists and has non-zero size.
 ```
 
 `[[ condition1 && condition2 ]]` というように、 カッコ[]を二重にすると`-a, -o`の代わりに`&&, ||`が使える。
@@ -283,6 +331,32 @@ Read
 https://stackoverflow.com/questions/7427262/how-to-read-a-file-into-a-variable-in-shell
 
 https://linuxhint.com/read_file_line_by_line_bash/
+
+### 文字列リストから配列にする
+
+```sh
+IFS=', ' read -ra my_array <<<${LIST[@]}
+
+for item in "${my_array[@]}"; do
+  echo $item
+done
+```
+
+入力の記号も文字として読むので注意
+
+```sh
+LIST='["item1", "item2"]'
+["item1"
+"item2"]
+
+LIST='"item1", "item2"'
+["item1"
+"item2"]
+
+LIST='item1, item2'
+item1
+item2
+```
 
 ### 最後が改行で終わっていないファイルを対策する
 
@@ -399,7 +473,21 @@ func_arg $this $that
 
 ## try catch はない
 
-ないそうです
+ないそうです。
+
+こうやると無理やり書ける？
+
+```sh
+func(){
+
+}
+
+func
+
+if $? != 0
+  # catch...
+
+```
 
 # 例: ループで日付順に処理
 
