@@ -4,6 +4,7 @@
   - [環境変数](#環境変数)
   - [sleep](#sleep)
   - [配列](#配列)
+    - [grepから配列にする例](#grepから配列にする例)
   - [条件判定](#条件判定)
   - [数値を 2 回判定](#数値を-2-回判定)
   - [文字列が同一かを判定](#文字列が同一かを判定)
@@ -116,6 +117,53 @@ d=(`date`)
 echo ${d[3]}  # その3番目の要素(曜日)
 
 ```
+
+### grepから配列にする例
+
+tmp.txt
+
+```txt
+    "local/services/aaa",
+    "global/services/bbb",
+    "global/services/ccc",
+```
+
+bash test.sh
+```bash
+SELECTION=( $(cat tmp.txt | grep global) )
+# SELECTION="$(cat tmp.txt | grep global)"  # NG
+
+echo ${SELECTION[@]}
+# echo "${SELECTION[@]}"  # OK
+
+IFS=', '  read -ra my_array <<<${SELECTION[@]}
+
+echo ---
+
+echo "${my_array[@]}"
+
+for item in "${my_array[@]}"; do
+	echo ===
+	echo $item
+	base=$(basename $item | tr -d \")
+	echo $base
+done
+```
+
+出力
+```
+"global/services/bbb", "global/services/ccc",
+---
+"global/services/bbb" "global/services/ccc"
+"global/services/ccc"
+===
+"global/services/bbb"
+bbb
+===
+"global/services/ccc"
+ccc
+```
+
 
 ## 条件判定
 
