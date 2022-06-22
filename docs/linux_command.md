@@ -2,37 +2,18 @@
 
 - [grep](#grep)
 - [find](#find)
-  - [更新時間で探す](#更新時間で探す)
-  - [find で/var/.. を検索するときの注意](#find-でvar-を検索するときの注意)
+    - [更新時間で探す](#更新時間で探す)
+    - [find で/var/.. を検索するときの注意](#find-でvar-を検索するときの注意)
 - [locate](#locate)
 - [ls](#ls)
 - [sed](#sed)
+  - [書式](#書式)
+- [オプション](#オプション)
 - [tree](#tree)
 - [awk](#awk)
-  - [オプション](#オプション)
+  - [オプション](#オプション-1)
   - [Tips](#tips)
   - [例](#例)
-- [Tips いろいろ](#tips-いろいろ)
-  - [文字列の連結](#文字列の連結)
-  - [コマンド中でランダム数を入れる](#コマンド中でランダム数を入れる)
-  - [$RANDOM でランダム数を出せる](#random-でランダム数を出せる)
-  - [rm でディレクトリを削除するときは、`rm -rf direname` で丸ごと削除](#rm-でディレクトリを削除するときはrm--rf-direname-で丸ごと削除)
-  - [`nautilus .` で今いるディレクトリを開く](#nautilus--で今いるディレクトリを開く)
-  - [`mkdir -p`で深いディレクトリを同時に作る](#mkdir--pで深いディレクトリを同時に作る)
-  - [lsof -i でポート使用状況を確認する](#lsof--i-でポート使用状況を確認する)
-  - [`cd -` で直前にいたディレクトリに戻る](#cd---で直前にいたディレクトリに戻る)
-  - [which コマンドで実行ファイルのフルパスを出力](#which-コマンドで実行ファイルのフルパスを出力)
-  - [readlink でファイルの full path を出力](#readlink-でファイルの-full-path-を出力)
-  - [unzip -l で、解凍せずに中を見る](#unzip--l-で解凍せずに中を見る)
-- [シェルスクリプト本より](#シェルスクリプト本より)
-  - [パス名展開](#パス名展開)
-  - [パラメータ展開](#パラメータ展開)
-  - [パターンを指定して切り出す](#パターンを指定して切り出す)
-  - [置換してから展開する](#置換してから展開する)
-  - [コマンド置換](#コマンド置換)
-  - [算術式評価](#算術式評価)
-  - [ファイルディスクリプタ](#ファイルディスクリプタ)
-  - [リダイレクト](#リダイレクト)
 
 # grep
 
@@ -202,42 +183,94 @@ find . -maxdepth 1  -newermt 2020-09-1 ! -newermt 2020-09-2 -exec mv -t <dir_2>/
 
 # sed
 
+https://linuxjm.osdn.jp/html/GNU_sed/man1/sed.1.html
+
+## 書式
+
+```
+sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+```
+
+- sed はストリームエディター
+- 入力ストリーム (ファイルまたはパイプラインからの入力) に対して基本的なテキスト変換を行う
+- sed は 他のエディターと似ている面もあるが、
+  - sed は入力に対して 1 パスだけで動作するので、より効率的
+  - sed はパイプラインのテキストに対してフィルター動作を行うことができる
+
+
 ```sh
+置換は 's/パターン/置き換え/'
 
-# 基本形
-sed 's/aaa/bbb/g'
+# echoを入力ストリームとして、パイプする例
+echo abcdab
+abcdab
 
-g をつけると何回でも置換。つけないと1回だけ置換。
--E, -r, --regexp-extended 拡張正規表現を使う
--i 編集してファイルを上書き保存する
+# 一回だけ置換
+echo abcdab | sed 's/a/x/'
+xbcdab
 
-# echoをパイプする # gがないので1つ目だけ
-echo test | sed -E 's/t//'
-Out:est
+# gを使うとパターンにマッチした全部が置換
+echo abcdab | sed 's/a/x/g'
+xbcdxb
 
-# 変数を上書きする Delete "#"、space
-S=$(echo $S | sed -E 's/#\s//g')
+# ダブルクォートでも同じ
+echo abcdab | sed "s/a/x/"
+xbcdab
 
-# fileを対象にする
-sed -E 's/aaa/bbb/g' tmp.txt
+# パターン部分に正規表現はオプションなしで使える
+# [bc]で、bまたはc全部
+echo abcdab | sed 's/[bc]/x/g'
+axxdax
 
-# 別fileに保存
-sed -E 's/aaa/bbb/g' tmp.txt > tmp2.txt
+# ファイルを入力ストリームにする
+file.txtというファイルがあるとする。
 
-# 同じfileに上書き
-sed -Ei 's/aaa/bbb/g' tmp.txt
+abcdab
+abcdab
+abcdab
 
-# 2行目だけを置換する
-sed '2s/aaa/bbb/g' file
+# ファイルの全行に対象
+sed 's/[bc]/x/g' file.txt
+axxdax
+axxdax
+axxdax
 
-# 2から4行目だけを置換する
-sed '2,4s/aaa/bbb/g' file
+# 別ファイルに保存
+sed 's/[bc]/x/g' file.txt -> file2.txt
+
+# 2行目だけを対象に
+sed '2s/[bc]/x/g' file.txt
+
+# 1,2行目だけを対象に
+sed '1,2s/[bc]/x/g' file.txt
+
+# 変数を上書きする方法
+S=abcdab
+S=$(echo $S | sed "s/a/x/g")
 
 # \ でエスケープして/ を置換する
 echo //path// | sed  's/\/\//\//g'
 
 # 区切り文字を他の記号(ここでは%)にすれば/ をエスケープしなくてよい
 echo //path// | sed  's%//%/%g'
+
+# sedの中に変数を使うときはシングルクォートで囲む
+# その1
+var=[bc]
+sed 's/'$var'/x/g' file.txt
+
+# その2
+var=1,2
+sed ''$var's/[bc]/x/g' file.txt
+
+```
+# オプション
+```
+-E, -r, --regexp-extended 拡張正規表現を使う
+-i 編集してファイルを上書き保存する
+
+# -i: 同じfileに上書き Macでは -i "" とする
+sed -i 's/aaa/bbb/g' file
 
 ```
 
@@ -306,7 +339,7 @@ ls -la | awk '{print $1, $NF}'
 ```
 ls -la | awk 'NR==4 || NR==7'
 ls -la | awk 'NR>=4 && NR<=7'
-```
+```ls -la | awk 'NR==4 || NR==7'
 
 ---
 

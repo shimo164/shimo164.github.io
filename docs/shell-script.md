@@ -5,6 +5,7 @@
   - [sleep](#sleep)
   - [配列](#配列)
     - [grepから配列にする例](#grepから配列にする例)
+    - [空白を含めて、複数行文字列を配列にする例](#空白を含めて複数行文字列を配列にする例)
   - [条件判定](#条件判定)
   - [数値を 2 回判定](#数値を-2-回判定)
   - [文字列が同一かを判定](#文字列が同一かを判定)
@@ -165,6 +166,28 @@ bbb
 "global/services/ccc"
 ccc
 ```
+
+### 空白を含めて、複数行文字列を配列にする例
+
+```
+#!/bin/bash
+
+str="
+ここは indent0
+  サンプル indent2
+    の複数行文字列 indent4
+です。 indent0
+"
+echo "$str"
+
+IFS=$'\t\n' read -d '' -a myarray <<<${str[@]}
+
+for item in "${myarray[@]}"; do
+	echo ===
+	echo "$item"
+done
+```
+
 
 
 ## 条件判定
