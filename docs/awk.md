@@ -54,7 +54,7 @@ echo 'This is mine.' > file.txt
 awk '{print $1}' file.txt
 This
 
-# 複数行ファイルから読む
+# 複数行から読む
 echo $'This is mine.\nThat is yours.' | awk '{print $1}'
 This
 That
