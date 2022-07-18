@@ -357,3 +357,6 @@ stdout と stderr 出力を同じファイルにリダイレクトする
 ```
 ll is aliased to `ls -alF'
 ```
+
+# インクリメントの書き方
+num=$(($num + 1))

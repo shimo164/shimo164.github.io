@@ -18,8 +18,9 @@
   - [for 文](#for-文)
   - [キー入力](#キー入力)
   - [ファイル Read](#ファイル-read)
-    - [文字列リストから配列にする](#文字列リストから配列にする)
-    - [最後が改行で終わっていないファイルを対策する](#最後が改行で終わっていないファイルを対策する)
+    - [文字列リストから配列にする その1](#文字列リストから配列にする-その1)
+    - [文字列リストから配列にする その2](#文字列リストから配列にする-その2)
+- [test.txt](#testtxt)
   - [ファイル Write](#ファイル-write)
   - [関数を作る](#関数を作る)
     - [関数で返り値を作る](#関数で返り値を作る)
@@ -27,6 +28,7 @@
   - [try catch はない](#try-catch-はない)
 - [例: ループで日付順に処理](#例-ループで日付順に処理)
 - [例 実行している file の basename を出力](#例-実行している-file-の-basename-を出力)
+- [ファイルの行数を調べる](#ファイルの行数を調べる)
 
 参考) 新しいシェルプログラミングの教科書 三宅 英明
 
@@ -58,6 +60,7 @@
   - `echo $(date +%Y-%m-%d\ %H:%M:%S)` -> 2021-12-17 08:41:07
 - `eval $(command)`でコマンド結果の文字列を実行する
   - 例:`eval $(cat tmp.txt | awk 'NR==1')` で tmp.txt の 1 行目のコマンドを実行する
+- 変数はグローバルなので注意(入れ子の関数のループの$iとかが上書きされる)
 
 ## sh の実行
 
@@ -236,6 +239,8 @@ if [[ $cnt -eq 0 ]] || [[ $cnt -eq 1 ]]; then
 
 ## 文字列が同一かを判定
 
+注意: == の間にスペースを入れること。いれない場合、`"$T"=="$S"`という結合された文字列を判定することになり、常にTrueになる。
+
 ```sh
 if [[ "$T" == "$S" ]]; then
 	echo "Identical string!"
@@ -368,7 +373,19 @@ do
 done
 ```
 
+- whileの条件判定
+```
+while [ $num -lt 3 ]
+do
+	echo $num
+	num=$(( $num + 1 ))
+done
+```
+
 ## for 文
+
+ここにほとんどのパターンが載っている。
+https://www.cyberciti.biz/faq/bash-for-loop/
 
 - for .. do .. done
 
@@ -405,7 +422,7 @@ https://stackoverflow.com/questions/7427262/how-to-read-a-file-into-a-variable-i
 
 https://linuxhint.com/read_file_line_by_line_bash/
 
-### 文字列リストから配列にする
+### 文字列リストから配列にする その1
 
 ```sh
 IFS=', ' read -ra my_array <<<${LIST[@]}
@@ -429,6 +446,30 @@ LIST='"item1", "item2"'
 LIST='item1, item2'
 item1
 item2
+```
+
+### 文字列リストから配列にする その2
+
+[これが使いやすい](https://stackoverflow.com/questions/24628076/convert-multiline-string-to-array/24628676#24628676)
+```
+SAVEIFS=$IFS   # Save current IFS
+IFS=$'\n'      # Change IFS to new line
+names=($names) # split to array $names
+IFS=$SAVEIFS   # Restore IFS
+``````
+
+関数にしておく??-> TODO 使えないかも
+```
+to_array(){
+	SAVEIFS=$IFS   # Save current IFS
+	IFS=$'\n'      # Change IFS to new line
+	a=($1)         # split to array $names
+	IFS=$SAVEIFS   # Restore IFS
+	echo $a
+}
+
+a = to_array $a
+
 ```
 
 ### 最後が改行で終わっていないファイルを対策する
@@ -611,4 +652,12 @@ me=$(basename "$0")
 
 echo $0
 echo $me
+```
+
+# ファイルの行数を調べる
+
+< がないとき、ファイル名も出力される
+
+```
+wc -l < test.txt
 ```

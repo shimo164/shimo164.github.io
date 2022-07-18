@@ -4,6 +4,7 @@
 - [広島・長崎記念式典での首相スピーチ](#広島長崎記念式典での首相スピーチ)
 	- [平成13年(2001年) 小泉純一郎](#平成13年2001年-小泉純一郎)
 	- [平成14年(2002年) 小泉純一郎](#平成14年2002年-小泉純一郎)
+	- [平成15年(2003年) 小泉純一郎](#平成15年2003年-小泉純一郎)
 	- [平成16年(2004年) 小泉純一郎](#平成16年2004年-小泉純一郎)
 	- [平成17年(2005年) 小泉純一郎](#平成17年2005年-小泉純一郎)
 	- [平成18年(2006年) 小泉純一郎](#平成18年2006年-小泉純一郎)
@@ -168,6 +169,62 @@
     </tr>
   </tbody>
 </table>
+
+## 平成15年(2003年) 小泉純一郎
+
+<table>
+  <thead >
+    <tr >
+      <th width="50%">広島</th>
+      <th >長崎</th>
+    </tr>
+	<tr>
+		<td><span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式・</span>平和祈念<span class=hiroshima>式</span></td>
+		<td><span class=nagasaki>長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典</span></td>
+	</tr>
+	<tr>
+		<td>内閣総理大臣挨拶</td>
+		<td>内閣総理大臣挨拶</td>
+	</tr>
+	<tr>
+		<td>　本日、被爆５８周年の<span class=hiroshima>広島市</span>原爆<span class=hiroshima>死没</span>者慰霊<span class=hiroshima>式並びに</span>平和祈念<span class=hiroshima>式</span>が執り行われるに当たり、原子爆弾の犠牲者の御霊に対し、謹んで哀悼の誠を捧げます。そして、今なお被爆の後遺症に苦しんでおられる方々に対し、心からお見舞いを申し上げます。</td>
+		<td>　本日、被爆５８周年の<span class=nagasaki>長崎</span>原爆<span class=nagasaki>犠牲</span>者慰霊平和祈念<span class=nagasaki>式典</span>が執り行われるに当たり、原子爆弾の犠牲者の御霊に対し、謹んで哀悼の誠を捧げます。そして、今なお被爆の後遺症に苦しんでおられる方々に対し、心からお見舞いを申し上げます。</td>
+	</tr>
+	<tr>
+		<td>　人類史上唯一の被爆国である我が国は、広島、長崎の悲劇を再び繰り返してはならないとの堅い決意の下、平和憲法を遵守し、非核三原則を堅持してまいりました。我が国は、今後とも、この立場を変えることなく、また、国際社会の先頭に立ち、各国政府に対する包括的核実験禁止条約（ＣＴＢＴ）の早期批准の働きかけを一層強化するなど、核軍縮・核不拡散の取組を推し進め、核兵器の廃絶に全力で取り組んでまいります。</td>
+		<td>　人類史上唯一の被爆国である我が国は、広島、長崎の悲劇を再び繰り返してはならないとの堅い決意の下、平和憲法を遵守し、非核三原則を堅持してまいりました。我が国は、今後とも、この立場を変えることなく、また、国際社会の先頭に立ち、各国政府に対する包括的核実験禁止条約（ＣＴＢＴ）の早期批准の働きかけを一層強化するなど、核軍縮・核不拡散の取組を推し進め、核兵器の廃絶に全力で取り組んでまいります。</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>　<span class=nagasaki>本年７月には、国立長崎原爆死没者追悼平和祈念館を開館いたしました。この祈念館が、将来にわたり、原子爆弾の惨禍を全世界に伝え、世界平和に貢献する施設となるよう期待します。</span></td>
+	</tr>
+	<tr>
+		<td>　被爆者の方々に対しては、これまで保健、医療及び福祉にわたる総合的な援護施策を充実させてまいりました。最近では、治療のため来日する在外被爆者の方々に対して渡航費用を補助するほか、日本で支給認定を受けた方が出国した後も引き続き手当を受けられるよう改めるなど、支援策を講じたところ<span class=hiroshima>です</span>。今後とも、高齢化の進行など被爆者の実状を直視しながら援護施策の推進に誠心誠意努めてまいります。</td>
+		<td><span class=nagasaki>　</span>被爆者の方々に対しては、これまで保健、医療及び福祉にわたる総合的な援護施策を充実させてまいりました。最近では、治療のため来日する在外被爆者の方々に対して渡航費用を補助するほか、日本で支給認定を受けた方が出国した後も引き続き手当を受けられるよう改めるなど、支援策を講じたところ<span class=nagasaki>であります</span>。今後とも、高齢化の進行など被爆者の実状を直視しながら援護施策の推進に誠心誠意努めてまいります。</td>
+	</tr>
+	<tr>
+		<td>　<span class=hiroshima>戦後、広島</span>は<span class=hiroshima>国際平和文化都市として</span>、大きな発展を遂げました。<span class=hiroshima>今日まで、広島</span>の復興に<span class=hiroshima>尽力され</span>た多くの皆様に深い敬意を表します。そして、戦後一貫して世界平和実現に向けて<span class=hiroshima>取組ん</span>できた市民の願いは、<span class=hiroshima>「ヒロシマ」</span>の<span class=hiroshima>名前</span>とともに、世界中の人々の心に届いています。<span class=hiroshima>「ヒロシマ」は</span>、世界<span class=hiroshima>平和</span>を<span class=hiroshima>考えるシンボルとなり</span>、<span class=hiroshima>毎年、</span>多くの人々が<span class=hiroshima>、この街を訪れています。今後とも、平和を希求する多くの人々を惹きつける</span>都市であるよう祈念します。</td>
+		<td>　<span class=nagasaki>長崎</span>は、<span class=nagasaki>原爆投下による被害の中から、市民の努力によりあらゆる困難を乗り越えて、今日まで</span>大きな発展を遂げました。<span class=nagasaki>長崎</span>の復興に<span class=nagasaki>尽してこられ</span>た多くの皆様に深い敬意を表します。そして、戦後一貫して世界平和実現に向けて<span class=nagasaki>取り組ん</span>できた市民の願いは、<span class=nagasaki>平和</span>の<span class=nagasaki>鐘の音</span>とともに、世界中の人々の心に届いて<span class=nagasaki>おります。現在、長崎は、平和の希求と人権の尊重を基本理念に掲げて、歴史がいきづく交流拠点都市に向けたまちづくりを進めて</span>います。<span class=nagasaki>長い間</span>、<span class=nagasaki>我が国と西欧文明の交流の窓口であり、国際色あふれる観光都市でもある長崎が、今後とも、平和について</span>世界<span class=nagasaki>に発信</span>を<span class=nagasaki>続ける街として</span>、<span class=nagasaki>外国からも</span>多くの人々が<span class=nagasaki>訪れる</span>都市であるよう祈念します。</td>
+	</tr>
+	<tr>
+		<td>　終わりに、犠牲となられた方々の御冥福と、被爆者並びに御遺族の今後の御多幸をお祈り申し上げます。</td>
+		<td>　終わりに、犠牲となられた方々の御冥福と、被爆者並びに御遺族の今後の御多幸をお祈り申し上げます。</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>平成15年8月<span class=hiroshima>6</span>日</td>
+		<td>平成15年8月<span class=nagasaki>9</span>日</td>
+	</tr>
+	<tr>
+		<td>内閣総理大臣　　　小泉　純一郎</td>
+		<td>内閣総理大臣　　　小泉　純一郎</td>
+	</tr>
+  </tbody>
+</table>
+
 
 ## 平成16年(2004年) 小泉純一郎
 
